@@ -1,0 +1,307 @@
+[
+  {
+    "base": "mingw-w64-boost",
+    "version": "1.92.0-4",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-boost",
+      "mingw-w64-ucrt-x86_64-boost-libs"
+    ],
+    "license": "spdx:BSL-1.0",
+    "upstream": "https://www.boost.org/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-boost-1.92.0-4.src.tar.zst",
+    "sourcePackageSha256": "9825BFDE4A8107204253921256CA5C488F23B5AF50A94B80292B10E16D511D6E",
+    "sourcePackageBytes": 107843639,
+    "recipe": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost",
+    "pkgbuildSha256": "E4EB71CD62D6AB8DC5B2BB689849353C36F2B208524898255240F937A008EA3F"
+  },
+  {
+    "base": "mingw-w64-brotli",
+    "version": "1.2.0-1",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-brotli"
+    ],
+    "license": "spdx:MIT",
+    "upstream": "https://github.com/google/brotli",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-brotli-1.2.0-1.src.tar.zst",
+    "sourcePackageSha256": "2F0F93875AAC21990D20F1EAF0AD8B970EB6F186C663C77AE47AAAF9E5711FCF",
+    "sourcePackageBytes": 644113,
+    "recipe": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli",
+    "pkgbuildSha256": "894120DAC11E7FFFD72224148E22D424075FABF23A8CAFBF4F2C5390C73755C9"
+  },
+  {
+    "base": "mingw-w64-crt",
+    "version": "14.0.0.r495.g63ebe6cdb-1",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-crt"
+    ],
+    "license": "spdx:ZPL-2.1",
+    "upstream": "https://www.mingw-w64.org/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1.src.tar.zst",
+    "sourcePackageSha256": "08B00D1BC565A2430D7559E40116ECCC9137DD41431475D125933CD32A10E769",
+    "sourcePackageBytes": 55146965,
+    "recipe": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt",
+    "pkgbuildSha256": "37FBC393B4F7FCFD34EDB546F8B87A530831312184EA73B5120121B3C87EFA5B"
+  },
+  {
+    "base": "mingw-w64-curl",
+    "version": "8.23.0-1",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-curl-winssl"
+    ],
+    "license": "spdx:MIT",
+    "upstream": "https://curl.se/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-curl-8.23.0-1.src.tar.zst",
+    "sourcePackageSha256": "85206B050A96CE7E78F25F15307BD1545472CEAAA834E00169573B0A61A5436B",
+    "sourcePackageBytes": 3000806,
+    "recipe": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl",
+    "pkgbuildSha256": "06B87103F789C1198E114248F13F23FC892CAC828891D9500A13DD81ACFB8D04"
+  },
+  {
+    "base": "mingw-w64-gcc",
+    "version": "16.2.0-6",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-gcc",
+      "mingw-w64-ucrt-x86_64-libgcc",
+      "mingw-w64-ucrt-x86_64-libquadmath",
+      "mingw-w64-ucrt-x86_64-libstdc++"
+    ],
+    "license": "spdx:GPL-3.0-or-later WITH GCC-exception-3.1 AND GFDL-1.3-or-later",
+    "upstream": "https://gcc.gnu.org",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-gcc-16.2.0-6.src.tar.zst",
+    "sourcePackageSha256": "A901D8AFB78438ABCFF9ED020CD9AA9431DB76DE1992171C2454C3C07AD289E8",
+    "sourcePackageBytes": 107229138,
+    "recipe": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc",
+    "pkgbuildSha256": "1A123EA062E01BEB611C4375999492B0F41EF2D92D03E38CB29E7C23E855AD45"
+  },
+  {
+    "base": "mingw-w64-gettext",
+    "version": "1.0-1",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-gettext-runtime"
+    ],
+    "license": "spdx:GPL-3.0-or-later AND LGPL-2.1-or-later",
+    "upstream": "https://www.gnu.org/software/gettext/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-gettext-1.0-1.src.tar.zst",
+    "sourcePackageSha256": "CCA0D0C8F60353FACCC5AD40405240014E4A7CCC8B1C6CA9F4626AEF3097D26E",
+    "sourcePackageBytes": 10267655,
+    "recipe": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext",
+    "pkgbuildSha256": "853EF80A50588F29355722A4513F24CF1A5F8DE06E0B5EE326580464DB539741"
+  },
+  {
+    "base": "mingw-w64-headers",
+    "version": "14.0.0.r495.g63ebe6cdb-1",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-headers"
+    ],
+    "license": "spdx:ZPL-2.1 AND LGPL-2.1-or-later",
+    "upstream": "https://www.mingw-w64.org/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1.src.tar.zst",
+    "sourcePackageSha256": "1DE0821540E27952A7C4361570238CB919E8E6DDC18CF4AB77503155E4E59BEE",
+    "sourcePackageBytes": 55137484,
+    "recipe": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers",
+    "pkgbuildSha256": "A54230F1F04C609102CCBC7470455DACDDA41F76766E60F86F67CF77A98A6C0E"
+  },
+  {
+    "base": "mingw-w64-icu",
+    "version": "78.3-4",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-icu"
+    ],
+    "license": "spdx:ICU",
+    "upstream": "https://icu.unicode.org/home/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-icu-78.3-4.src.tar.zst",
+    "sourcePackageSha256": "9E24BCCF1F6E00658114E0A61AA14ED6742E29983DBA3DA8058E6D2C42366F9F",
+    "sourcePackageBytes": 26077652,
+    "recipe": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu",
+    "pkgbuildSha256": "52929939E457053452D531274A12F7FEFB3B2F87B4E656AD7954763855119DF2"
+  },
+  {
+    "base": "mingw-w64-libiconv",
+    "version": "1.19-1",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-libiconv"
+    ],
+    "license": "spdx:LGPL-2.1-or-later",
+    "upstream": "https://www.gnu.org/software/libiconv/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-libiconv-1.19-1.src.tar.zst",
+    "sourcePackageSha256": "74428280C17094DA5B702C29B2E1A0ABAE59556EA5DFDD65705CC8CCC1E000FB",
+    "sourcePackageBytes": 5131029,
+    "recipe": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv",
+    "pkgbuildSha256": "9B3212D06910560FB59E017E0B73A29D392A5082D3A47A613E61509BD7DCD475"
+  },
+  {
+    "base": "mingw-w64-libidn2",
+    "version": "2.3.8-4",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-libidn2"
+    ],
+    "license": "spdx:GPL-2.0-or-later",
+    "upstream": "https://www.gnu.org/software/libidn/#libidn2",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-libidn2-2.3.8-4.src.tar.zst",
+    "sourcePackageSha256": "CD83E8514FBEB6A4499299B88691B9B9ECC3114CCA1E2BE4F6C54AAB6AE9DDD0",
+    "sourcePackageBytes": 2147337,
+    "recipe": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2",
+    "pkgbuildSha256": "CF6DEF1817D6A38B49C66FC4CBE36CD56705D9B8952DAE13E06D60DA703983FF"
+  },
+  {
+    "base": "mingw-w64-libpsl",
+    "version": "0.21.5-3",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-libpsl"
+    ],
+    "license": "spdx:MIT",
+    "upstream": "https://rockdaboot.github.io/libpsl/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-libpsl-0.21.5-3.src.tar.zst",
+    "sourcePackageSha256": "102B4AB4C60322162E808C5C81F545438C346C659E8FB63E0851066F07A0E76B",
+    "sourcePackageBytes": 6829368,
+    "recipe": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl",
+    "pkgbuildSha256": "84F8E19B62B3037D82F1F20BC041B9C1A83F8D82EEFFE158BBF3D7F50DF286C3"
+  },
+  {
+    "base": "mingw-w64-libssh2",
+    "version": "1.11.1-2",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-libssh2-wincng"
+    ],
+    "license": "spdx:BSD-3-Clause",
+    "upstream": "https://libssh2.org/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-libssh2-1.11.1-2.src.tar.zst",
+    "sourcePackageSha256": "BB78F8354441190221ECE18A96C09F631FE02648F5DD7D1E247AE8D00A9FEA5F",
+    "sourcePackageBytes": 1094498,
+    "recipe": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2",
+    "pkgbuildSha256": "187EA90E8D6671C06397C56153BE4803B0FBECF17F8851C58B97047516B98910"
+  },
+  {
+    "base": "mingw-w64-libunistring",
+    "version": "1.4.2-1",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-libunistring"
+    ],
+    "license": "spdx:LGPL-3.0-or-later OR GPL-3.0-or-later",
+    "upstream": "https://www.gnu.org/software/libunistring",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-libunistring-1.4.2-1.src.tar.zst",
+    "sourcePackageSha256": "A5BAFB360D5C13C5C52EF071D5A8288CE2345346B902F20ED6E9322766EC60EB",
+    "sourcePackageBytes": 4770800,
+    "recipe": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring",
+    "pkgbuildSha256": "E612DB993601F9DAF35D4B527F93AAD9792B7886735113AC46393A77C17264D7"
+  },
+  {
+    "base": "mingw-w64-libvpl",
+    "version": "2.17.0-1",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-libvpl"
+    ],
+    "license": "spdx:MIT",
+    "upstream": "https://intel.github.io/libvpl",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-libvpl-2.17.0-1.src.tar.zst",
+    "sourcePackageSha256": "4BD392447F4A5F986462CFC412AB7ACE3DFAA980E53B41F35D08C44B8B31CC9D",
+    "sourcePackageBytes": 12923471,
+    "recipe": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl",
+    "pkgbuildSha256": "25E2112AC24D70E385BDF6B2152D3C362F0B590DCD1EFF6C07BED79C5BF5BE65"
+  },
+  {
+    "base": "mingw-w64-winpthreads",
+    "version": "14.0.0.r495.g63ebe6cdb-1",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-libwinpthread",
+      "mingw-w64-ucrt-x86_64-winpthreads"
+    ],
+    "license": "spdx:MIT AND BSD-3-Clause",
+    "upstream": "https://www.mingw-w64.org/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1.src.tar.zst",
+    "sourcePackageSha256": "2E4DCB3933FC2DFBD6939935F601E10AE7F9ABAD06F0BE508E1E152768E3E55B",
+    "sourcePackageBytes": 55136351,
+    "recipe": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads",
+    "pkgbuildSha256": "1ED2E13D4E8B360C72BE2063C1045B8C4F3A0BC4B35DEC8B6932581D2E8AD2E8"
+  },
+  {
+    "base": "mingw-w64-MinHook",
+    "version": "1.3.4-2",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-MinHook"
+    ],
+    "license": "BSD",
+    "upstream": "https://github.com/TsudaKageyu/minhook",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-MinHook-1.3.4-2.src.tar.zst",
+    "sourcePackageSha256": "BE1CF373AE87B037E5D82D3E976E149974844387AA0D5B5F6B05392AC070479D",
+    "sourcePackageBytes": 30312,
+    "recipe": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook",
+    "pkgbuildSha256": "DCBE0AD04CF5DDADDB8E9410A9A0331B168C398BE0ACD78C8843EBBEAE2CA146"
+  },
+  {
+    "base": "mingw-w64-miniupnpc",
+    "version": "2.3.3-4",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-miniupnpc"
+    ],
+    "license": "spdx:BSD-3-Clause",
+    "upstream": "http://miniupnp.free.fr",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-miniupnpc-2.3.3-4.src.tar.zst",
+    "sourcePackageSha256": "19EC1F6F9619507A43DB907C6E8FA1E925E4264871F76A0B373EF2C99BE8A95A",
+    "sourcePackageBytes": 144226,
+    "recipe": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc",
+    "pkgbuildSha256": "E51F25B5D8C3AA287A3CE7613A14EDB763B4A86163E8176A68C72743ED584DFB"
+  },
+  {
+    "base": "mingw-w64-opus",
+    "version": "1.6.1-2",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-opus"
+    ],
+    "license": "spdx:BSD-3-Clause",
+    "upstream": "https://www.opus-codec.org/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-opus-1.6.1-2.src.tar.zst",
+    "sourcePackageSha256": "65AF241B547B36A0B1B07561B41F35EA6F8825712A22707005B9E783BD9AFC72",
+    "sourcePackageBytes": 10473017,
+    "recipe": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus",
+    "pkgbuildSha256": "1BF6A9F3BD44097537BB97FB22F4089EB4844921DCA0C9EB11E0B2C63F313E6C"
+  },
+  {
+    "base": "mingw-w64-zlib",
+    "version": "1.3.2-2",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-zlib"
+    ],
+    "license": "spdx:Zlib",
+    "upstream": "https://www.zlib.net/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-zlib-1.3.2-2.src.tar.zst",
+    "sourcePackageSha256": "EEF69DEA52357E01B272D6FD6DC4D7C0773F71260CB7BCDE6047C8C383518DB3",
+    "sourcePackageBytes": 1326375,
+    "recipe": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib",
+    "pkgbuildSha256": "8A4A54A964EAB7EFA313E2FAA8267052BC237EF61F8ADF82A55CC93F4028DB8A"
+  },
+  {
+    "base": "mingw-w64-zstd",
+    "version": "1.5.7-2",
+    "installedPackages": [
+      "mingw-w64-ucrt-x86_64-zstd"
+    ],
+    "license": "spdx:BSD-3-Clause OR GPL-2.0-or-later",
+    "upstream": "https://facebook.github.io/zstd/",
+    "status": "package-recipe-archived",
+    "sourcePackageUrl": "https://repo.msys2.org/mingw/sources/mingw-w64-zstd-1.5.7-2.src.tar.zst",
+    "sourcePackageSha256": "306797282DF799E95D550E6D0BB4B0A7B848027B8E13893A24236E060837C217",
+    "sourcePackageBytes": 2402010,
+    "recipe": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd",
+    "pkgbuildSha256": "EF88E168F729B6E57BDCCB8D566A1CBC1B0B1FD4EF86B26CC4C441236E496388"
+  }
+]

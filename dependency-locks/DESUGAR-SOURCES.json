@@ -1,0 +1,18 @@
+[
+  {
+    "name": "desugar-jdk-libs",
+    "commit": "73170c345e6a762fc6a1f0301bb15218850023ef",
+    "url": "https://codeload.github.com/google/desugar_jdk_libs/tar.gz/73170c345e6a762fc6a1f0301bb15218850023ef",
+    "archive": "downloads/desugar-jdk-libs-73170c345e6a762fc6a1f0301bb15218850023ef.tar.gz",
+    "sha256": "4cd2faa88ecb2450522fd4f0dcd11d6df878d7197b2276fb35532c50267f7a64",
+    "provenance": "Exact upstream release-preparation commit, pinned from official commit history; no PGP verification claim."
+  },
+  {
+    "name": "desugar-configuration",
+    "commit": "c331a820ddae7dea41f41a04375b784486d0f705",
+    "url": "https://r8.googlesource.com/r8.git/+archive/c331a820ddae7dea41f41a04375b784486d0f705.tar.gz",
+    "archive": "downloads/desugar-configuration-c331a820ddae7dea41f41a04375b784486d0f705.tar.gz",
+    "sha256": "f4540ac6b6531ab5191db221a0cb1a465f014f4fe3cd7eee343142fd1fd047e6",
+    "provenance": "Exact upstream release-preparation commit, pinned from official commit history; no PGP verification claim."
+  }
+]

@@ -1,0 +1,84 @@
+[
+  {
+    "file": "downloads/openssl-3.5.9.tar.gz",
+    "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.9/openssl-3.5.9.tar.gz",
+    "sha256": "603F5602E2EEF00D77FBD429D34DCD5822BB301757A1BC9CDB24C670F1EB859A",
+    "bytes": 53279637,
+    "officialExpectedSha256": "603F5602E2EEF00D77FBD429D34DCD5822BB301757A1BC9CDB24C670F1EB859A"
+  },
+  {
+    "file": "downloads/opus-1.6.1.tar.gz",
+    "url": "https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz",
+    "sha256": "6FFCB593207BE92584DF15B32466ED64BBEC99109F007C82205F0194572411A1",
+    "bytes": 10472813,
+    "officialExpectedSha256": "6FFCB593207BE92584DF15B32466ED64BBEC99109F007C82205F0194572411A1"
+  },
+  {
+    "file": "downloads/build-deps-c0a89a8.tar.gz",
+    "url": "https://codeload.github.com/LizardByte/build-deps/tar.gz/c0a89a80c399dcdd25fa7357d5799c0c7988d547",
+    "sha256": "374B8B47B8C3AF9678E30686EF4B577EAC748188B8A3A96632402D2F5434402A",
+    "bytes": 28691,
+    "officialExpectedSha256": null,
+    "gitCommit": "c0a89a80c399dcdd25fa7357d5799c0c7988d547"
+  },
+  {
+    "file": "downloads/AMF-16f7d73e0b45.tar.gz",
+    "url": "https://codeload.github.com/GPUOpen-LibrariesAndSDKs/AMF/tar.gz/16f7d73e0b45c473e903e46981ed0b91efc4c091",
+    "sha256": "4718172EA414A8219EF0E0C7863E127EE0EE6F3094662008F44BFD73AB77A23A",
+    "bytes": 178978418,
+    "officialExpectedSha256": null,
+    "gitCommit": "16f7d73e0b45c473e903e46981ed0b91efc4c091",
+    "repository": "https://github.com/GPUOpen-LibrariesAndSDKs/AMF",
+    "recipePath": "third-party/FFmpeg/AMF"
+  },
+  {
+    "file": "downloads/FFmpeg-6400860b9d4b.tar.gz",
+    "url": "https://codeload.github.com/FFmpeg/FFmpeg/tar.gz/6400860b9d4bec5ace91ec3a5e43ad76f9660579",
+    "sha256": "504379E404CB0F4C5314D61444922BA5579180A4107981A4B3DAD47674A8F337",
+    "bytes": 15918221,
+    "officialExpectedSha256": null,
+    "gitCommit": "6400860b9d4bec5ace91ec3a5e43ad76f9660579",
+    "repository": "https://github.com/FFmpeg/FFmpeg",
+    "recipePath": "third-party/FFmpeg/FFmpeg"
+  },
+  {
+    "file": "downloads/SVT-AV1-efc905a7c2ed.tar.gz",
+    "url": "https://codeload.github.com/LizardByte-infrastructure/SVT-AV1/tar.gz/efc905a7c2ed155b3654d7968173622734eeb0c0",
+    "sha256": "50A897D58470B06F99B386DC691AB63E802962421E6ABDB75E4D234A3E73CD6A",
+    "bytes": 10906083,
+    "officialExpectedSha256": null,
+    "gitCommit": "efc905a7c2ed155b3654d7968173622734eeb0c0",
+    "repository": "https://github.com/LizardByte-infrastructure/SVT-AV1",
+    "recipePath": "third-party/FFmpeg/SVT-AV1"
+  },
+  {
+    "file": "downloads/nv-codec-headers-22441b505d9d.tar.gz",
+    "url": "https://codeload.github.com/FFmpeg/nv-codec-headers/tar.gz/22441b505d9d9afc1e3002290820909846c24bdc",
+    "sha256": "DC28F764FBC72F6AC2A96FCACE252E6ECC84B308B8D4400820203CC901BAE596",
+    "bytes": 77625,
+    "officialExpectedSha256": null,
+    "gitCommit": "22441b505d9d9afc1e3002290820909846c24bdc",
+    "repository": "https://github.com/FFmpeg/nv-codec-headers",
+    "recipePath": "third-party/FFmpeg/nv-codec-headers"
+  },
+  {
+    "file": "downloads/x264-b35605ace3dd.tar.gz",
+    "url": "https://codeload.github.com/LizardByte-infrastructure/x264/tar.gz/b35605ace3ddf7c1a5d67a2eb553f034aef41d55",
+    "sha256": "CD71A7515B0E9A012E1AC9B1F8415BEBCAF6FC97D4DB32286642AC4C0FBE24F9",
+    "bytes": 1040327,
+    "officialExpectedSha256": null,
+    "gitCommit": "b35605ace3ddf7c1a5d67a2eb553f034aef41d55",
+    "repository": "https://github.com/LizardByte-infrastructure/x264",
+    "recipePath": "third-party/FFmpeg/x264"
+  },
+  {
+    "file": "downloads/x265_git-1d117bed4747.tar.gz",
+    "url": "https://codeload.github.com/LizardByte-infrastructure/x265_git/tar.gz/1d117bed4747758b51bd2c124d738527e30392cb",
+    "sha256": "2FC3A96C2423DB101F29B714D3551F1126A35C94DC5F5160633C70D482D1AF6D",
+    "bytes": 1727480,
+    "officialExpectedSha256": null,
+    "gitCommit": "1d117bed4747758b51bd2c124d738527e30392cb",
+    "repository": "https://github.com/LizardByte-infrastructure/x265_git",
+    "recipePath": "third-party/FFmpeg/x265_git"
+  }
+]

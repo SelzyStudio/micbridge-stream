@@ -1,0 +1,10 @@
+MicBridge Stream / Host 1.0.0-rc1. Modified 2026-10-20.
+This is an unofficial fork of Apollo/Sunshine and Artemis/Moonlight, not an upstream release.
+Matching source: MicBridge-Stream-1.0.0-rc1-Corresponding-Source.zip, supplied alongside this installer.
+Source includes modified applications, recursively pinned submodules, codec/crypto sources, MSYS2 recipes/inputs and build scripts.
+Keep that source asset available from the same release page and equivalent access as binary assets.
+Publisher: SelzyStudio, an independent GitHub organization.
+Repository publication target: https://github.com/SelzyStudio/micbridge-stream
+Matching source publication target: https://github.com/SelzyStudio/micbridge-stream/releases/download/v1.0.0-rc1/MicBridge-Stream-1.0.0-rc1-Corresponding-Source.zip
+Uploads have not been performed. No upstream auto-update channel is used.
+AGPL-covered libdisplaydevice source is included in that companion asset. For network deployment, give all remote users this exact source asset; retain the upstream web About/source links and license notices.

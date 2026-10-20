@@ -1,0 +1,1308 @@
+diff --git a/cmake/compile_definitions/windows.cmake b/cmake/compile_definitions/windows.cmake
+index e761125..756fd9c 100644
+--- a/cmake/compile_definitions/windows.cmake
++++ b/cmake/compile_definitions/windows.cmake
+@@ -76,9 +76,7 @@ set(PLATFORM_TARGET_FILES
+         "${CMAKE_SOURCE_DIR}/third-party/ViGEmClient/include/ViGEm/km/BusShared.h"
+         ${NVPREFS_FILES})
+ 
+-set(OPENSSL_LIBRARIES
+-        libssl.a
+-        libcrypto.a)
++# Keep the absolute libraries selected by FindOpenSSL from the pinned LTS prefix.
+ 
+ list(PREPEND PLATFORM_LIBRARIES
+         ${CURL_STATIC_LIBRARIES}
+diff --git a/cmake/dependencies/common.cmake b/cmake/dependencies/common.cmake
+index 97319be..bb806b2 100644
+--- a/cmake/dependencies/common.cmake
++++ b/cmake/dependencies/common.cmake
+@@ -26,47 +26,23 @@ pkg_check_modules(CURL REQUIRED libcurl)
+ pkg_check_modules(MINIUPNP miniupnpc REQUIRED)
+ include_directories(SYSTEM ${MINIUPNP_INCLUDE_DIRS})
+ 
+-# ffmpeg pre-compiled binaries
++# MicBridge pinned source-built dependencies (no historical prebuilt codec fallback).
+ if(NOT DEFINED FFMPEG_PREPARED_BINARIES)
+-    if(WIN32)
+-        set(FFMPEG_PLATFORM_LIBRARIES mfplat ole32 strmiids mfuuid vpl)
+-    elseif(UNIX AND NOT APPLE)
+-        set(FFMPEG_PLATFORM_LIBRARIES numa va va-drm va-x11 X11)
+-    endif()
+-    set(FFMPEG_PREPARED_BINARIES
+-            "${CMAKE_SOURCE_DIR}/third-party/build-deps/dist/${CMAKE_SYSTEM_NAME}-${CMAKE_SYSTEM_PROCESSOR}")
+-
+-    # check if the directory exists
+-    if(NOT EXISTS "${FFMPEG_PREPARED_BINARIES}")
+-        message(FATAL_ERROR
+-                "FFmpeg pre-compiled binaries not found at ${FFMPEG_PREPARED_BINARIES}. \
+-                Please consider contributing to the LizardByte/build-deps repository. \
+-                Optionally, you can use the FFMPEG_PREPARED_BINARIES option to specify the path to the \
+-                system-installed FFmpeg libraries")
+-    endif()
+-
+-    if(EXISTS "${FFMPEG_PREPARED_BINARIES}/lib/libhdr10plus.a")
+-        set(HDR10_PLUS_LIBRARY
+-                "${FFMPEG_PREPARED_BINARIES}/lib/libhdr10plus.a")
+-    endif()
+-    set(FFMPEG_LIBRARIES
+-            "${FFMPEG_PREPARED_BINARIES}/lib/libavcodec.a"
+-            "${FFMPEG_PREPARED_BINARIES}/lib/libswscale.a"
+-            "${FFMPEG_PREPARED_BINARIES}/lib/libavutil.a"
+-            "${FFMPEG_PREPARED_BINARIES}/lib/libcbs.a"
+-            "${FFMPEG_PREPARED_BINARIES}/lib/libSvtAv1Enc.a"
+-            "${FFMPEG_PREPARED_BINARIES}/lib/libx264.a"
+-            "${FFMPEG_PREPARED_BINARIES}/lib/libx265.a"
+-            ${HDR10_PLUS_LIBRARY}
+-            ${FFMPEG_PLATFORM_LIBRARIES})
+-else()
+-    set(FFMPEG_LIBRARIES
+-        "${FFMPEG_PREPARED_BINARIES}/lib/libavcodec.a"
+-        "${FFMPEG_PREPARED_BINARIES}/lib/libswscale.a"
+-        "${FFMPEG_PREPARED_BINARIES}/lib/libavutil.a"
+-        "${FFMPEG_PREPARED_BINARIES}/lib/libcbs.a"
+-        ${FFMPEG_PLATFORM_LIBRARIES})
++    message(FATAL_ERROR "Set FFMPEG_PREPARED_BINARIES to the pinned source-built codec prefix")
++endif()
++if(WIN32)
++    set(FFMPEG_PLATFORM_LIBRARIES mfplat ole32 strmiids mfuuid vpl)
+ endif()
++set(FFMPEG_LIBRARIES
++    "${FFMPEG_PREPARED_BINARIES}/lib/libavcodec.a"
++    "${FFMPEG_PREPARED_BINARIES}/lib/libswscale.a"
++    "${FFMPEG_PREPARED_BINARIES}/lib/libavutil.a"
++    "${FFMPEG_PREPARED_BINARIES}/lib/libcbs.a"
++    "${FFMPEG_PREPARED_BINARIES}/lib/libSvtAv1Enc.a"
++    "${FFMPEG_PREPARED_BINARIES}/lib/libx264.a"
++    "${FFMPEG_PREPARED_BINARIES}/lib/libx265.a"
++    "${FFMPEG_PREPARED_BINARIES}/lib/libhdr10plus.a"
++    ${FFMPEG_PLATFORM_LIBRARIES})
+ 
+ set(FFMPEG_INCLUDE_DIRS
+         "${FFMPEG_PREPARED_BINARIES}/include")
+diff --git a/src/audio.cpp b/src/audio.cpp
+index ddacd05..cdad459 100644
+--- a/src/audio.cpp
++++ b/src/audio.cpp
+@@ -133,7 +133,7 @@ namespace audio {
+     },
+   };
+ 
+-  void encodeThread(sample_queue_t samples, config_t config, void *channel_data) {
++  void encodeThread(sample_queue_t samples, config_t config, void *channel_data, stream_activity::state_ptr activity) {
+     auto packets = mail::man->queue<packet_t>(mail::audio_packets);
+     auto stream = stream_configs[map_stream(config.channels, config.flags[config_t::HIGH_QUALITY])];
+     if (config.flags[config_t::CUSTOM_SURROUND_PARAMS]) {
+@@ -162,6 +162,9 @@ namespace audio {
+ 
+     auto frame_size = config.packetDuration * stream.sampleRate / 1000;
+     while (auto sample = samples->pop()) {
++      if (stream_activity::paused(activity)) {
++        continue;
++      }
+       buffer_t packet {1400};
+ 
+       int bytes = opus_multistream_encode_float(opus.get(), sample->data(), frame_size, std::begin(packet), packet.size());
+@@ -173,11 +176,13 @@ namespace audio {
+       }
+ 
+       packet.fake_resize(bytes);
+-      packets->raise(channel_data, std::move(packet));
++      if (!stream_activity::paused(activity)) {
++        packets->raise(channel_data, std::move(packet));
++      }
+     }
+   }
+ 
+-  void capture(safe::mail_t mail, config_t config, void *channel_data) {
++  void capture(safe::mail_t mail, config_t config, void *channel_data, stream_activity::state_ptr activity) {
+     auto shutdown_event = mail->event<bool>(mail::shutdown);
+     if (!config::audio.stream || config.input_only) {
+       shutdown_event->view();
+@@ -258,7 +263,7 @@ namespace audio {
+     platf::adjust_thread_priority(platf::thread_priority_e::critical);
+ 
+     auto samples = std::make_shared<sample_queue_t::element_type>(30);
+-    std::thread thread {encodeThread, samples, config, channel_data};
++    std::thread thread {encodeThread, samples, config, channel_data, activity};
+ 
+     auto fg = util::fail_guard([&]() {
+       samples->stop();
+@@ -270,6 +275,19 @@ namespace audio {
+     int samples_per_frame = frame_size * stream.channelCount;
+ 
+     while (!shutdown_event->peek()) {
++      if (stream_activity::paused(activity)) {
++        // Release only this session's loopback capture; shared sink stays held.
++        mic.reset();
++        shutdown_event->view(20ms);
++        continue;
++      }
++      if (!mic) {
++        mic = control->microphone(stream.mapping, stream.channelCount, stream.sampleRate, frame_size);
++        if (!mic) {
++          shutdown_event->view(250ms);
++          continue;
++        }
++      }
+       std::vector<float> sample_buffer;
+       sample_buffer.resize(samples_per_frame);
+ 
+@@ -296,7 +314,9 @@ namespace audio {
+           return;
+       }
+ 
+-      samples->raise(std::move(sample_buffer));
++      if (!stream_activity::paused(activity)) {
++        samples->raise(std::move(sample_buffer));
++      }
+     }
+   }
+ 
+diff --git a/src/audio.h b/src/audio.h
+index 207dce0..e05d355 100644
+--- a/src/audio.h
++++ b/src/audio.h
+@@ -6,6 +6,7 @@
+ 
+ // local includes
+ #include "platform/common.h"
++#include "stream_activity.h"
+ #include "thread_safe.h"
+ #include "utility.h"
+ 
+@@ -123,7 +124,7 @@ namespace audio {
+     std::vector<std::string> recent_events;
+   };
+ 
+-  void capture(safe::mail_t mail, config_t config, void *channel_data);
++  void capture(safe::mail_t mail, config_t config, void *channel_data, stream_activity::state_ptr activity = {});
+ 
+   /**
+    * @brief Get the reference to the audio context.
+diff --git a/src/nvhttp.cpp b/src/nvhttp.cpp
+index ef5f6fe..ce57755 100644
+--- a/src/nvhttp.cpp
++++ b/src/nvhttp.cpp
+@@ -911,6 +911,8 @@ namespace nvhttp {
+     // For HTTP requests, use a placeholder MAC address that Moonlight knows to ignore.
+     if constexpr (std::is_same_v<SunshineHTTPS, T>) {
+       tree.put("root.mac", platf::get_mac_address(net::addr_to_normalized_string(local_endpoint.address())));
++      // Only a verified HTTPS serverinfo response may remove the client's legacy mic lease wait.
++      tree.put("root.ApolloMicResumeHandoff", 1);
+ 
+       auto named_cert_p = get_verified_cert(request);
+       if (!!(named_cert_p->perm & PERM::server_cmd)) {
+diff --git a/src/platform/common.h b/src/platform/common.h
+index d663ebb..2d28815 100644
+--- a/src/platform/common.h
++++ b/src/platform/common.h
+@@ -502,6 +502,10 @@ namespace platf {
+      */
+     virtual capture_e capture(const push_captured_image_cb_t &push_captured_image_cb, const pull_free_image_cb_t &pull_free_image_cb, bool *cursor) = 0;
+ 
++    // Called outside backend snapshot/device locks. Windows can idle capture
++    // while every subscribing session is hidden without holding a DXGI frame.
++    std::function<bool()> wait_for_capture;
++
+     virtual std::shared_ptr<img_t> alloc_img() = 0;
+ 
+     virtual int dummy_img(img_t *img) = 0;
+diff --git a/src/platform/windows/display_base.cpp b/src/platform/windows/display_base.cpp
+index dfb0b16..56c2cd9 100644
+--- a/src/platform/windows/display_base.cpp
++++ b/src/platform/windows/display_base.cpp
+@@ -229,6 +229,9 @@ namespace platf::dxgi {
+     sleep_overshoot_logger.reset();
+ 
+     while (true) {
++      if (wait_for_capture && !wait_for_capture()) {
++        return capture_e::ok;
++      }
+       // This will return false if the HDR state changes or for any number of other
+       // display or GPU changes. We should reinit to examine the updated state of
+       // the display subsystem. It is recommended to call this once per frame.
+diff --git a/src/platform/windows/mic_write.cpp b/src/platform/windows/mic_write.cpp
+index 33ec630..34e5e12 100644
+--- a/src/platform/windows/mic_write.cpp
++++ b/src/platform/windows/mic_write.cpp
+@@ -676,22 +676,13 @@ namespace platf::audio {
+     float peak = 0.0f;
+     {
+       std::lock_guard lock(queue_mutex);
+-      for (int frame = 0; frame < decoded_frames; ++frame) {
+-        const float sample = std::clamp(samples[frame], -1.0f, 1.0f);
+-        peak = std::max(peak, std::fabs(sample));
+-        pending_frames.push_back(sample);
+-      }
+-
+-      if (pending_frames.size() > max_queued_frames) {
+-        const auto frames_to_trim = pending_frames.size() - max_queued_frames;
+-        pending_frames.erase(pending_frames.begin(), pending_frames.begin() + static_cast<std::ptrdiff_t>(frames_to_trim));
+-      }
++      peak = pending_frames.append(samples, static_cast<std::size_t>(decoded_frames), sequence_number);
++      pending_frames.trim_to(max_queued_frames);
+     }
+ 
+     const double normalized_level = std::clamp(static_cast<double>(peak), 0.0, 1.0);
+     const bool silent = peak < 0.015625f;
+     ::audio::mic_debug_on_packet_decoded(sequence_number, normalized_level, silent);
+-    ::audio::mic_debug_on_packet_rendered(sequence_number, normalized_level, silent);
+   }
+ 
+   bool mic_write_wasapi_t::decode_next_packet() {
+@@ -767,11 +758,6 @@ namespace platf::audio {
+       decoded_frames = static_cast<int>(silent_pcm.size());
+     } else {
+       append_decoded_frames(decoded_pcm.data(), decoded_frames, packet_sequence);
+-
+-      if (!first_packet_written_logged) {
+-        first_packet_written_logged = true;
+-        BOOST_LOG(info) << "Client microphone audio is being rendered into [" << target_device_name << ']';
+-      }
+     }
+ 
+     {
+@@ -883,11 +869,18 @@ namespace platf::audio {
+         continue;
+       }
+ 
++      std::uint16_t render_sequence_number;
++      {
++        std::lock_guard lock(queue_mutex);
++        render_sequence_number = pending_frames.front_sequence_number();
++      }
++
+       BYTE *buffer = nullptr;
+       status = audio_render->GetBuffer(queued_frames, &buffer);
+       if (FAILED(status) || buffer == nullptr) {
+         BOOST_LOG(debug) << "Couldn't acquire microphone playback buffer for [" << target_device_name << "]: 0x"
+                          << util::hex(status).to_string_view();
++        ::audio::mic_debug_on_render_error(render_sequence_number, "Could not acquire the microphone playback buffer");
+         if (FAILED(status) && is_recoverable_device_error(status)) {
+           ::audio::mic_debug_on_backend_error("Steam microphone playback device was invalidated while acquiring a render buffer. Restart the stream.");
+           break;
+@@ -896,24 +889,32 @@ namespace platf::audio {
+       }
+ 
+       auto *dst = reinterpret_cast<float *>(buffer);
++      std::optional<std::vector<mic_render_queue_t::packet_t>> rendered_packets;
+       {
+         std::lock_guard lock(queue_mutex);
+-        for (UINT32 frame = 0; frame < queued_frames; ++frame) {
+-          const float sample = pending_frames.front();
+-          pending_frames.pop_front();
+-          dst[static_cast<std::size_t>(frame) * 2] = sample;
+-          dst[static_cast<std::size_t>(frame) * 2 + 1] = sample;
+-        }
++        rendered_packets = pending_frames.submit_stereo(dst, queued_frames, [&]() {
++          status = audio_render->ReleaseBuffer(queued_frames, 0);
++          return SUCCEEDED(status);
++        });
+       }
+ 
+-      status = audio_render->ReleaseBuffer(queued_frames, 0);
+-      if (FAILED(status)) {
++      if (!rendered_packets) {
+         BOOST_LOG(debug) << "Couldn't release microphone playback buffer for [" << target_device_name << "]: 0x"
+                          << util::hex(status).to_string_view();
++        ::audio::mic_debug_on_render_error(render_sequence_number, "Could not submit the microphone playback buffer");
+         if (is_recoverable_device_error(status)) {
+           ::audio::mic_debug_on_backend_error("Steam microphone playback device was invalidated while releasing a render buffer. Restart the stream.");
+           break;
+         }
++        continue;
++      }
++
++      for (const auto &packet : *rendered_packets) {
++        ::audio::mic_debug_on_packet_rendered(packet.sequence_number, packet.peak, packet.peak < 0.015625f);
++      }
++      if (!first_packet_written_logged) {
++        first_packet_written_logged = true;
++        BOOST_LOG(info) << "Client microphone audio is being rendered into [" << target_device_name << ']';
+       }
+     }
+ 
+diff --git a/src/platform/windows/mic_write.h b/src/platform/windows/mic_write.h
+index f71ed43..c1c242e 100644
+--- a/src/platform/windows/mic_write.h
++++ b/src/platform/windows/mic_write.h
+@@ -19,6 +19,7 @@
+ #include <mmdeviceapi.h>
+ 
+ #include "apollo_vmic.h"
++#include "mic_render_queue.h"
+ #include "src/platform/common.h"
+ 
+ struct OpusDecoder;
+@@ -74,7 +75,7 @@ namespace platf::audio {
+     util::safe_ptr_v2<void, BOOL, CloseHandle> render_event;
+     std::mutex queue_mutex;
+     std::map<std::uint16_t, queued_mic_packet_t> pending_packets;
+-    std::deque<float> pending_frames;
++    mic_render_queue_t pending_frames;
+     std::thread render_thread;
+     std::atomic<bool> stop_render_thread {false};
+     std::uint16_t expected_sequence_number = 0;
+diff --git a/src/rtsp.cpp b/src/rtsp.cpp
+index 7241d7f..1aa324c 100644
+--- a/src/rtsp.cpp
++++ b/src/rtsp.cpp
+@@ -29,6 +29,7 @@ extern "C" {
+ #include "network.h"
+ #include "rtsp.h"
+ #include "stream.h"
++#include "stream_activity.h"
+ #include "sync.h"
+ #include "video.h"
+ 
+@@ -788,7 +789,7 @@ namespace rtsp_stream {
+     std::stringstream ss;
+ 
+     // Tell the client about our supported features
+-    ss << "a=x-ss-general.featureFlags:" << (uint32_t) platf::get_capabilities() << std::endl;
++    ss << "a=x-ss-general.featureFlags:" << ((uint32_t) platf::get_capabilities() | stream_activity::feature_flag) << std::endl;
+ 
+     // Always request new control stream encryption if the client supports it
+     uint32_t encryption_flags_supported = SS_ENC_CONTROL_V2 | SS_ENC_AUDIO;
+diff --git a/src/stream.cpp b/src/stream.cpp
+index bb39ce1..a27f76b 100644
+--- a/src/stream.cpp
++++ b/src/stream.cpp
+@@ -11,6 +11,7 @@
+ // lib includes
+ #include <boost/endian/arithmetic.hpp>
+ #include <openssl/err.h>
++#include <opus/opus.h>
+ 
+ extern "C" {
+   // clang-format off
+@@ -26,10 +27,12 @@ extern "C" {
+ #include "globals.h"
+ #include "input.h"
+ #include "logging.h"
++#include "microphone_owner.h"
+ #include "network.h"
+ #include "platform/common.h"
+ #include "process.h"
+ #include "stream.h"
++#include "stream_activity.h"
+ #include "sync.h"
+ #include "system_tray.h"
+ #include "thread_safe.h"
+@@ -355,6 +358,8 @@ namespace stream {
+     udp::socket mic_sock {io_context};
+ 
+     control_server_t control_server;
++    // Protected by control_server._sessions, including backend release/init and packet writes.
++    microphone_owner::state_t<session_t> mic_owner;
+   };
+ 
+   struct session_t {
+@@ -405,6 +410,7 @@ namespace stream {
+       std::unique_ptr<platf::deinit_t> qos;
+       bool enable_mic;
+       bool first_mic_packet_logged;
++      std::optional<udp::endpoint> mic_peer;
+     } audio;
+ 
+     struct {
+@@ -423,9 +429,12 @@ namespace stream {
+       safe::mail_raw_t::event_t<video::hdr_info_t> hdr_queue;
+     } control;
+ 
++    stream_activity::state_ptr media_activity = std::make_shared<stream_activity::state_t>();
++
+     std::uint32_t launch_session_id;
+     std::string device_name;
+     std::string device_uuid;
++    bool authenticated_rtsp;
+     crypto::PERM permission;
+ 
+     std::list<crypto::command_entry_t> do_cmds;
+@@ -1013,6 +1022,24 @@ namespace stream {
+       input::passthrough(session->input, std::move(plaintext), session->permission);
+     });
+ 
++    server->map(stream_activity::packet_type, [](session_t *session, const std::string_view &payload) {
++      // Only the authenticated, encrypted control path can reach this handler.
++      // A viewer may pause its own media; no server-command permission is needed.
++      auto result = stream_activity::apply_command(payload,
++          session->config.controlProtocolType == 13,
++          session->state.load(std::memory_order_acquire) == session::state_e::RUNNING,
++          !!(session->permission & crypto::PERM::view), session->media_activity,
++          [&]() { session->video.idr_events->raise(true); });
++      if (result == stream_activity::command_result_e::malformed) {
++        BOOST_LOG(warning) << "Rejected malformed background media command";
++      } else if (result == stream_activity::command_result_e::paused ||
++                 result == stream_activity::command_result_e::resumed) {
++        BOOST_LOG(info) << "Client media "
++                       << (result == stream_activity::command_result_e::paused ? "paused" : "resumed")
++                       << " for [" << session->device_name << "]";
++      }
++    });
++
+     server->map(packetTypes[IDX_EXEC_SERVER_CMD], [server](session_t *session, const std::string_view &payload) {
+       BOOST_LOG(debug) << "type [IDX_EXEC_SERVER_CMD]"sv;
+ 
+@@ -1336,23 +1363,21 @@ namespace stream {
+     }
+   }
+ 
+-  session_t *find_mic_session(broadcast_ctx_t &ctx, const udp::endpoint &peer) {
+-    auto lg = ctx.control_server._sessions.lock();
+-    for (auto *stream_session : *ctx.control_server._sessions) {
+-      if (!stream_session->audio.enable_mic) {
+-        continue;
+-      }
+-
+-      if (stream_session->state.load(std::memory_order_relaxed) != stream::session::state_e::RUNNING) {
+-        continue;
+-      }
+-
+-      if (stream_session->audio.peer.address() == peer.address()) {
+-        return stream_session;
+-      }
++  // The caller must hold _sessions.lock() until it finishes using the result.
++  // The single host decoder/jitter buffer can have only one microphone owner.
++  session_t *find_mic_session_locked(broadcast_ctx_t &ctx, const udp::endpoint &peer) {
++    auto *owner = ctx.mic_owner.get();
++    if (owner == nullptr || !owner->audio.enable_mic ||
++        owner->state.load(std::memory_order_acquire) != stream::session::state_e::RUNNING ||
++        std::find(ctx.control_server._sessions->begin(), ctx.control_server._sessions->end(), owner) ==
++            ctx.control_server._sessions->end() ||
++        owner->control.expected_peer_address != peer.address().to_string()) {
++      return nullptr;
+     }
+-
+-    return nullptr;
++    if (owner->audio.mic_peer && *owner->audio.mic_peer != peer) {
++      return nullptr;
++    }
++    return owner;
+   }
+ 
+   void micRecvThread(broadcast_ctx_t &ctx) {
+@@ -1389,17 +1414,52 @@ namespace stream {
+         continue;
+       }
+ 
+-      auto *session = find_mic_session(ctx, peer);
++      // Session removal and controlEnd signalling also take this lock. Keep it
++      // through decrypt/write so session::join cannot free the selected session.
++      auto session_lock = ctx.control_server._sessions.lock();
++      auto *session = find_mic_session_locked(ctx, peer);
+       if (session == nullptr) {
+         continue;
+       }
+ 
++      if (!(session->config.encryptionFlagsEnabled & SS_ENC_MICROPHONE)) {
++        continue;
++      }
++
+       const auto sequence_number = static_cast<std::uint16_t>(header->sequenceNumber);
+       const auto timestamp = static_cast<std::uint32_t>(header->timestamp);
+       const auto payload_len = bytes - sizeof(mic_packet_header_t);
+       const auto *payload = reinterpret_cast<const std::uint8_t *>(buf.data() + sizeof(mic_packet_header_t));
+       audio::mic_debug_on_packet_received(sequence_number, payload_len);
+ 
++      std::vector<std::uint8_t> decrypted_payload;
++      crypto::aes_t iv(16);
++      *(std::uint32_t *) iv.data() = util::endian::big<std::uint32_t>(session->audio.avRiKeyId + sequence_number);
++
++      if (session->audio.cipher.decrypt(std::string_view {reinterpret_cast<const char *>(payload), payload_len}, decrypted_payload, &iv) != 0) {
++        BOOST_LOG(warning) << "Dropping encrypted microphone packet with invalid payload for ["sv << session->device_name
++                           << "] sequence "sv << sequence_number;
++        audio::mic_debug_on_packet_decrypt_error(sequence_number, "Encrypted microphone packet could not be decrypted");
++        continue;
++      }
++
++      // CBC padding alone does not authenticate a packet. Parse the decrypted
++      // Opus framing before pinning a source endpoint; keep the existing wire
++      // format, and never use trial decryption to choose among session keys.
++      unsigned char toc;
++      const unsigned char *frames[48];
++      opus_int16 frame_sizes[48];
++      int payload_offset;
++      if (decrypted_payload.empty() ||
++          opus_packet_parse(decrypted_payload.data(), static_cast<opus_int32>(decrypted_payload.size()), &toc, frames, frame_sizes, &payload_offset) <= 0 ||
++          opus_packet_get_nb_samples(decrypted_payload.data(), static_cast<opus_int32>(decrypted_payload.size()), 48000) <= 0) {
++        audio::mic_debug_on_packet_dropped(sequence_number, "Decrypted microphone packet has invalid Opus framing");
++        continue;
++      }
++
++      if (!session->audio.mic_peer) {
++        session->audio.mic_peer = peer;
++      }
+       if (!session->audio.first_mic_packet_logged) {
+         session->audio.first_mic_packet_logged = true;
+         BOOST_LOG(info) << "Received first client microphone packet for ["sv << session->device_name
+@@ -1407,23 +1467,7 @@ namespace stream {
+                         << "] with payload "sv << payload_len << " bytes";
+       }
+ 
+-      std::vector<std::uint8_t> decrypted_payload;
+-      if (session->config.encryptionFlagsEnabled & SS_ENC_MICROPHONE) {
+-        crypto::aes_t iv(16);
+-        *(std::uint32_t *) iv.data() = util::endian::big<std::uint32_t>(session->audio.avRiKeyId + sequence_number);
+-
+-        if (session->audio.cipher.decrypt(std::string_view {reinterpret_cast<const char *>(payload), payload_len}, decrypted_payload, &iv) != 0) {
+-          BOOST_LOG(warning) << "Dropping encrypted microphone packet with invalid payload for ["sv << session->device_name
+-                             << "] sequence "sv << sequence_number;
+-          audio::mic_debug_on_packet_decrypt_error(sequence_number, "Encrypted microphone packet could not be decrypted");
+-          continue;
+-        }
+-
+-        payload = decrypted_payload.data();
+-      }
+-
+-      const auto decoded_payload_len = decrypted_payload.empty() ? payload_len : decrypted_payload.size();
+-      if (audio::write_mic_data(reinterpret_cast<const char *>(payload), decoded_payload_len, sequence_number, timestamp) < 0) {
++      if (audio::write_mic_data(reinterpret_cast<const char *>(decrypted_payload.data()), decrypted_payload.size(), sequence_number, timestamp) < 0) {
+         BOOST_LOG(debug) << "Dropping microphone packet for ["sv << session->device_name << ']';
+         audio::mic_debug_on_packet_dropped(sequence_number, "Host microphone render path rejected the packet");
+       }
+@@ -1462,6 +1506,9 @@ namespace stream {
+       frame_network_latency_logger.first_point_now();
+ 
+       auto session = (session_t *) packet->channel_data;
++      if (stream_activity::paused(session->media_activity)) {
++        continue;  // Discard frames already queued when the client became hidden.
++      }
+       auto lowseq = session->video.lowseq;
+ 
+       std::string_view payload {(char *) packet->data(), packet->data_size()};
+@@ -1784,6 +1831,9 @@ namespace stream {
+ 
+       TUPLE_2D_REF(channel_data, packet_data, *packet);
+       auto session = (session_t *) channel_data;
++      if (stream_activity::paused(session->media_activity)) {
++        continue;
++      }
+ 
+       auto sequenceNumber = session->audio.sequenceNumber;
+       auto timestamp = session->audio.timestamp;
+@@ -2048,7 +2098,7 @@ namespace stream {
+     session->video.qos = platf::enable_socket_qos(ref->video_sock.native_handle(), address, session->video.peer.port(), platf::qos_data_type_e::video, session->config.videoQosType != 0);
+ 
+     BOOST_LOG(debug) << "Start capturing Video"sv;
+-    video::capture(session->mail, session->config.monitor, session);
++    video::capture(session->mail, session->config.monitor, session, session->media_activity);
+   }
+ 
+   void audioThread(session_t *session) {
+@@ -2069,12 +2119,11 @@ namespace stream {
+     session->audio.qos = platf::enable_socket_qos(ref->audio_sock.native_handle(), address, session->audio.peer.port(), platf::qos_data_type_e::audio, session->config.audioQosType != 0);
+ 
+     BOOST_LOG(debug) << "Start capturing Audio"sv;
+-    audio::capture(session->mail, session->config.audio, session);
++    audio::capture(session->mail, session->config.audio, session, session->media_activity);
+   }
+ 
+   namespace session {
+     std::atomic_uint running_sessions;
+-    std::atomic_uint running_mic_sessions;
+ 
+     state_e state(session_t &session) {
+       return session.state.load(std::memory_order_relaxed);
+@@ -2175,6 +2224,14 @@ namespace stream {
+       session.audioThread.join();
+       BOOST_LOG(debug) << "Waiting for control to end..."sv;
+       session.controlEnd.view();
++      {
++        // Normal stop removes this entry before signalling controlEnd. Global
++        // broadcast shutdown may only signal it, so remove it here as well and
++        // wait for a microphone receive that already holds the registry lock.
++        auto lg = session.broadcast_ref->control_server._sessions.lock();
++        auto &sessions = *session.broadcast_ref->control_server._sessions;
++        sessions.erase(std::remove(sessions.begin(), sessions.end(), &session), sessions.end());
++      }
+       // Reset input on session stop to avoid stuck repeated keys
+       BOOST_LOG(debug) << "Resetting Input..."sv;
+       input::reset(session.input);
+@@ -2198,9 +2255,15 @@ namespace stream {
+         exec_thread.detach();
+       }
+ 
+-      if (session.audio.enable_mic && running_mic_sessions.fetch_sub(1, std::memory_order_acq_rel) == 1) {
+-        audio::release_mic_redirect_device();
+-        audio::mic_debug_on_session_stop("Remote microphone session ended");
++      {
++        // Packet decrypt/write, takeover and old-session teardown use the same lock.
++        // A superseded session must never release its replacement's decoder/backend.
++        auto lg = session.broadcast_ref->control_server._sessions.lock();
++        session.broadcast_ref->mic_owner.release(&session, session.launch_session_id, [] {
++          audio::release_mic_redirect_device();
++          audio::mic_debug_on_session_stop("Remote microphone session ended");
++        });
++        session.audio.enable_mic = false;
+       }
+ 
+       // If this is the last session, invoke the platform callbacks
+@@ -2234,10 +2297,13 @@ namespace stream {
+       session.control.expected_peer_address = addr_string;
+       BOOST_LOG(debug) << "Expecting incoming session connections from "sv << addr_string;
+ 
+-      // Insert this session into the session list
++      // Reserve the new running session before an old owner's teardown can drop the
++      // count to zero and pause the Desktop/revert its display during a handoff.
++      bool first_running_session;
+       {
+         auto lg = session.broadcast_ref->control_server._sessions.lock();
+         session.broadcast_ref->control_server._sessions->push_back(&session);
++        first_running_session = ++running_sessions == 1;
+       }
+ 
+       auto addr = boost::asio::ip::make_address(addr_string);
+@@ -2247,24 +2313,42 @@ namespace stream {
+       session.audio.peer.address(addr);
+       session.audio.peer.port(0);
+ 
++      session_t *replaced_mic_owner = nullptr;
++      std::uint32_t replaced_mic_launch_session_id = 0;
+       if (session.audio.enable_mic) {
+-        audio::mic_debug_on_session_start(session.device_name, (session.config.encryptionFlagsEnabled & SS_ENC_MICROPHONE) != 0);
+-        if (running_mic_sessions.fetch_add(1, std::memory_order_acq_rel) == 0) {
+-          if (audio::init_mic_redirect_device() != 0) {
+-            running_mic_sessions.fetch_sub(1, std::memory_order_acq_rel);
+-            session.audio.enable_mic = false;
+-            audio::mic_debug_on_backend_error("Microphone backend could not initialize on the host");
+-            audio::mic_debug_on_session_stop("Microphone redirection requested, but the host backend could not initialize");
+-            BOOST_LOG(warning) << "Client microphone redirection is unavailable for ["sv << session.device_name << ']';
+-          } else {
+-            BOOST_LOG(info) << "Client microphone redirection requested for ["sv << session.device_name
+-                            << "] with encryption "sv
+-                            << ((session.config.encryptionFlagsEnabled & SS_ENC_MICROPHONE) ? "enabled"sv : "disabled"sv);
+-          }
+-        } else {
++        auto lg = session.broadcast_ref->control_server._sessions.lock();
++        const bool encrypted_transport = session.authenticated_rtsp &&
++            session.config.controlProtocolType == 13 &&
++            (session.config.encryptionFlagsEnabled & SS_ENC_MICROPHONE) != 0;
++        const microphone_owner::identity_t identity {session.device_uuid, session.launch_session_id,
++            encrypted_transport, !!(session.permission & crypto::PERM::_allow_view)};
++        auto claim = session.broadcast_ref->mic_owner.claim(&session, identity,
++            [&](session_t *previous) {
++              previous->audio.enable_mic = false;
++              replaced_mic_owner = previous;
++              replaced_mic_launch_session_id = previous->launch_session_id;
++            }, [] { audio::release_mic_redirect_device(); }, [&] {
++          audio::mic_debug_on_session_start(session.device_name, (session.config.encryptionFlagsEnabled & SS_ENC_MICROPHONE) != 0);
++          return audio::init_mic_redirect_device() == 0;
++        });
++        if (claim == microphone_owner::claim_result_e::backend_failure) {
++          session.audio.enable_mic = false;
++          audio::mic_debug_on_backend_error("Microphone backend could not initialize on the host");
++          audio::mic_debug_on_session_stop("Microphone redirection requested, but the host backend could not initialize");
++          BOOST_LOG(warning) << "Client microphone redirection is unavailable for ["sv << session.device_name << ']';
++        } else if (claim == microphone_owner::claim_result_e::acquired ||
++                   claim == microphone_owner::claim_result_e::handed_off) {
+           BOOST_LOG(info) << "Client microphone redirection requested for ["sv << session.device_name
+                           << "] with encryption "sv
+                           << ((session.config.encryptionFlagsEnabled & SS_ENC_MICROPHONE) ? "enabled"sv : "disabled"sv);
++          if (claim == microphone_owner::claim_result_e::handed_off) {
++            BOOST_LOG(info) << "Transferred microphone decoder to the newer authenticated session for ["sv
++                            << session.device_name << ']';
++          }
++        } else {
++          session.audio.enable_mic = false;
++          BOOST_LOG(warning) << "Microphone redirection is unavailable for ["sv << session.device_name
++                             << "]: another session owns the host microphone decoder. Video and audio streaming will continue.";
+         }
+       }
+ 
+@@ -2273,14 +2357,24 @@ namespace stream {
+       session.audioThread = std::thread {audioThread, &session};
+       session.videoThread = std::thread {videoThread, &session};
+ 
+-      session.state.store(state_e::RUNNING, std::memory_order_relaxed);
++      session.state.store(state_e::RUNNING, std::memory_order_release);
+ 
+       // If this is the first session, invoke the platform callbacks
+-      if (++running_sessions == 1) {
++      if (first_running_session) {
+         platf::streaming_will_start();
+         proc::proc.resume();
+       }
+ 
++      if (replaced_mic_owner) {
++        auto lg = session.broadcast_ref->control_server._sessions.lock();
++        const auto &sessions = *session.broadcast_ref->control_server._sessions;
++        // Never dereference a raw pointer after its registry entry has been removed.
++        if (std::find(sessions.begin(), sessions.end(), replaced_mic_owner) != sessions.end() &&
++            replaced_mic_owner->launch_session_id == replaced_mic_launch_session_id) {
++          stop(*replaced_mic_owner);
++        }
++      }
++
+       if (!session.do_cmds.empty()) {
+         auto exec_thread = std::thread([cmd_list = session.do_cmds]{
+           for (auto &cmd : cmd_list) {
+@@ -2312,6 +2406,7 @@ namespace stream {
+       session->launch_session_id = launch_session.id;
+       session->device_name = launch_session.device_name;
+       session->device_uuid = launch_session.unique_id;
++      session->authenticated_rtsp = launch_session.rtsp_cipher.has_value();
+       session->permission = launch_session.perm;
+ 
+       session->do_cmds = std::move(launch_session.client_do_cmds);
+@@ -2374,6 +2469,7 @@ namespace stream {
+       session->audio.timestamp = 0;
+       session->audio.enable_mic = launch_session.enable_mic && config::audio.stream_mic;
+       session->audio.first_mic_packet_logged = false;
++      session->audio.mic_peer.reset();
+ 
+       session->control.peer = nullptr;
+       session->state.store(state_e::STOPPED, std::memory_order_relaxed);
+diff --git a/src/video.cpp b/src/video.cpp
+index bc69d9a..83cd881 100644
+--- a/src/video.cpp
++++ b/src/video.cpp
+@@ -446,6 +446,7 @@ namespace video {
+     config_t config;
+     int frame_nr;
+     void *channel_data;
++    stream_activity::state_ptr activity;
+   };
+ 
+   struct sync_session_t {
+@@ -459,6 +460,7 @@ namespace video {
+   struct capture_ctx_t {
+     img_event_t images;
+     config_t config;
++    stream_activity::state_ptr activity;
+   };
+ 
+   struct capture_thread_async_ctx_t {
+@@ -1298,7 +1300,7 @@ namespace video {
+             continue;
+           }
+ 
+-          if (frame_captured) {
++          if (frame_captured && !stream_activity::paused(capture_ctx->activity)) {
+             capture_ctx->images->raise(img);
+           }
+ 
+@@ -1321,7 +1323,29 @@ namespace video {
+         return true;
+       };
+ 
++      disp->wait_for_capture = [&]() {
++        while (stream_activity::all_paused(capture_ctxs, [](const auto &ctx) {
++          return stream_activity::paused(ctx.activity);
++        })) {
++          if (!capture_ctx_queue->running()) {
++            return false;
++          }
++          if (switch_display_event->peek()) {
++            artificial_reinit = true;
++            return false;
++          }
++          // Let the normal callback add/remove subscribers before deciding
++          // whether the shared capture may remain asleep.
++          if (capture_ctx_queue->peek() || std::any_of(capture_ctxs.begin(), capture_ctxs.end(),
++              [](const auto &ctx) { return !ctx.images->running(); })) {
++            break;
++          }
++          std::this_thread::sleep_for(20ms);
++        }
++        return capture_ctx_queue->running();
++      };
+       auto status = disp->capture(push_captured_image_callback, pull_free_image_callback, &display_cursor);
++      disp->wait_for_capture = {};
+ 
+       if (artificial_reinit && status != platf::capture_e::error) {
+         status = platf::capture_e::reinit;
+@@ -1909,7 +1933,8 @@ namespace video {
+     std::unique_ptr<platf::encode_device_t> encode_device,
+     safe::signal_t &reinit_event,
+     const encoder_t &encoder,
+-    void *channel_data
++    void *channel_data,
++    const stream_activity::state_ptr &activity
+   ) {
+     auto session = make_encode_session(disp.get(), encoder, config, disp->width, disp->height, std::move(encode_device));
+     if (!session) {
+@@ -1977,6 +2002,7 @@ namespace video {
+     }
+ 
+     std::chrono::steady_clock::time_point encode_frame_timestamp;
++    bool was_background = false;
+ 
+     while (true) {
+       // Break out of the encoding loop if any of the following are true:
+@@ -1990,7 +2016,22 @@ namespace video {
+         break;
+       }
+ 
+-      bool requested_idr_frame = false;
++      if (stream_activity::paused(activity)) {
++        // Keep the encoder and negotiated format alive, but do not convert
++        // images or manufacture normal minimum-FPS duplicate frames.
++        if (images->peek()) {
++          images->pop(0ms);
++        }
++        was_background = true;
++        std::this_thread::sleep_for(20ms);
++        continue;
++      }
++
++      bool requested_idr_frame = was_background;
++      if (was_background) {
++        encode_frame_timestamp = {};
++        was_background = false;
++      }
+ 
+       while (invalidate_ref_frames_events->peek()) {
+         if (auto frames = invalidate_ref_frames_events->pop(0ms)) {
+@@ -2042,6 +2083,9 @@ namespace video {
+         }
+       }
+ 
++      if (stream_activity::paused(activity)) {
++        continue;
++      }
+       if (encode(frame_nr++, *session, packets, channel_data, frame_timestamp)) {
+         BOOST_LOG(error) << "Could not encode video packet"sv;
+         break;
+@@ -2266,6 +2310,11 @@ namespace video {
+             continue;
+           }
+ 
++          if (stream_activity::paused(ctx->activity)) {
++            ++pos;
++            continue;
++          }
++
+           if (ctx->idr_events->peek()) {
+             pos->session->request_idr_frame();
+             ctx->idr_events->pop();
+@@ -2309,7 +2358,27 @@ namespace video {
+         return true;
+       };
+ 
++      disp->wait_for_capture = [&]() {
++        while (stream_activity::all_paused(synced_session_ctxs, [](const auto &ctx) {
++          return stream_activity::paused(ctx->activity);
++        })) {
++          if (!encode_session_ctx_queue.running()) {
++            return false;
++          }
++          if (switch_display_event->peek()) {
++            ec = platf::capture_e::reinit;
++            return false;
++          }
++          if (encode_session_ctx_queue.peek() || std::any_of(synced_session_ctxs.begin(), synced_session_ctxs.end(),
++              [](const auto &ctx) { return ctx->shutdown_event->peek(); })) {
++            break;
++          }
++          std::this_thread::sleep_for(20ms);
++        }
++        return encode_session_ctx_queue.running();
++      };
+       auto status = disp->capture(push_captured_image_callback, pull_free_image_callback, &display_cursor);
++      disp->wait_for_capture = {};
+       switch (status) {
+         case platf::capture_e::reinit:
+         case platf::capture_e::error:
+@@ -2354,7 +2423,8 @@ namespace video {
+   void capture_async(
+     safe::mail_t mail,
+     config_t &config,
+-    void *channel_data
++    void *channel_data,
++    const stream_activity::state_ptr &activity
+   ) {
+     auto shutdown_event = mail->event<bool>(mail::shutdown);
+ 
+@@ -2369,7 +2439,7 @@ namespace video {
+       return;
+     }
+ 
+-    ref->capture_ctx_queue->raise(capture_ctx_t {images, config});
++    ref->capture_ctx_queue->raise(capture_ctx_t {images, config, activity});
+ 
+     if (!ref->capture_ctx_queue->running()) {
+       return;
+@@ -2430,7 +2500,8 @@ namespace video {
+         std::move(encode_device),
+         ref->reinit_event,
+         *ref->encoder_p,
+-        channel_data
++        channel_data,
++        activity
+       );
+     }
+   }
+@@ -2438,13 +2509,14 @@ namespace video {
+   void capture(
+     safe::mail_t mail,
+     config_t config,
+-    void *channel_data
++    void *channel_data,
++    stream_activity::state_ptr activity
+   ) {
+     auto idr_events = mail->event<bool>(mail::idr);
+ 
+     idr_events->raise(true);
+     if (chosen_encoder->flags & PARALLEL_ENCODING) {
+-      capture_async(std::move(mail), config, channel_data);
++      capture_async(std::move(mail), config, channel_data, activity);
+     } else {
+       safe::signal_t join_event;
+       auto ref = capture_thread_sync.ref();
+@@ -2458,6 +2530,7 @@ namespace video {
+         config,
+         1,
+         channel_data,
++        std::move(activity),
+       });
+ 
+       // Wait for join signal
+diff --git a/src/video.h b/src/video.h
+index ced3711..bba8cdb 100644
+--- a/src/video.h
++++ b/src/video.h
+@@ -6,6 +6,7 @@
+ 
+ // local includes
+ #include "input.h"
++#include "stream_activity.h"
+ #include "platform/common.h"
+ #include "thread_safe.h"
+ #include "video_colorspace.h"
+@@ -344,7 +345,8 @@ namespace video {
+   void capture(
+     safe::mail_t mail,
+     config_t config,
+-    void *channel_data
++    void *channel_data,
++    stream_activity::state_ptr activity = {}
+   );
+ 
+   bool validate_encoder(encoder_t &encoder, bool expect_failure);
+diff --git a/src_assets/common/assets/web/index.html b/src_assets/common/assets/web/index.html
+index 1dc94d6..f33ff02 100644
+--- a/src_assets/common/assets/web/index.html
++++ b/src_assets/common/assets/web/index.html
+@@ -1,162 +1,158 @@
+-<!DOCTYPE html>
+-<html lang="en" data-bs-theme="auto">
+-
+-<head>
+-  <%- header %>
+-</head>
+-
+-<body id="app" v-cloak>
+-  <Navbar></Navbar>
+-  <div id="content" class="container">
+-    <h1 class="my-4">{{ $t('index.welcome') }}</h1>
+-    <p>{{ $t('index.description') }}</p>
+-    <div class="alert alert-danger" v-if="fancyLogs.find(x => x.level === 'Fatal')">
+-      <div style="line-height: 32px;">
+-        <i class="fas fa-circle-exclamation" style="font-size: 32px;margin-right: 0.25em;"></i>
+-        <p v-html="$t('index.startup_errors')"></p>
+-        <br>
+-      </div>
+-      <ul>
+-        <li v-for="v in fancyLogs.filter(x => x.level === 'Fatal')">{{v.value}}</li>
+-      </ul>
+-      <a class="btn btn-danger" href="./troubleshooting#logs">View Logs</a>
+-    </div>
+-    <!-- Version -->
+-    <div class="card p-2 my-4">
+-      <div class="card-body" v-if="version">
+-        <h2>Version {{version.version}}</h2>
+-        <br>
+-        <div v-if="loading">
+-          {{ $t('index.loading_latest') }}
+-        </div>
+-        <div class="alert alert-success" v-if="buildVersionIsDirty">
+-          {{ $t('index.version_dirty') }} 🌇
+-        </div>
+-        <div class="alert alert-info" v-if="installedVersionNotStable">
+-          {{ $t('index.installed_version_not_stable') }}
+-        </div>
+-        <div v-else-if="(!preReleaseBuildAvailable || !notifyPreReleases) && !stableBuildAvailable && !buildVersionIsDirty">
+-          <div class="alert alert-success">
+-            {{ $t('index.version_latest') }}
+-          </div>
+-        </div>
+-        <div v-if="notifyPreReleases && preReleaseBuildAvailable">
+-          <div class="alert alert-warning">
+-            <div class="d-flex justify-content-between">
+-              <div class="my-2">
+-                <p>{{ $t('index.new_pre_release') }}</p>
+-              </div>
+-              <a class="btn btn-success m-1" :href="preReleaseVersion.release.html_url" target="_blank">{{ $t('index.download') }}</a>
+-            </div>
+-            <pre><b>{{preReleaseVersion.release.name}}</b></pre>
+-            <pre>{{preReleaseVersion.release.body}}</pre>
+-          </div>
+-        </div>
+-        <div v-if="stableBuildAvailable">
+-          <div class="alert alert-warning">
+-            <div class="d-flex justify-content-between">
+-              <div class="my-2">
+-                <p>{{ $t('index.new_stable') }}</p>
+-              </div>
+-              <a class="btn btn-success m-1" :href="githubVersion.release.html_url" target="_blank">{{ $t('index.download') }}</a>
+-            </div>
+-            <h3>{{githubVersion.release.name}}</h3>
+-            <pre>{{githubVersion.release.body}}</pre>
+-          </div>
+-        </div>
+-      </div>
+-    </div>
+-    <!-- Resources -->
+-    <div class="my-4">
+-      <Client-Card></Client-Card>
+-      <Resource-Card></Resource-Card>
+-    </div>
+-  </div>
+-</body>
+-
+-<script type="module">
+-  import { createApp } from 'vue'
+-  import { initApp } from './init'
+-  import Navbar from './Navbar.vue'
+-  import ClientCard from './ClientCard.vue'
+-  import ResourceCard from './ResourceCard.vue'
+-  import ApolloVersion from './apollo_version'
+-
+-  console.log("Hello, Apollo!")
+-  let app = createApp({
+-    components: {
+-      Navbar,
+-      ClientCard,
+-      ResourceCard
+-    },
+-    data() {
+-      return {
+-        version: null,
+-        githubVersion: null,
+-        notifyPreReleases: false,
+-        preReleaseVersion: null,
+-        loading: true,
+-        logs: null,
+-      }
+-    },
+-    async created() {
+-      try {
+-        let config = await fetch("./api/config").then((r) => r.json());
+-        this.notifyPreReleases = config.notify_pre_releases;
+-        this.version = new ApolloVersion(null, config.version);
+-        console.log("Version: ", this.version.version)
+-        this.githubVersion = new ApolloVersion(await fetch("https://api.github.com/repos/ClassicOldSong/Apollo/releases/latest").then((r) => r.json()), null);
+-        console.log("GitHub Version: ", this.githubVersion.version)
+-        if (this.githubVersion) {
+-          this.preReleaseVersion = new ApolloVersion((await fetch("https://api.github.com/repos/ClassicOldSong/Apollo/releases").then((r) => r.json())).find(release => release.prerelease), null);
+-          console.log("Pre-Release Version: ", this.preReleaseVersion.version)
+-        }
+-      } catch (e) {
+-        console.error(e);
+-      }
+-      try {
+-        this.logs = (await fetch("./api/logs").then(r => r.text()))
+-      } catch (e) {
+-        console.error(e);
+-      }
+-      this.loading = false;
+-    },
+-    computed: {
+-      installedVersionNotStable() {
+-        if (!this.githubVersion || !this.version) {
+-          return false;
+-        }
+-        return this.version.isGreater(this.githubVersion);
+-      },
+-      stableBuildAvailable() {
+-        if (!this.githubVersion || !this.version) {
+-          return false;
+-        }
+-        return this.githubVersion.isGreater(this.version);
+-      },
+-      preReleaseBuildAvailable() {
+-        if (!this.preReleaseVersion || !this.githubVersion || !this.version) {
+-          return false;
+-        }
+-        return this.preReleaseVersion.isGreater(this.version, true) && this.preReleaseVersion.isGreater(this.githubVersion, true);
+-      },
+-      buildVersionIsDirty() {
+-        return this.version.version?.split(".").length === 5 &&
+-          this.version.version.indexOf("dirty") !== -1
+-      },
+-      /** Parse the text errors, calculating the text, the timestamp and the level */
+-      fancyLogs() {
+-        if (!this.logs) return [];
+-        let regex = /(\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3}]):\s/g;
+-        let rawLogLines = (this.logs.split(regex)).splice(1);
+-        let logLines = []
+-        for (let i = 0; i < rawLogLines.length; i += 2) {
+-          logLines.push({ timestamp: rawLogLines[i], level: rawLogLines[i + 1].split(":")[0], value: rawLogLines[i + 1] });
+-        }
+-        return logLines;
+-      }
+-    }
+-  });
+-
+-  initApp(app);
+-</script>
++<!DOCTYPE html>
++<html lang="en" data-bs-theme="auto">
++
++<head>
++  <%- header %>
++</head>
++
++<body id="app" v-cloak>
++  <Navbar></Navbar>
++  <div class="container my-3"><strong>MicBridge Host 1.0.0-rc1</strong> — unofficial Apollo fork. <a href="/assets/micbridge-source.html">Source and license notice</a></div>
++  <div id="content" class="container">
++    <h1 class="my-4">{{ $t('index.welcome') }}</h1>
++    <p>{{ $t('index.description') }}</p>
++    <div class="alert alert-danger" v-if="fancyLogs.find(x => x.level === 'Fatal')">
++      <div style="line-height: 32px;">
++        <i class="fas fa-circle-exclamation" style="font-size: 32px;margin-right: 0.25em;"></i>
++        <p v-html="$t('index.startup_errors')"></p>
++        <br>
++      </div>
++      <ul>
++        <li v-for="v in fancyLogs.filter(x => x.level === 'Fatal')">{{v.value}}</li>
++      </ul>
++      <a class="btn btn-danger" href="./troubleshooting#logs">View Logs</a>
++    </div>
++    <!-- Version -->
++    <div class="card p-2 my-4">
++      <div class="card-body" v-if="version">
++        <h2>Version {{version.version}}</h2>
++        <br>
++        <div v-if="loading">
++          {{ $t('index.loading_latest') }}
++        </div>
++        <div class="alert alert-success" v-if="buildVersionIsDirty">
++          {{ $t('index.version_dirty') }} 🌇
++        </div>
++        <div class="alert alert-info" v-if="installedVersionNotStable">
++          {{ $t('index.installed_version_not_stable') }}
++        </div>
++        <div v-else-if="(!preReleaseBuildAvailable || !notifyPreReleases) && !stableBuildAvailable && !buildVersionIsDirty">
++          <div class="alert alert-success">
++            MicBridge Host candidate. No automatic update feed is configured.
++          </div>
++        </div>
++        <div v-if="notifyPreReleases && preReleaseBuildAvailable">
++          <div class="alert alert-warning">
++            <div class="d-flex justify-content-between">
++              <div class="my-2">
++                <p>{{ $t('index.new_pre_release') }}</p>
++              </div>
++              <a class="btn btn-success m-1" :href="preReleaseVersion.release.html_url" target="_blank">{{ $t('index.download') }}</a>
++            </div>
++            <pre><b>{{preReleaseVersion.release.name}}</b></pre>
++            <pre>{{preReleaseVersion.release.body}}</pre>
++          </div>
++        </div>
++        <div v-if="stableBuildAvailable">
++          <div class="alert alert-warning">
++            <div class="d-flex justify-content-between">
++              <div class="my-2">
++                <p>{{ $t('index.new_stable') }}</p>
++              </div>
++              <a class="btn btn-success m-1" :href="githubVersion.release.html_url" target="_blank">{{ $t('index.download') }}</a>
++            </div>
++            <h3>{{githubVersion.release.name}}</h3>
++            <pre>{{githubVersion.release.body}}</pre>
++          </div>
++        </div>
++      </div>
++    </div>
++    <!-- Resources -->
++    <div class="my-4">
++      <Client-Card></Client-Card>
++      <Resource-Card></Resource-Card>
++    </div>
++  </div>
++</body>
++
++<script type="module">
++  import { createApp } from 'vue'
++  import { initApp } from './init'
++  import Navbar from './Navbar.vue'
++  import ClientCard from './ClientCard.vue'
++  import ResourceCard from './ResourceCard.vue'
++  import ApolloVersion from './apollo_version'
++
++  console.log("Hello, Apollo!")
++  let app = createApp({
++    components: {
++      Navbar,
++      ClientCard,
++      ResourceCard
++    },
++    data() {
++      return {
++        version: null,
++        githubVersion: null,
++        notifyPreReleases: false,
++        preReleaseVersion: null,
++        loading: true,
++        logs: null,
++      }
++    },
++    async created() {
++      try {
++        let config = await fetch("./api/config").then((r) => r.json());
++        this.notifyPreReleases = config.notify_pre_releases;
++        this.version = new ApolloVersion(null, config.version);
++        console.log("Version: ", this.version.version)
++        // Fork publication URL is unset; never offer another project's binary as an update.
++      } catch (e) {
++        console.error(e);
++      }
++      try {
++        this.logs = (await fetch("./api/logs").then(r => r.text()))
++      } catch (e) {
++        console.error(e);
++      }
++      this.loading = false;
++    },
++    computed: {
++      installedVersionNotStable() {
++        if (!this.githubVersion || !this.version) {
++          return false;
++        }
++        return this.version.isGreater(this.githubVersion);
++      },
++      stableBuildAvailable() {
++        if (!this.githubVersion || !this.version) {
++          return false;
++        }
++        return this.githubVersion.isGreater(this.version);
++      },
++      preReleaseBuildAvailable() {
++        if (!this.preReleaseVersion || !this.githubVersion || !this.version) {
++          return false;
++        }
++        return this.preReleaseVersion.isGreater(this.version, true) && this.preReleaseVersion.isGreater(this.githubVersion, true);
++      },
++      buildVersionIsDirty() {
++        return this.version.version?.split(".").length === 5 &&
++          this.version.version.indexOf("dirty") !== -1
++      },
++      /** Parse the text errors, calculating the text, the timestamp and the level */
++      fancyLogs() {
++        if (!this.logs) return [];
++        let regex = /(\[\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\.\d{3}]):\s/g;
++        let rawLogLines = (this.logs.split(regex)).splice(1);
++        let logLines = []
++        for (let i = 0; i < rawLogLines.length; i += 2) {
++          logLines.push({ timestamp: rawLogLines[i], level: rawLogLines[i + 1].split(":")[0], value: rawLogLines[i + 1] });
++        }
++        return logLines;
++      }
++    }
++  });
++
++  initApp(app);
++</script>

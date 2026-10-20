@@ -1,0 +1,22 @@
+{
+  "status": "release-candidate",
+  "githubOwner": "SelzyStudio",
+  "ownerType": "Organization",
+  "repository": "micbridge-stream",
+  "repositoryUrl": "https://github.com/SelzyStudio/micbridge-stream",
+  "releaseTag": "v1.0.0-rc1",
+  "sourceUrl": "https://github.com/SelzyStudio/micbridge-stream/releases/download/v1.0.0-rc1/MicBridge-Stream-1.0.0-rc1-Corresponding-Source.zip",
+  "sourceUrlStatus": "release-asset-url",
+  "sourceAsset": "MicBridge-Stream-1.0.0-rc1-Corresponding-Source.zip",
+  "uploadAuthorized": true,
+  "repositoryCreated": true,
+  "authenticodeSigned": false,
+  "androidCertificateSha256": "41be3472edc8dacc0372c5ca044a44c7be16f07f70781cfca888145081446b0c",
+  "privateSigningKeyIncluded": false,
+  "androidAppId": "app.micbridge.stream",
+  "githubOwnerVerified": true,
+  "publicationAuthorization": "Explicit user publication instruction",
+  "applicationSourcesChangedForPublication": false,
+  "publisherDisplayName": "Selzy Studio",
+  "publisherAccount": "selzystudio-01"
+}

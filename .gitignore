@@ -1,0 +1,13 @@
+node_modules/
+.gradle/
+.cxx/
+build/
+local.properties
+*.apk
+*.exe
+*.p12
+*.pfx
+*.jks
+*.keystore
+*password*
+private-signing/

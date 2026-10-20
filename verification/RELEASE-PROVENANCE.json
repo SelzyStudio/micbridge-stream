@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0-rc1",
+  "correspondingSourceAsset": "MicBridge-Stream-1.0.0-rc1-Corresponding-Source.zip",
+  "correspondingSourceSha256": "F5D0B1F435E098204D914E6F682AC21361CDD0873E68B9AED84A9A21ACBDFFB1",
+  "sourceSnapshot": "Original build manifest retained in BUILD-SOURCE-MANIFEST.json",
+  "applicationSourcesChangedForPublication": false,
+  "binaryAssetsChangedForPublication": false,
+  "windowsAuthenticodeSigned": false,
+  "physicalCrossDeviceTested": false
+}

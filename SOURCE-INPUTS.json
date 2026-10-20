@@ -1,0 +1,3374 @@
+[
+  {
+    "path": "android-dependency-sources/androidx.activity/activity-ktx/1.8.0/activity-ktx-1.8.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.activity/activity-ktx/1.8.0/activity-ktx-1.8.0-sources.jar",
+    "bytes": 5873,
+    "sha256": "9E86834B7CA5B2C13E2ADF3EC0766521E198F9E1969DC6E1B642C9C57F2F603E"
+  },
+  {
+    "path": "android-dependency-sources/androidx.activity/activity-ktx/1.8.0/activity-ktx-1.8.0.pom",
+    "storedPath": "android-dependency-sources/androidx.activity/activity-ktx/1.8.0/activity-ktx-1.8.0.pom",
+    "bytes": 3307,
+    "sha256": "C9439D18ECB1BADF5900325979B2A6587A40BED4F074DAB69CEBD00CFAE391B7"
+  },
+  {
+    "path": "android-dependency-sources/androidx.activity/activity/1.8.0/activity-1.8.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.activity/activity/1.8.0/activity-1.8.0-sources.jar",
+    "bytes": 54468,
+    "sha256": "0426BA5BF1A8D3FE94610ECE12E1AF150B6A1A565D87539FFA50E614A50547E6"
+  },
+  {
+    "path": "android-dependency-sources/androidx.activity/activity/1.8.0/activity-1.8.0.pom",
+    "storedPath": "android-dependency-sources/androidx.activity/activity/1.8.0/activity-1.8.0.pom",
+    "bytes": 4131,
+    "sha256": "65131285F53CB042E8FFD189E705DAFC9B8AE6D62435E8778AC9AB3B8E3F756F"
+  },
+  {
+    "path": "android-dependency-sources/androidx.annotation/annotation-experimental/1.4.1/annotation-experimental-1.4.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.annotation/annotation-experimental/1.4.1/annotation-experimental-1.4.1-sources.jar",
+    "bytes": 5257,
+    "sha256": "783A221A7C1093FF8932053998A69A24489F7930806A32B55366108146D29C1D"
+  },
+  {
+    "path": "android-dependency-sources/androidx.annotation/annotation-experimental/1.4.1/annotation-experimental-1.4.1.pom",
+    "storedPath": "android-dependency-sources/androidx.annotation/annotation-experimental/1.4.1/annotation-experimental-1.4.1.pom",
+    "bytes": 2031,
+    "sha256": "FE57B228417F4D7C677903DC61FB4A7CF993D603499DE26D8D8113E477CC4F1B"
+  },
+  {
+    "path": "android-dependency-sources/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar",
+    "bytes": 71470,
+    "sha256": "C6AE897FBFB73CA09D4AE31A24BFFF85C652097AD10644CDBB738488728CB39B"
+  },
+  {
+    "path": "android-dependency-sources/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1.pom",
+    "storedPath": "android-dependency-sources/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1.pom",
+    "bytes": 1826,
+    "sha256": "89B99C218D60019316B50AAB79816707BC21696C896A030E1B1AE038961BCB8E"
+  },
+  {
+    "path": "android-dependency-sources/androidx.appcompat/appcompat-resources/1.7.1/appcompat-resources-1.7.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.appcompat/appcompat-resources/1.7.1/appcompat-resources-1.7.1-sources.jar",
+    "bytes": 40127,
+    "sha256": "CACF441FBBEC0EBF12B4308BBEEB9A7389387C35A66F13BD2551DC328CF33EAD"
+  },
+  {
+    "path": "android-dependency-sources/androidx.appcompat/appcompat-resources/1.7.1/appcompat-resources-1.7.1.pom",
+    "storedPath": "android-dependency-sources/androidx.appcompat/appcompat-resources/1.7.1/appcompat-resources-1.7.1.pom",
+    "bytes": 2993,
+    "sha256": "2FAF922E8C3D706F29D862B3FBB3AA1347705C21C6EAE18586D2BB1F7366EA01"
+  },
+  {
+    "path": "android-dependency-sources/androidx.appcompat/appcompat/1.7.1/appcompat-1.7.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.appcompat/appcompat/1.7.1/appcompat-1.7.1-sources.jar",
+    "bytes": 496096,
+    "sha256": "D3F8371E7B5B61E36450677AF4E911C351C9EC625E9A7FC5B44ACBB3FBC3A45D"
+  },
+  {
+    "path": "android-dependency-sources/androidx.appcompat/appcompat/1.7.1/appcompat-1.7.1.pom",
+    "storedPath": "android-dependency-sources/androidx.appcompat/appcompat/1.7.1/appcompat-1.7.1.pom",
+    "bytes": 5366,
+    "sha256": "1F79910CC20DE198ACF3867B1E93F9ED59DDB643585B2E9C28EE55518AF1BC00"
+  },
+  {
+    "path": "android-dependency-sources/androidx.arch.core/core-common/2.2.0/core-common-2.2.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.arch.core/core-common/2.2.0/core-common-2.2.0-sources.jar",
+    "bytes": 5684,
+    "sha256": "563D430880D847890029234386EF03ADB95403C34F3C9DEC3A7002E2F4007AE4"
+  },
+  {
+    "path": "android-dependency-sources/androidx.arch.core/core-common/2.2.0/core-common-2.2.0.pom",
+    "storedPath": "android-dependency-sources/androidx.arch.core/core-common/2.2.0/core-common-2.2.0.pom",
+    "bytes": 1704,
+    "sha256": "1E17D4AF8D6425BE2A69F8AF4D654A87E0456259A9EEF1542869BCB023547E28"
+  },
+  {
+    "path": "android-dependency-sources/androidx.arch.core/core-runtime/2.2.0/core-runtime-2.2.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.arch.core/core-runtime/2.2.0/core-runtime-2.2.0-sources.jar",
+    "bytes": 4715,
+    "sha256": "4ADAAB3A8AB711634D566D2E239E199AF8B5AC92C1DE85540DC34C7040754E96"
+  },
+  {
+    "path": "android-dependency-sources/androidx.arch.core/core-runtime/2.2.0/core-runtime-2.2.0.pom",
+    "storedPath": "android-dependency-sources/androidx.arch.core/core-runtime/2.2.0/core-runtime-2.2.0.pom",
+    "bytes": 1920,
+    "sha256": "0F953706598140D9D8735CDD5AEB1FA35933F4E2F31C0BF3EB81A053A4C8C1A5"
+  },
+  {
+    "path": "android-dependency-sources/androidx.cardview/cardview/1.0.0/cardview-1.0.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.cardview/cardview/1.0.0/cardview-1.0.0-sources.jar",
+    "bytes": 16485,
+    "sha256": "AD7A28E7768893F8B33A8B7B275A92E33C125243CA4A9130A984C40E578E19B4"
+  },
+  {
+    "path": "android-dependency-sources/androidx.cardview/cardview/1.0.0/cardview-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.cardview/cardview/1.0.0/cardview-1.0.0.pom",
+    "bytes": 1349,
+    "sha256": "E64EF4E08B58358FE27B599E6FE80A1B153DB014C644BEEE630AB271061C3E6C"
+  },
+  {
+    "path": "android-dependency-sources/androidx.collection/collection-jvm/1.4.2/collection-jvm-1.4.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.collection/collection-jvm/1.4.2/collection-jvm-1.4.2-sources.jar",
+    "bytes": 235172,
+    "sha256": "9CDB219EE75724515C232AE2BB04403C1FD1B40208C61D92AAA6452836D943C5"
+  },
+  {
+    "path": "android-dependency-sources/androidx.collection/collection-jvm/1.4.2/collection-jvm-1.4.2.pom",
+    "storedPath": "android-dependency-sources/androidx.collection/collection-jvm/1.4.2/collection-jvm-1.4.2.pom",
+    "bytes": 2414,
+    "sha256": "ADBB379E2B160F08E63E341AD04BBCC7033F6D868EC51AC11E4334642A4E39EF"
+  },
+  {
+    "path": "android-dependency-sources/androidx.collection/collection-ktx/1.4.2/collection-ktx-1.4.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.collection/collection-ktx/1.4.2/collection-ktx-1.4.2-sources.jar",
+    "bytes": 261,
+    "sha256": "C6DEADA2FAC53B8EA6523DBDA77597B128006674616F140F04DF23264C6D1AA3"
+  },
+  {
+    "path": "android-dependency-sources/androidx.collection/collection-ktx/1.4.2/collection-ktx-1.4.2.pom",
+    "storedPath": "android-dependency-sources/androidx.collection/collection-ktx/1.4.2/collection-ktx-1.4.2.pom",
+    "bytes": 2086,
+    "sha256": "4B2D5F929A0F04DDA7B50697A29F51343217E257F0798289712C137E0DC41556"
+  },
+  {
+    "path": "android-dependency-sources/androidx.concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0-sources.jar",
+    "bytes": 19716,
+    "sha256": "CC06FB6045A6C066F50E237A3C2126BC88C16D358A57B3612BA633C9F530B0A0"
+  },
+  {
+    "path": "android-dependency-sources/androidx.concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0.pom",
+    "bytes": 1888,
+    "sha256": "748A34EB5D13D19D187ADECAEA82667FDED5F1B0B98A655E13ED2E4A8B3D8AE6"
+  },
+  {
+    "path": "android-dependency-sources/androidx.constraintlayout/constraintlayout-core/1.0.0/constraintlayout-core-1.0.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.constraintlayout/constraintlayout-core/1.0.0/constraintlayout-core-1.0.0-sources.jar",
+    "bytes": 267860,
+    "sha256": "4263D8A8EBE1E574C60EA04B314A38FB23A77537F13D4263EE2FACCFC1CB866A"
+  },
+  {
+    "path": "android-dependency-sources/androidx.constraintlayout/constraintlayout-core/1.0.0/constraintlayout-core-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.constraintlayout/constraintlayout-core/1.0.0/constraintlayout-core-1.0.0.pom",
+    "bytes": 1434,
+    "sha256": "93E01622E90B5879BB950FEDB5C417C8024555FDC779481BCEE21A3B5977CB8C"
+  },
+  {
+    "path": "android-dependency-sources/androidx.constraintlayout/constraintlayout/2.1.0/constraintlayout-2.1.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.constraintlayout/constraintlayout/2.1.0/constraintlayout-2.1.0-sources.jar",
+    "bytes": 267815,
+    "sha256": "FF6770ECF5221D7E16776E3224AADB1E436511F3A9F37E38E6B4C2E4300C8A92"
+  },
+  {
+    "path": "android-dependency-sources/androidx.constraintlayout/constraintlayout/2.1.0/constraintlayout-2.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.constraintlayout/constraintlayout/2.1.0/constraintlayout-2.1.0.pom",
+    "bytes": 2044,
+    "sha256": "25104AF5AE91EFE5FE6C9178EEE35F6B02E31349505738CCEB4DF2DF8385B585"
+  },
+  {
+    "path": "android-dependency-sources/androidx.coordinatorlayout/coordinatorlayout/1.1.0/coordinatorlayout-1.1.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.coordinatorlayout/coordinatorlayout/1.1.0/coordinatorlayout-1.1.0-sources.jar",
+    "bytes": 30702,
+    "sha256": "C8904CFFCFB757CF14D8C0CF7563274EDC3A8BC883CA9203B4B98E9823F7B22B"
+  },
+  {
+    "path": "android-dependency-sources/androidx.coordinatorlayout/coordinatorlayout/1.1.0/coordinatorlayout-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.coordinatorlayout/coordinatorlayout/1.1.0/coordinatorlayout-1.1.0.pom",
+    "bytes": 2187,
+    "sha256": "A67C52C9DDFAFF2FFB2FD4B97CD94FA382E837EA8A5874D029E0A04FA63E5CAF"
+  },
+  {
+    "path": "android-dependency-sources/androidx.core/core-ktx/1.13.0/core-ktx-1.13.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.core/core-ktx/1.13.0/core-ktx-1.13.0-sources.jar",
+    "bytes": 69704,
+    "sha256": "B6646F76CD2D59210561DFFB16B32A4E5FCCA6DE37CA027F1DAE82BFB0CF6493"
+  },
+  {
+    "path": "android-dependency-sources/androidx.core/core-ktx/1.13.0/core-ktx-1.13.0.pom",
+    "storedPath": "android-dependency-sources/androidx.core/core-ktx/1.13.0/core-ktx-1.13.0.pom",
+    "bytes": 2450,
+    "sha256": "7CF6D4FB2F61AB4924232B92D6580B65DF9103C0437CDAE60CE14388C3731210"
+  },
+  {
+    "path": "android-dependency-sources/androidx.core/core/1.13.0/core-1.13.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.core/core/1.13.0/core-1.13.0-sources.jar",
+    "bytes": 931982,
+    "sha256": "AC5D17C3DC9744346CA5A2687CB259606787FB10972D5716F49E4C226F092C71"
+  },
+  {
+    "path": "android-dependency-sources/androidx.core/core/1.13.0/core-1.13.0.pom",
+    "storedPath": "android-dependency-sources/androidx.core/core/1.13.0/core-1.13.0.pom",
+    "bytes": 3654,
+    "sha256": "4502E4ED8B59122021AC9A1C1312E2326E4B0F43F7ECBBBC9B50EE77429574D4"
+  },
+  {
+    "path": "android-dependency-sources/androidx.cursoradapter/cursoradapter/1.0.0/cursoradapter-1.0.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.cursoradapter/cursoradapter/1.0.0/cursoradapter-1.0.0-sources.jar",
+    "bytes": 11882,
+    "sha256": "99B72A3AEC8C9EDFD9DE20F5913CE4C413BCA2F0CF9877B504E26AA03EF50323"
+  },
+  {
+    "path": "android-dependency-sources/androidx.cursoradapter/cursoradapter/1.0.0/cursoradapter-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.cursoradapter/cursoradapter/1.0.0/cursoradapter-1.0.0.pom",
+    "bytes": 1611,
+    "sha256": "62D95C89850AF21030B19F14D5F7ECD6D8BCC9A3014C59002EC99624CAAC8100"
+  },
+  {
+    "path": "android-dependency-sources/androidx.customview/customview-poolingcontainer/1.0.0/customview-poolingcontainer-1.0.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.customview/customview-poolingcontainer/1.0.0/customview-poolingcontainer-1.0.0-sources.jar",
+    "bytes": 2651,
+    "sha256": "0715571BAA86E8F7683FCC1D59FE2881C5E8603AF9FF212C82423AE098D34C62"
+  },
+  {
+    "path": "android-dependency-sources/androidx.customview/customview-poolingcontainer/1.0.0/customview-poolingcontainer-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.customview/customview-poolingcontainer/1.0.0/customview-poolingcontainer-1.0.0.pom",
+    "bytes": 2068,
+    "sha256": "9FA62196C4C4E79B6A58DBB38A8C022BEF8DB21989D7DAE2DA0F6F5B66289A9C"
+  },
+  {
+    "path": "android-dependency-sources/androidx.customview/customview/1.1.0/customview-1.1.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.customview/customview/1.1.0/customview-1.1.0-sources.jar",
+    "bytes": 30221,
+    "sha256": "0F119C77C7613881901CBCD149E718409480C08C39661737750A35F5D6B5DFD2"
+  },
+  {
+    "path": "android-dependency-sources/androidx.customview/customview/1.1.0/customview-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.customview/customview/1.1.0/customview-1.1.0.pom",
+    "bytes": 1957,
+    "sha256": "C814D435F73E9E6D169886D0EB96B5C5361FEB48449FBBB315C908C03C588C94"
+  },
+  {
+    "path": "android-dependency-sources/androidx.drawerlayout/drawerlayout/1.1.1/drawerlayout-1.1.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.drawerlayout/drawerlayout/1.1.1/drawerlayout-1.1.1-sources.jar",
+    "bytes": 20624,
+    "sha256": "BEC7CE941920860747B3368B0A6D58C14B91C164DFBDDD1DE866E7CFAB4F27FD"
+  },
+  {
+    "path": "android-dependency-sources/androidx.drawerlayout/drawerlayout/1.1.1/drawerlayout-1.1.1.pom",
+    "storedPath": "android-dependency-sources/androidx.drawerlayout/drawerlayout/1.1.1/drawerlayout-1.1.1.pom",
+    "bytes": 1986,
+    "sha256": "C12FA903BA53005962A72405F37896608718F41673FC4A62312E4536132F6F45"
+  },
+  {
+    "path": "android-dependency-sources/androidx.dynamicanimation/dynamicanimation/1.1.0/dynamicanimation-1.1.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.dynamicanimation/dynamicanimation/1.1.0/dynamicanimation-1.1.0-sources.jar",
+    "bytes": 29271,
+    "sha256": "D730234D4276722A13721FEEA2630A5AAA189D5DC11681AACC7CFE94527D7B94"
+  },
+  {
+    "path": "android-dependency-sources/androidx.dynamicanimation/dynamicanimation/1.1.0/dynamicanimation-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.dynamicanimation/dynamicanimation/1.1.0/dynamicanimation-1.1.0.pom",
+    "bytes": 2620,
+    "sha256": "CAECB7B379585D8E4070EBAFAE3974A137C6689DE8077F9165935B3605784A93"
+  },
+  {
+    "path": "android-dependency-sources/androidx.emoji2/emoji2-views-helper/1.3.0/emoji2-views-helper-1.3.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.emoji2/emoji2-views-helper/1.3.0/emoji2-views-helper-1.3.0-sources.jar",
+    "bytes": 17409,
+    "sha256": "AE8F9EAC6A0627A136F631AF717E6FAB86A69E45C83765661E3795F7BBEF3562"
+  },
+  {
+    "path": "android-dependency-sources/androidx.emoji2/emoji2-views-helper/1.3.0/emoji2-views-helper-1.3.0.pom",
+    "storedPath": "android-dependency-sources/androidx.emoji2/emoji2-views-helper/1.3.0/emoji2-views-helper-1.3.0.pom",
+    "bytes": 3230,
+    "sha256": "2673B0F5859D4361A4E9A30457852A6745D0C3C85B5E0412070483F3963EF526"
+  },
+  {
+    "path": "android-dependency-sources/androidx.emoji2/emoji2/1.3.0/emoji2-1.3.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.emoji2/emoji2/1.3.0/emoji2-1.3.0-sources.jar",
+    "bytes": 57650,
+    "sha256": "CD9B28E11CC5B9DACB5187CE2DB89F97650A4C71C6CCF0AAA41A68CF8863C409"
+  },
+  {
+    "path": "android-dependency-sources/androidx.emoji2/emoji2/1.3.0/emoji2-1.3.0.pom",
+    "storedPath": "android-dependency-sources/androidx.emoji2/emoji2/1.3.0/emoji2-1.3.0.pom",
+    "bytes": 3702,
+    "sha256": "14EBBEA8234F013211965FDD08B42EE907CE0075AF321018C8C2865C2E5DB0EB"
+  },
+  {
+    "path": "android-dependency-sources/androidx.fragment/fragment-ktx/1.3.6/fragment-ktx-1.3.6-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.fragment/fragment-ktx/1.3.6/fragment-ktx-1.3.6-sources.jar",
+    "bytes": 6099,
+    "sha256": "12650B3FFA02E40F19886B7E84031CA37908A9573AD58D150EC8299DCDE5D9E6"
+  },
+  {
+    "path": "android-dependency-sources/androidx.fragment/fragment-ktx/1.3.6/fragment-ktx-1.3.6.pom",
+    "storedPath": "android-dependency-sources/androidx.fragment/fragment-ktx/1.3.6/fragment-ktx-1.3.6.pom",
+    "bytes": 3204,
+    "sha256": "9AB733BF4C9139749C5375949AFCDB840E71D1DAF53B31056141CCBA05D793B4"
+  },
+  {
+    "path": "android-dependency-sources/androidx.fragment/fragment/1.5.4/fragment-1.5.4-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.fragment/fragment/1.5.4/fragment-1.5.4-sources.jar",
+    "bytes": 190527,
+    "sha256": "388140B5E899EA70DCEB7DE93EBE732B7D534A14CA87014895FAF19EF74AC8FE"
+  },
+  {
+    "path": "android-dependency-sources/androidx.fragment/fragment/1.5.4/fragment-1.5.4.pom",
+    "storedPath": "android-dependency-sources/androidx.fragment/fragment/1.5.4/fragment-1.5.4.pom",
+    "bytes": 4234,
+    "sha256": "F8CA1877C66E642C554907E1CE5A493A897CA29270CB19E2BB6D424BA43B6C98"
+  },
+  {
+    "path": "android-dependency-sources/androidx.graphics/graphics-shapes-android/1.0.1/graphics-shapes-android-1.0.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.graphics/graphics-shapes-android/1.0.1/graphics-shapes-android-1.0.1-sources.jar",
+    "bytes": 48524,
+    "sha256": "AE746C3A68F8631D2B8B2AC74A8A1E59352112E86380BD966D741C6D4EFA61C6"
+  },
+  {
+    "path": "android-dependency-sources/androidx.graphics/graphics-shapes-android/1.0.1/graphics-shapes-android-1.0.1.pom",
+    "storedPath": "android-dependency-sources/androidx.graphics/graphics-shapes-android/1.0.1/graphics-shapes-android-1.0.1.pom",
+    "bytes": 5079,
+    "sha256": "81DE7BCC8549084D104D5AF33B120F93E10D45424A15A454CFA1F24304AA4D11"
+  },
+  {
+    "path": "android-dependency-sources/androidx.interpolator/interpolator/1.0.0/interpolator-1.0.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.interpolator/interpolator/1.0.0/interpolator-1.0.0-sources.jar",
+    "bytes": 6655,
+    "sha256": "FA13ADA71FE7BD9461F622F418E7C16A18E85DA7708FB505C75229A9B8830345"
+  },
+  {
+    "path": "android-dependency-sources/androidx.interpolator/interpolator/1.0.0/interpolator-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.interpolator/interpolator/1.0.0/interpolator-1.0.0.pom",
+    "bytes": 1608,
+    "sha256": "0DDC07CC39699F48ECD9EC894B5830C0F09E22E82959294EDF37217224C88B7B"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-common/2.6.2/lifecycle-common-2.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-common/2.6.2/lifecycle-common-2.6.2-sources.jar",
+    "bytes": 24682,
+    "sha256": "9B194A75AA6724BDAC277BE839EDDD5D49192D64389D5AC02D1F6BB6C334124E"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-common/2.6.2/lifecycle-common-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-common/2.6.2/lifecycle-common-2.6.2.pom",
+    "bytes": 6581,
+    "sha256": "57304CDAC4DA289A6ECDD0738E16B1D8858F1EF8E9FABE2D65A963719FD81DBA"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata-core-ktx/2.6.2/lifecycle-livedata-core-ktx-2.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata-core-ktx/2.6.2/lifecycle-livedata-core-ktx-2.6.2-sources.jar",
+    "bytes": 1631,
+    "sha256": "52AEBE57B7619530D5D762671262A6BE54972C7AB64E41A330D81AB21ADFCBA9"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata-core-ktx/2.6.2/lifecycle-livedata-core-ktx-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata-core-ktx/2.6.2/lifecycle-livedata-core-ktx-2.6.2.pom",
+    "bytes": 6147,
+    "sha256": "4C44C39DFE366934081F62F27CD975FC514D1F03985F59A218E842674AA2825B"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata-core/2.6.2/lifecycle-livedata-core-2.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata-core/2.6.2/lifecycle-livedata-core-2.6.2-sources.jar",
+    "bytes": 6943,
+    "sha256": "CACBE1DC9C099DF7FD37069266986EEB8C4447C3E08C4A31762C7466A0082568"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata-core/2.6.2/lifecycle-livedata-core-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata-core/2.6.2/lifecycle-livedata-core-2.6.2.pom",
+    "bytes": 6490,
+    "sha256": "1FAF8EBF53F28B2F0AE2C2095371AE67D0CA16AC328FCE7F163609A43214B5A4"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2-sources.jar",
+    "bytes": 6551,
+    "sha256": "5E55DDAD2A4A2CF7C33650059F11274A579DB92DD88A04800912D70576227F61"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2.pom",
+    "bytes": 6510,
+    "sha256": "D7C9E019CF68779387481877878F6C499D1786B85F2C0480E9264DD5097C51C0"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-process/2.6.2/lifecycle-process-2.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-process/2.6.2/lifecycle-process-2.6.2-sources.jar",
+    "bytes": 5598,
+    "sha256": "F6F6C2465BF5219798D64ED255A1768CF26547D56755C0CCEB32E752A231F689"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-process/2.6.2/lifecycle-process-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-process/2.6.2/lifecycle-process-2.6.2.pom",
+    "bytes": 6503,
+    "sha256": "1F14396EC764B44D37C143ADACEE01E5B68CB5F35A21BCD9CDEBD7C83EA7D2E9"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-runtime-ktx/2.6.2/lifecycle-runtime-ktx-2.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-runtime-ktx/2.6.2/lifecycle-runtime-ktx-2.6.2-sources.jar",
+    "bytes": 7211,
+    "sha256": "8503ED85CF65D200B9079E660A2B2C645CB322D74558034B08D364F0E349662A"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-runtime-ktx/2.6.2/lifecycle-runtime-ktx-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-runtime-ktx/2.6.2/lifecycle-runtime-ktx-2.6.2.pom",
+    "bytes": 6523,
+    "sha256": "69C6CA9FF9FC9C6940BD55EF91C5B7B57DEABAB686D2C64A5AF85152F29904CD"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-runtime/2.6.2/lifecycle-runtime-2.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-runtime/2.6.2/lifecycle-runtime-2.6.2-sources.jar",
+    "bytes": 8601,
+    "sha256": "07129C61C68A7C4333AEABE1712827C33677F973DB29BC11B99044463899B13D"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-runtime/2.6.2/lifecycle-runtime-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-runtime/2.6.2/lifecycle-runtime-2.6.2.pom",
+    "bytes": 6877,
+    "sha256": "8175255546E2A5F510865F84ACE680660954730240B1905D9175B4345BEDA977"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2-sources.jar",
+    "bytes": 1410,
+    "sha256": "DC9B84FECF2D5C7EADE2D86E75A5C407C81209698E001FE822A5ED1896571D67"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2.pom",
+    "bytes": 6353,
+    "sha256": "1D336FBF91471FC497AFDF9D875989261D08B564D021EAF275944865F526DCEF"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.6.2/lifecycle-viewmodel-savedstate-2.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.6.2/lifecycle-viewmodel-savedstate-2.6.2-sources.jar",
+    "bytes": 15736,
+    "sha256": "4BEDC7C786CDE5B49ADFF6D8BCD2357C09B897F20DD6E4F1B79E5AF55F32DB9E"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.6.2/lifecycle-viewmodel-savedstate-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.6.2/lifecycle-viewmodel-savedstate-2.6.2.pom",
+    "bytes": 7139,
+    "sha256": "7FC854440644CF52C35894D58D946B208E42769E8517D71A5EFCBA17865432DE"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel/2.6.2/lifecycle-viewmodel-2.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel/2.6.2/lifecycle-viewmodel-2.6.2-sources.jar",
+    "bytes": 16948,
+    "sha256": "4EED85C3E86326DA8B6949FD3964D2380AA5C56730DE402E3C6F1C6D747596E0"
+  },
+  {
+    "path": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel/2.6.2/lifecycle-viewmodel-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel/2.6.2/lifecycle-viewmodel-2.6.2.pom",
+    "bytes": 6087,
+    "sha256": "A9FB0B39A8360BEEF7BDC8F3953D4D78F3D85304FC80ADAC3C8EAF530D758050"
+  },
+  {
+    "path": "android-dependency-sources/androidx.loader/loader/1.0.0/loader-1.0.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.loader/loader/1.0.0/loader-1.0.0-sources.jar",
+    "bytes": 25417,
+    "sha256": "EFCBAFAAC8FC06BD5B162B57AC1E146D11919B79DEA2202339470C931CECDC67"
+  },
+  {
+    "path": "android-dependency-sources/androidx.loader/loader/1.0.0/loader-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.loader/loader/1.0.0/loader-1.0.0.pom",
+    "bytes": 2207,
+    "sha256": "C978D550808B47434AA49A63164110A50B55B0BCC6160A93A2E37D5110DF8C5E"
+  },
+  {
+    "path": "android-dependency-sources/androidx.preference/preference/1.2.1/preference-1.2.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.preference/preference/1.2.1/preference-1.2.1-sources.jar",
+    "bytes": 114097,
+    "sha256": "E5C16F4CE8AFACB66BBBB34837CC070A5C6A7CA07AE1A8FF9C4C80C8E6EDBF1F"
+  },
+  {
+    "path": "android-dependency-sources/androidx.preference/preference/1.2.1/preference-1.2.1.pom",
+    "storedPath": "android-dependency-sources/androidx.preference/preference/1.2.1/preference-1.2.1.pom",
+    "bytes": 3151,
+    "sha256": "0157B052E8433A6BAB5DF7FFE4FBF01BD10A55F18F111B37FAF7DFAFE14C7923"
+  },
+  {
+    "path": "android-dependency-sources/androidx.profileinstaller/profileinstaller/1.3.1/profileinstaller-1.3.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.profileinstaller/profileinstaller/1.3.1/profileinstaller-1.3.1-sources.jar",
+    "bytes": 38842,
+    "sha256": "0FF5F58D8DF11E5F8254013B04386789BDB1367288E9EB74433198261FB14D95"
+  },
+  {
+    "path": "android-dependency-sources/androidx.profileinstaller/profileinstaller/1.3.1/profileinstaller-1.3.1.pom",
+    "storedPath": "android-dependency-sources/androidx.profileinstaller/profileinstaller/1.3.1/profileinstaller-1.3.1.pom",
+    "bytes": 2418,
+    "sha256": "08263EB70A814A7CB26D11D3A83825F84C29F3E4B59F9134724E0E02E2BBD768"
+  },
+  {
+    "path": "android-dependency-sources/androidx.recyclerview/recyclerview/1.4.0/recyclerview-1.4.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.recyclerview/recyclerview/1.4.0/recyclerview-1.4.0-sources.jar",
+    "bytes": 340940,
+    "sha256": "CAD83357A7003B5903197BE0494F6E8F6825FA1338EE6B09B06A8DEA32A97CB8"
+  },
+  {
+    "path": "android-dependency-sources/androidx.recyclerview/recyclerview/1.4.0/recyclerview-1.4.0.pom",
+    "storedPath": "android-dependency-sources/androidx.recyclerview/recyclerview/1.4.0/recyclerview-1.4.0.pom",
+    "bytes": 3106,
+    "sha256": "D551D4343861814E05380F67F8C2E63140B84DF37435FFD2EB53528A96045D63"
+  },
+  {
+    "path": "android-dependency-sources/androidx.resourceinspection/resourceinspection-annotation/1.0.1/resourceinspection-annotation-1.0.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.resourceinspection/resourceinspection-annotation/1.0.1/resourceinspection-annotation-1.0.1-sources.jar",
+    "bytes": 5237,
+    "sha256": "CDCA7861AE17115F8D74F9F197D1A4F8B0217CA035A3990DA2E2C1CA1FA7F822"
+  },
+  {
+    "path": "android-dependency-sources/androidx.resourceinspection/resourceinspection-annotation/1.0.1/resourceinspection-annotation-1.0.1.pom",
+    "storedPath": "android-dependency-sources/androidx.resourceinspection/resourceinspection-annotation/1.0.1/resourceinspection-annotation-1.0.1.pom",
+    "bytes": 1808,
+    "sha256": "B8EB4938ED95D7FCDAA2712EBCA363E46A0F9228B8BE7F23154DEF56846815DC"
+  },
+  {
+    "path": "android-dependency-sources/androidx.savedstate/savedstate-ktx/1.2.1/savedstate-ktx-1.2.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.savedstate/savedstate-ktx/1.2.1/savedstate-ktx-1.2.1-sources.jar",
+    "bytes": 1225,
+    "sha256": "45F49FE9075235C62D409F2D11D795B3C7308BCCB475ED43ED8312638119CC27"
+  },
+  {
+    "path": "android-dependency-sources/androidx.savedstate/savedstate-ktx/1.2.1/savedstate-ktx-1.2.1.pom",
+    "storedPath": "android-dependency-sources/androidx.savedstate/savedstate-ktx/1.2.1/savedstate-ktx-1.2.1.pom",
+    "bytes": 2236,
+    "sha256": "D09553211F6703B19AEFD608D6007C77132D27A281556A8E689D92764EC27D3B"
+  },
+  {
+    "path": "android-dependency-sources/androidx.savedstate/savedstate/1.2.1/savedstate-1.2.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.savedstate/savedstate/1.2.1/savedstate-1.2.1-sources.jar",
+    "bytes": 8863,
+    "sha256": "FD201FB9EA2D3E66262CB09BF1E33CBBE41050FCFCB96C9CE197F1780B614A73"
+  },
+  {
+    "path": "android-dependency-sources/androidx.savedstate/savedstate/1.2.1/savedstate-1.2.1.pom",
+    "storedPath": "android-dependency-sources/androidx.savedstate/savedstate/1.2.1/savedstate-1.2.1.pom",
+    "bytes": 2549,
+    "sha256": "0D33BC285DF1E12F22780F1624A6F0B38EA2A6181B0955EC6641CAF620C50CBF"
+  },
+  {
+    "path": "android-dependency-sources/androidx.slidingpanelayout/slidingpanelayout/1.2.0/slidingpanelayout-1.2.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.slidingpanelayout/slidingpanelayout/1.2.0/slidingpanelayout-1.2.0-sources.jar",
+    "bytes": 17923,
+    "sha256": "2C231F1699EABA44F6FF27B4906DF51E5DF22EE169569F05891E34FE2B97E50E"
+  },
+  {
+    "path": "android-dependency-sources/androidx.slidingpanelayout/slidingpanelayout/1.2.0/slidingpanelayout-1.2.0.pom",
+    "storedPath": "android-dependency-sources/androidx.slidingpanelayout/slidingpanelayout/1.2.0/slidingpanelayout-1.2.0.pom",
+    "bytes": 2730,
+    "sha256": "283F5EAA6BECD4842C65176B6C9DE96BB284250FB9FBD78B4717FAC1AC5357EF"
+  },
+  {
+    "path": "android-dependency-sources/androidx.startup/startup-runtime/1.1.1/startup-runtime-1.1.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.startup/startup-runtime/1.1.1/startup-runtime-1.1.1-sources.jar",
+    "bytes": 6839,
+    "sha256": "53E03BC065B26B2227B5FDCA6776CBFA0D1A69AFB8F3C1E96C1743FA54320196"
+  },
+  {
+    "path": "android-dependency-sources/androidx.startup/startup-runtime/1.1.1/startup-runtime-1.1.1.pom",
+    "storedPath": "android-dependency-sources/androidx.startup/startup-runtime/1.1.1/startup-runtime-1.1.1.pom",
+    "bytes": 1949,
+    "sha256": "F4114B5C6859BB1BC3CAF281CB6D6F25998FA7F7292C64CEAEA74A93210E746B"
+  },
+  {
+    "path": "android-dependency-sources/androidx.tracing/tracing/1.0.0/tracing-1.0.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.tracing/tracing/1.0.0/tracing-1.0.0-sources.jar",
+    "bytes": 5581,
+    "sha256": "A593C115D145DF9CB9AE2226960DA1D53FF8590EFF1C285E7C9DE2B6727D3C21"
+  },
+  {
+    "path": "android-dependency-sources/androidx.tracing/tracing/1.0.0/tracing-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.tracing/tracing/1.0.0/tracing-1.0.0.pom",
+    "bytes": 1717,
+    "sha256": "CD0299A90D4720D78F1CFB5FF7505F4DBC1A70D05FE23FD9F4D4B77EA59CA05E"
+  },
+  {
+    "path": "android-dependency-sources/androidx.transition/transition/1.5.0/transition-1.5.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.transition/transition/1.5.0/transition-1.5.0-sources.jar",
+    "bytes": 131490,
+    "sha256": "90E0173D6B572F889B4E18718E6391A19B7911178AA9971A6EE0704D013DAA1A"
+  },
+  {
+    "path": "android-dependency-sources/androidx.transition/transition/1.5.0/transition-1.5.0.pom",
+    "storedPath": "android-dependency-sources/androidx.transition/transition/1.5.0/transition-1.5.0.pom",
+    "bytes": 2674,
+    "sha256": "DB6C7497F0F094FF2EECFB329E1700658F0D6C56FB088482F7E9B774DE9AD53F"
+  },
+  {
+    "path": "android-dependency-sources/androidx.vectordrawable/vectordrawable-animated/1.1.0/vectordrawable-animated-1.1.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.vectordrawable/vectordrawable-animated/1.1.0/vectordrawable-animated-1.1.0-sources.jar",
+    "bytes": 24016,
+    "sha256": "A3880C595965C55FD1BDEE0554B99C66E9C28D3311B7CE6242189FC1F554FCF1"
+  },
+  {
+    "path": "android-dependency-sources/androidx.vectordrawable/vectordrawable-animated/1.1.0/vectordrawable-animated-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.vectordrawable/vectordrawable-animated/1.1.0/vectordrawable-animated-1.1.0.pom",
+    "bytes": 1798,
+    "sha256": "276A20116B705FB75B9003EE9496C56F6FD3B32375FB232472811EBA60A040BD"
+  },
+  {
+    "path": "android-dependency-sources/androidx.vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0-sources.jar",
+    "bytes": 19475,
+    "sha256": "A1AE4FCCC4AB76A734C10F79ADF39262517658A79084BAD467C4C6F41C478187"
+  },
+  {
+    "path": "android-dependency-sources/androidx.vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0.pom",
+    "bytes": 1726,
+    "sha256": "5B0E2D5B2179E54804785CBC21CE5F473B5E1DDD55A57DA482E94DCD39492BB2"
+  },
+  {
+    "path": "android-dependency-sources/androidx.versionedparcelable/versionedparcelable/1.1.1/versionedparcelable-1.1.1-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.versionedparcelable/versionedparcelable/1.1.1/versionedparcelable-1.1.1-sources.jar",
+    "bytes": 21164,
+    "sha256": "135016AF471ACF4CD9583D36CEB779710C6B46812CCAAEF7C526D5D60EAE6B0B"
+  },
+  {
+    "path": "android-dependency-sources/androidx.versionedparcelable/versionedparcelable/1.1.1/versionedparcelable-1.1.1.pom",
+    "storedPath": "android-dependency-sources/androidx.versionedparcelable/versionedparcelable/1.1.1/versionedparcelable-1.1.1.pom",
+    "bytes": 1643,
+    "sha256": "5F51E65873CA612DE3838FA90D2EE95B8D040EFD31B9C390A19BF94D615CDB2F"
+  },
+  {
+    "path": "android-dependency-sources/androidx.viewpager/viewpager/1.0.0/viewpager-1.0.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.viewpager/viewpager/1.0.0/viewpager-1.0.0-sources.jar",
+    "bytes": 38376,
+    "sha256": "D4F9A044AB8C23392B12A3F2930D5FD6B5982421A746F2F2A812E9619431FBFD"
+  },
+  {
+    "path": "android-dependency-sources/androidx.viewpager/viewpager/1.0.0/viewpager-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.viewpager/viewpager/1.0.0/viewpager-1.0.0.pom",
+    "bytes": 1997,
+    "sha256": "1F72F836339D03C6EB013F65075E76CA87075A577578EB4F95F74A3A5D253128"
+  },
+  {
+    "path": "android-dependency-sources/androidx.viewpager2/viewpager2/1.1.0-beta02/viewpager2-1.1.0-beta02-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.viewpager2/viewpager2/1.1.0-beta02/viewpager2-1.1.0-beta02-sources.jar",
+    "bytes": 41955,
+    "sha256": "EABEBFC680FCE0DD5CE6B169835636287178FE9DC70F0CC82EF6CD325512BB73"
+  },
+  {
+    "path": "android-dependency-sources/androidx.viewpager2/viewpager2/1.1.0-beta02/viewpager2-1.1.0-beta02.pom",
+    "storedPath": "android-dependency-sources/androidx.viewpager2/viewpager2/1.1.0-beta02/viewpager2-1.1.0-beta02.pom",
+    "bytes": 2754,
+    "sha256": "1C2485AAB537E5E9CC6FBEB289F0422C0BA89B44A78D5EBCF2CDC27C51F0F503"
+  },
+  {
+    "path": "android-dependency-sources/androidx.window/window/1.0.0/window-1.0.0-sources.jar",
+    "storedPath": "android-dependency-sources/androidx.window/window/1.0.0/window-1.0.0-sources.jar",
+    "bytes": 66779,
+    "sha256": "9C68EA6F87898CDB1BD0DDF6ED7F20715F7FD54727749EF00F3E73B75F5EA66A"
+  },
+  {
+    "path": "android-dependency-sources/androidx.window/window/1.0.0/window-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.window/window/1.0.0/window-1.0.0.pom",
+    "bytes": 2575,
+    "sha256": "377FEE39DCF1AEFA6B2CAEECB3C9E33079010FD45DC070DBCBA57D54C5081F8A"
+  },
+  {
+    "path": "android-dependency-sources/com.android.tools/desugar_jdk_libs/2.1.5/desugar_jdk_libs-2.1.5.pom",
+    "storedPath": "android-dependency-sources/com.android.tools/desugar_jdk_libs/2.1.5/desugar_jdk_libs-2.1.5.pom",
+    "bytes": 1257,
+    "sha256": "2E195880F15D4545C8D60B2D2CAC52201CCF98DB7A29DB2577AD5826A930FCCA"
+  },
+  {
+    "path": "android-dependency-sources/com.android.tools/desugar_jdk_libs_configuration/2.1.5/desugar_jdk_libs_configuration-2.1.5.pom",
+    "storedPath": "android-dependency-sources/com.android.tools/desugar_jdk_libs_configuration/2.1.5/desugar_jdk_libs_configuration-2.1.5.pom",
+    "bytes": 1067,
+    "sha256": "B2099735B93905D6F01B52E136D1364280CD6A72C6E7EA3BE274A6C67703F2B4"
+  },
+  {
+    "path": "android-dependency-sources/com.github.ByteHamster/SearchPreference/v2.5.1/SearchPreference-v2.5.1-sources.jar",
+    "storedPath": "android-dependency-sources/com.github.ByteHamster/SearchPreference/v2.5.1/SearchPreference-v2.5.1-sources.jar",
+    "bytes": 18862,
+    "sha256": "3E1D5C22656F5E70B49A6FBACB4C72062E072096809BFFD429C55F8164DF4622"
+  },
+  {
+    "path": "android-dependency-sources/com.github.ByteHamster/SearchPreference/v2.5.1/SearchPreference-v2.5.1.pom",
+    "storedPath": "android-dependency-sources/com.github.ByteHamster/SearchPreference/v2.5.1/SearchPreference-v2.5.1.pom",
+    "bytes": 2223,
+    "sha256": "C3174126281F4898181E389773FD2203BD2D02D345DEBBDDBB16D6BA67A14B7C"
+  },
+  {
+    "path": "android-dependency-sources/com.github.PhilJay/MPAndroidChart/v3.1.0/MPAndroidChart-v3.1.0-sources.jar",
+    "storedPath": "android-dependency-sources/com.github.PhilJay/MPAndroidChart/v3.1.0/MPAndroidChart-v3.1.0-sources.jar",
+    "bytes": 250678,
+    "sha256": "A085962EECE513B35F54CDE7CF48039461FAEE21B3C556E7E4EDCC4F9C2425A1"
+  },
+  {
+    "path": "android-dependency-sources/com.github.PhilJay/MPAndroidChart/v3.1.0/MPAndroidChart-v3.1.0.pom",
+    "storedPath": "android-dependency-sources/com.github.PhilJay/MPAndroidChart/v3.1.0/MPAndroidChart-v3.1.0.pom",
+    "bytes": 811,
+    "sha256": "A738EAA8D368EAE78D8286BD5D440645BB21C8C9367FD5157B7652F7E5525C56"
+  },
+  {
+    "path": "android-dependency-sources/com.github.cgutman/ShieldControllerExtensions/1.0.1/ShieldControllerExtensions-1.0.1-sources.jar",
+    "storedPath": "android-dependency-sources/com.github.cgutman/ShieldControllerExtensions/1.0.1/ShieldControllerExtensions-1.0.1-sources.jar",
+    "bytes": 7338,
+    "sha256": "0DE9FF2FB8824BF6CDD4F0EBDDD69CE30E8D44D497C0CCC9B035419FA92111AC"
+  },
+  {
+    "path": "android-dependency-sources/com.github.cgutman/ShieldControllerExtensions/1.0.1/ShieldControllerExtensions-1.0.1.pom",
+    "storedPath": "android-dependency-sources/com.github.cgutman/ShieldControllerExtensions/1.0.1/ShieldControllerExtensions-1.0.1.pom",
+    "bytes": 1386,
+    "sha256": "3F8F41B745C89123A05C770BAF0F0E7830F2D82A2D79288EFD90D668BCB4236C"
+  },
+  {
+    "path": "android-dependency-sources/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0-sources.jar",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0-sources.jar",
+    "bytes": 456,
+    "sha256": "D5D12AF5B91047B36A58F6104AA6BC9C8B5F64AA624F913E41E5B236D40B802A"
+  },
+  {
+    "path": "android-dependency-sources/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0.pom",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0.pom",
+    "bytes": 1657,
+    "sha256": "35E60B36FDEDF1181BC983A3D04506FC5D51A833AB5CC65F0C4C06B7897BBB11"
+  },
+  {
+    "path": "android-dependency-sources/com.google.ai.edge.litert/litert-gpu-api/1.4.0/litert-gpu-api-1.4.0-sources.jar",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert-gpu-api/1.4.0/litert-gpu-api-1.4.0-sources.jar",
+    "bytes": 456,
+    "sha256": "B811531E3A8BD8029586F19BB3AD5B985216AE0E7D3135A5414FC3DB59288597"
+  },
+  {
+    "path": "android-dependency-sources/com.google.ai.edge.litert/litert-gpu-api/1.4.0/litert-gpu-api-1.4.0.pom",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert-gpu-api/1.4.0/litert-gpu-api-1.4.0.pom",
+    "bytes": 1661,
+    "sha256": "F51AE2FE0DAB348E843E81D08B96DDD956F79ADF08CB67FAD5D45E4CAD9A7847"
+  },
+  {
+    "path": "android-dependency-sources/com.google.ai.edge.litert/litert-gpu/1.4.0/litert-gpu-1.4.0-sources.jar",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert-gpu-api/1.4.0/litert-gpu-api-1.4.0-sources.jar",
+    "bytes": 456,
+    "sha256": "B811531E3A8BD8029586F19BB3AD5B985216AE0E7D3135A5414FC3DB59288597"
+  },
+  {
+    "path": "android-dependency-sources/com.google.ai.edge.litert/litert-gpu/1.4.0/litert-gpu-1.4.0.pom",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert-gpu/1.4.0/litert-gpu-1.4.0.pom",
+    "bytes": 1981,
+    "sha256": "024B56C10D856D6CDDA88C41C7692189AB4B1C97887AAB88CB4E97AFC0651DF8"
+  },
+  {
+    "path": "android-dependency-sources/com.google.ai.edge.litert/litert/1.4.0/litert-1.4.0-sources.jar",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0-sources.jar",
+    "bytes": 456,
+    "sha256": "D5D12AF5B91047B36A58F6104AA6BC9C8B5F64AA624F913E41E5B236D40B802A"
+  },
+  {
+    "path": "android-dependency-sources/com.google.ai.edge.litert/litert/1.4.0/litert-1.4.0.pom",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert/1.4.0/litert-1.4.0.pom",
+    "bytes": 1813,
+    "sha256": "286847001F785EF08039D6245EC750E7DDA473C6374B15B141B12F0C9A6B149B"
+  },
+  {
+    "path": "android-dependency-sources/com.google.android.material/material/1.13.0/material-1.13.0-sources.jar",
+    "storedPath": "android-dependency-sources/com.google.android.material/material/1.13.0/material-1.13.0-sources.jar",
+    "bytes": 1290700,
+    "sha256": "7B8A89701918165BFA45E9137E07192C02AC85A8D52BBF16B3DEC0C329A76045"
+  },
+  {
+    "path": "android-dependency-sources/com.google.android.material/material/1.13.0/material-1.13.0.pom",
+    "storedPath": "android-dependency-sources/com.google.android.material/material/1.13.0/material-1.13.0.pom",
+    "bytes": 5660,
+    "sha256": "9C1F3C4600295CC5D7F6D6886AEA16D497F13F9AF4675442AD271E7C2FEBF772"
+  },
+  {
+    "path": "android-dependency-sources/com.google.code.gson/gson/2.13.1/gson-2.13.1-sources.jar",
+    "storedPath": "android-dependency-sources/com.google.code.gson/gson/2.13.1/gson-2.13.1-sources.jar",
+    "bytes": 208313,
+    "sha256": "3317B8662EBC2B7A5FF34AF2214CD0F8D74D37A9FA9757BE494AD8824E96EEE7"
+  },
+  {
+    "path": "android-dependency-sources/com.google.code.gson/gson/2.13.1/gson-2.13.1.pom",
+    "storedPath": "android-dependency-sources/com.google.code.gson/gson/2.13.1/gson-2.13.1.pom",
+    "bytes": 13490,
+    "sha256": "C0F65722D75C0E58CD1835B3046046F606B5DA699904161F8DB6B78FEB9B401A"
+  },
+  {
+    "path": "android-dependency-sources/com.google.errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0-sources.jar",
+    "storedPath": "android-dependency-sources/com.google.errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0-sources.jar",
+    "bytes": 40096,
+    "sha256": "BC4E1535CF5A236CA2E2CFB66D76DA4CEA99AE52D7447F57A2B05943CAC21747"
+  },
+  {
+    "path": "android-dependency-sources/com.google.errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.pom",
+    "storedPath": "android-dependency-sources/com.google.errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.pom",
+    "bytes": 4252,
+    "sha256": "3007BEF8AFF3AE8EA12D81C3FEACB4F15979B2CF5C3E38FC9189A98DEA141167"
+  },
+  {
+    "path": "android-dependency-sources/com.google.guava/listenablefuture/1.0/listenablefuture-1.0-sources.jar",
+    "storedPath": "android-dependency-sources/com.google.guava/listenablefuture/1.0/listenablefuture-1.0-sources.jar",
+    "bytes": 4021,
+    "sha256": "3D1BD8D4A39B293612A40E547EC51D9CE34FA638D7ADEAE83871CDBE2923B161"
+  },
+  {
+    "path": "android-dependency-sources/com.google.guava/listenablefuture/1.0/listenablefuture-1.0.pom",
+    "storedPath": "android-dependency-sources/com.google.guava/listenablefuture/1.0/listenablefuture-1.0.pom",
+    "bytes": 2226,
+    "sha256": "53873CAF26BC1ED8A567EA6C939AB2AAA3F47A5E32D5CADE95DDF5080D23238A"
+  },
+  {
+    "path": "android-dependency-sources/com.squareup.okhttp3/okhttp/4.12.0/okhttp-4.12.0-sources.jar",
+    "storedPath": "android-dependency-sources/com.squareup.okhttp3/okhttp/4.12.0/okhttp-4.12.0-sources.jar",
+    "bytes": 368316,
+    "sha256": "D91A769A4140E542CDDBAC4E67FCF279299614E8BFD53BD23B85E60C2861341C"
+  },
+  {
+    "path": "android-dependency-sources/com.squareup.okhttp3/okhttp/4.12.0/okhttp-4.12.0.pom",
+    "storedPath": "android-dependency-sources/com.squareup.okhttp3/okhttp/4.12.0/okhttp-4.12.0.pom",
+    "bytes": 1816,
+    "sha256": "7C737040A9419522E7C50CC027416A70FE7C7629E52B219935ADE6B4119C7D38"
+  },
+  {
+    "path": "android-dependency-sources/com.squareup.okio/okio-jvm/3.6.0/okio-jvm-3.6.0-sources.jar",
+    "storedPath": "android-dependency-sources/com.squareup.okio/okio-jvm/3.6.0/okio-jvm-3.6.0-sources.jar",
+    "bytes": 168730,
+    "sha256": "870A42A7B468AF8FD24D67B7B62E5861AAB398C56F15A80B10642E7001564E2F"
+  },
+  {
+    "path": "android-dependency-sources/com.squareup.okio/okio-jvm/3.6.0/okio-jvm-3.6.0.pom",
+    "storedPath": "android-dependency-sources/com.squareup.okio/okio-jvm/3.6.0/okio-jvm-3.6.0.pom",
+    "bytes": 1897,
+    "sha256": "61B4D7C515A0894FFAD925FD7052620C1425A86433FD35113B5FAB0DE890A57F"
+  },
+  {
+    "path": "android-dependency-sources/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7-sources.jar",
+    "storedPath": "android-dependency-sources/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7-sources.jar",
+    "bytes": 550341,
+    "sha256": "8C48529D61778CEE7B44E1C5858C887ABED5395F5D13D6D52931D14AB22F017F"
+  },
+  {
+    "path": "android-dependency-sources/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7.pom",
+    "storedPath": "android-dependency-sources/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7.pom",
+    "bytes": 27535,
+    "sha256": "16BF63E86F5EA0404E89ED0F654B0915BEA0030129AEA9531D74369B71F764DA"
+  },
+  {
+    "path": "android-dependency-sources/org.apache.commons/commons-text/1.3/commons-text-1.3-sources.jar",
+    "storedPath": "android-dependency-sources/org.apache.commons/commons-text/1.3/commons-text-1.3-sources.jar",
+    "bytes": 213251,
+    "sha256": "E33C5C4DCB6169513F623AE9B0E40FA5A2790919E2F8871CE4BC5CF027651AE8"
+  },
+  {
+    "path": "android-dependency-sources/org.apache.commons/commons-text/1.3/commons-text-1.3.pom",
+    "storedPath": "android-dependency-sources/org.apache.commons/commons-text/1.3/commons-text-1.3.pom",
+    "bytes": 14261,
+    "sha256": "DEEB2BA9701E495DC31D32633EB86B94B24B0A96E0DC67FB87E7062F153027AA"
+  },
+  {
+    "path": "android-dependency-sources/org.bouncycastle/bcpkix-jdk18on/1.81/bcpkix-jdk18on-1.81-sources.jar",
+    "storedPath": "android-dependency-sources/org.bouncycastle/bcpkix-jdk18on/1.81/bcpkix-jdk18on-1.81-sources.jar",
+    "bytes": 744587,
+    "sha256": "5C202E64971912E363D241B3C4F8AB7D56519D30553E4E0AB0EE6CEAEAD5EEB0"
+  },
+  {
+    "path": "android-dependency-sources/org.bouncycastle/bcpkix-jdk18on/1.81/bcpkix-jdk18on-1.81.pom",
+    "storedPath": "android-dependency-sources/org.bouncycastle/bcpkix-jdk18on/1.81/bcpkix-jdk18on-1.81.pom",
+    "bytes": 1524,
+    "sha256": "826297085C365472F3D45CB1E2CC73CA5D38878BC84108F054597AFBF5903EE2"
+  },
+  {
+    "path": "android-dependency-sources/org.bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1-sources.jar",
+    "storedPath": "android-dependency-sources/org.bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1-sources.jar",
+    "bytes": 5081009,
+    "sha256": "2EDC5C84CADCE610D3C72BDF9738544752097EC17ED43F81E07E5E88317E4628"
+  },
+  {
+    "path": "android-dependency-sources/org.bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1.pom",
+    "storedPath": "android-dependency-sources/org.bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1.pom",
+    "bytes": 1164,
+    "sha256": "BEFDF45EB55E5B31539D69CAD34E0E0B82892DC6CDC8E13C980D0ECDF5B8E2B1"
+  },
+  {
+    "path": "android-dependency-sources/org.bouncycastle/bcutil-jdk18on/1.81.1/bcutil-jdk18on-1.81.1-sources.jar",
+    "storedPath": "android-dependency-sources/org.bouncycastle/bcutil-jdk18on/1.81.1/bcutil-jdk18on-1.81.1-sources.jar",
+    "bytes": 515879,
+    "sha256": "582CA39B2B4C55144413C2AF84760906224876AE46BC6DE3190BA207D1FD1F96"
+  },
+  {
+    "path": "android-dependency-sources/org.bouncycastle/bcutil-jdk18on/1.81.1/bcutil-jdk18on-1.81.1.pom",
+    "storedPath": "android-dependency-sources/org.bouncycastle/bcutil-jdk18on/1.81.1/bcutil-jdk18on-1.81.1.pom",
+    "bytes": 1348,
+    "sha256": "B82F1716BDC40657A69CD6ED07C6C0D5A27E4DCB5D7D855EFEF2512539DB3CBE"
+  },
+  {
+    "path": "android-dependency-sources/org.jcodec/jcodec/0.2.5/jcodec-0.2.5-sources.jar",
+    "storedPath": "android-dependency-sources/org.jcodec/jcodec/0.2.5/jcodec-0.2.5-sources.jar",
+    "bytes": 1246282,
+    "sha256": "9945EFA92E16B3FBE8EB8BF37F00BE53FA0ADB52D09AC978A0744CA2EF3697DB"
+  },
+  {
+    "path": "android-dependency-sources/org.jcodec/jcodec/0.2.5/jcodec-0.2.5.pom",
+    "storedPath": "android-dependency-sources/org.jcodec/jcodec/0.2.5/jcodec-0.2.5.pom",
+    "bytes": 4797,
+    "sha256": "30F132C786D253A720ACBC773FA800A4DFB23C8EB9BF7690BBBCC6AA33D4EE8A"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.9.10/kotlin-stdlib-jdk7-1.9.10-sources.jar",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.9.10/kotlin-stdlib-jdk7-1.9.10-sources.jar",
+    "bytes": 580,
+    "sha256": "EA10D3E5E6E695D8A5283CBF116321ACAE6BA42D0BDD3EDA50F7C34A26FA25CB"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.9.10/kotlin-stdlib-jdk7-1.9.10.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.9.10/kotlin-stdlib-jdk7-1.9.10.pom",
+    "bytes": 1389,
+    "sha256": "C7FA67C7961320B89D85A3CA59A2E18C2C65850845595DCAE4B46AF6945EDCD5"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.9.10/kotlin-stdlib-jdk8-1.9.10-sources.jar",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.9.10/kotlin-stdlib-jdk8-1.9.10-sources.jar",
+    "bytes": 556,
+    "sha256": "40E9A80F6B953D12389623760D438E69914098D0C4D7053F70F90533EC041259"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.9.10/kotlin-stdlib-jdk8-1.9.10.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.9.10/kotlin-stdlib-jdk8-1.9.10.pom",
+    "bytes": 1581,
+    "sha256": "5F4B94DD3065A7764C37FA15DE2AD6D81F40D59F8CB33F17D181C6384FB7A72E"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24-sources.jar",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24-sources.jar",
+    "bytes": 605562,
+    "sha256": "E749E084569407E41085F51AA917ECC1B8185730FF49EB01986062753C45CF53"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.pom",
+    "bytes": 2847,
+    "sha256": "B9CEAD4C222DEE90C74F6F013D316A9E50F811A0293313C3351AECB2F7CCED5F"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/kotlinx-coroutines-android-1.6.4-sources.jar",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/kotlinx-coroutines-android-1.6.4-sources.jar",
+    "bytes": 7565,
+    "sha256": "CC2C16ED89092C1CCB41DB572D9DA8E3B2F730FCE4BA66687D47F6DC5ED7EC99"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/kotlinx-coroutines-android-1.6.4.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/kotlinx-coroutines-android-1.6.4.pom",
+    "bytes": 2226,
+    "sha256": "49F7E32474D64396ECE2C014DBDC2204D665CFA8FD73E69A6A1B3FAB138198B7"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4-sources.jar",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4-sources.jar",
+    "bytes": 368181,
+    "sha256": "AA1335DDB56712A4ACCA7BB0A2DC0870818B508B6054FEB3BE253075B6A9ED03"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.pom",
+    "bytes": 2217,
+    "sha256": "09D960F85922903C2E52E126B17E9FA5020B425C469EC61944B3C01835547224"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains/annotations/13.0/annotations-13.0-sources.jar",
+    "storedPath": "android-dependency-sources/org.jetbrains/annotations/13.0/annotations-13.0-sources.jar",
+    "bytes": 17566,
+    "sha256": "42A5E144B8E81D50D6913D1007B695E62E614705268D8CF9F13DBDC478C2C68E"
+  },
+  {
+    "path": "android-dependency-sources/org.jetbrains/annotations/13.0/annotations-13.0.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains/annotations/13.0/annotations-13.0.pom",
+    "bytes": 4930,
+    "sha256": "965AEB2BEDFF369819BDDE1BF7A0B3B89B8247DD69C88B86375D76163BB8C397"
+  },
+  {
+    "path": "android-dependency-sources/org.jmdns/jmdns/3.6.2/jmdns-3.6.2-sources.jar",
+    "storedPath": "android-dependency-sources/org.jmdns/jmdns/3.6.2/jmdns-3.6.2-sources.jar",
+    "bytes": 140264,
+    "sha256": "F832DA0F930E01F6EC6E91055BA7314EE34300797D2DEDED0B5349228DC53DDD"
+  },
+  {
+    "path": "android-dependency-sources/org.jmdns/jmdns/3.6.2/jmdns-3.6.2.pom",
+    "storedPath": "android-dependency-sources/org.jmdns/jmdns/3.6.2/jmdns-3.6.2.pom",
+    "bytes": 9466,
+    "sha256": "37C9CEB90BB73F8F874B9F5A3978B63D6E10A2D8D6621F75AFD2D1E4985EDC1F"
+  },
+  {
+    "path": "android-dependency-sources/org.jspecify/jspecify/1.0.0/jspecify-1.0.0-sources.jar",
+    "storedPath": "android-dependency-sources/org.jspecify/jspecify/1.0.0/jspecify-1.0.0-sources.jar",
+    "bytes": 11996,
+    "sha256": "ADF0898191D55937FB3192BA971826F4F294292C4A960740F3C27310E7B70296"
+  },
+  {
+    "path": "android-dependency-sources/org.jspecify/jspecify/1.0.0/jspecify-1.0.0.pom",
+    "storedPath": "android-dependency-sources/org.jspecify/jspecify/1.0.0/jspecify-1.0.0.pom",
+    "bytes": 1511,
+    "sha256": "CDAB929A3B95211F43D2090C5E2D0DFE8465960E378BC32B35841DAB324433A6"
+  },
+  {
+    "path": "android-dependency-sources/org.opencv/opencv/4.12.0/opencv-4.12.0-sources.jar",
+    "storedPath": "android-dependency-sources/org.opencv/opencv/4.12.0/opencv-4.12.0-sources.jar",
+    "bytes": 486880,
+    "sha256": "54325BB2E690308A83A4898412928CAC08F2A1489E86CB1539710A233D95B29B"
+  },
+  {
+    "path": "android-dependency-sources/org.opencv/opencv/4.12.0/opencv-4.12.0.pom",
+    "storedPath": "android-dependency-sources/org.opencv/opencv/4.12.0/opencv-4.12.0.pom",
+    "bytes": 1795,
+    "sha256": "8DD51688225BAD81734200C5715A438E157EC9345DA541BAE415C4894518C7A2"
+  },
+  {
+    "path": "android-dependency-sources/org.slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7-sources.jar",
+    "storedPath": "android-dependency-sources/org.slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7-sources.jar",
+    "bytes": 71835,
+    "sha256": "2D6C1E7BC70FDBCE8E5C6FFAAAA6673EC1A05E1CF5B9D7AE3285BF19CC81A8F1"
+  },
+  {
+    "path": "android-dependency-sources/org.slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.pom",
+    "storedPath": "android-dependency-sources/org.slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.pom",
+    "bytes": 2698,
+    "sha256": "2D403CCF0E0A02D5C1A8667B0E2A33C8DFC6038AB287B9671DD681C205267981"
+  },
+  {
+    "path": "android-notices/MPAndroidChart-Apache-2.0.txt",
+    "storedPath": "android-notices/MPAndroidChart-Apache-2.0.txt",
+    "bytes": 11357,
+    "sha256": "B40930BBCF80744C86C46A12BC9DA056641D722716C378F5659B9E555EF833E1"
+  },
+  {
+    "path": "android-notices/MiDaS-MIT.txt",
+    "storedPath": "android-notices/MiDaS-MIT.txt",
+    "bytes": 1098,
+    "sha256": "99EC0B9F9BCC9234B649787B8F03B07DBECE95764B7879E1E72FB76CB0F96876"
+  },
+  {
+    "path": "android-notices/SLF4J-MIT.txt",
+    "storedPath": "android-notices/SLF4J-MIT.txt",
+    "bytes": 1154,
+    "sha256": "6FBE2EAF44B193B8A40EED9208F52848572224AD8D7672DD09418AA174847E73"
+  },
+  {
+    "path": "android-notices/androidx.activity/activity-ktx/1.8.0/activity-ktx-1.8.0.pom",
+    "storedPath": "android-dependency-sources/androidx.activity/activity-ktx/1.8.0/activity-ktx-1.8.0.pom",
+    "bytes": 3307,
+    "sha256": "C9439D18ECB1BADF5900325979B2A6587A40BED4F074DAB69CEBD00CFAE391B7"
+  },
+  {
+    "path": "android-notices/androidx.activity/activity/1.8.0/activity-1.8.0.pom",
+    "storedPath": "android-dependency-sources/androidx.activity/activity/1.8.0/activity-1.8.0.pom",
+    "bytes": 4131,
+    "sha256": "65131285F53CB042E8FFD189E705DAFC9B8AE6D62435E8778AC9AB3B8E3F756F"
+  },
+  {
+    "path": "android-notices/androidx.annotation/annotation-experimental/1.4.1/annotation-experimental-1.4.1.pom",
+    "storedPath": "android-dependency-sources/androidx.annotation/annotation-experimental/1.4.1/annotation-experimental-1.4.1.pom",
+    "bytes": 2031,
+    "sha256": "FE57B228417F4D7C677903DC61FB4A7CF993D603499DE26D8D8113E477CC4F1B"
+  },
+  {
+    "path": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar/META-INF/androidx/annotation/annotation/LICENSE.txt",
+    "storedPath": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar/META-INF/androidx/annotation/annotation/LICENSE.txt",
+    "bytes": 10175,
+    "sha256": "809FA1ED21450F59827D1E9AEC720BBC4B687434FA22283C6CB5DD82A47AB9C0"
+  },
+  {
+    "path": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1.jar/META-INF/androidx/annotation/annotation/LICENSE.txt",
+    "storedPath": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar/META-INF/androidx/annotation/annotation/LICENSE.txt",
+    "bytes": 10175,
+    "sha256": "809FA1ED21450F59827D1E9AEC720BBC4B687434FA22283C6CB5DD82A47AB9C0"
+  },
+  {
+    "path": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1.pom",
+    "storedPath": "android-dependency-sources/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1.pom",
+    "bytes": 1826,
+    "sha256": "89B99C218D60019316B50AAB79816707BC21696C896A030E1B1AE038961BCB8E"
+  },
+  {
+    "path": "android-notices/androidx.appcompat/appcompat-resources/1.7.1/appcompat-resources-1.7.1.pom",
+    "storedPath": "android-dependency-sources/androidx.appcompat/appcompat-resources/1.7.1/appcompat-resources-1.7.1.pom",
+    "bytes": 2993,
+    "sha256": "2FAF922E8C3D706F29D862B3FBB3AA1347705C21C6EAE18586D2BB1F7366EA01"
+  },
+  {
+    "path": "android-notices/androidx.appcompat/appcompat/1.7.1/appcompat-1.7.1.pom",
+    "storedPath": "android-dependency-sources/androidx.appcompat/appcompat/1.7.1/appcompat-1.7.1.pom",
+    "bytes": 5366,
+    "sha256": "1F79910CC20DE198ACF3867B1E93F9ED59DDB643585B2E9C28EE55518AF1BC00"
+  },
+  {
+    "path": "android-notices/androidx.arch.core/core-common/2.2.0/core-common-2.2.0.pom",
+    "storedPath": "android-dependency-sources/androidx.arch.core/core-common/2.2.0/core-common-2.2.0.pom",
+    "bytes": 1704,
+    "sha256": "1E17D4AF8D6425BE2A69F8AF4D654A87E0456259A9EEF1542869BCB023547E28"
+  },
+  {
+    "path": "android-notices/androidx.arch.core/core-runtime/2.2.0/core-runtime-2.2.0.pom",
+    "storedPath": "android-dependency-sources/androidx.arch.core/core-runtime/2.2.0/core-runtime-2.2.0.pom",
+    "bytes": 1920,
+    "sha256": "0F953706598140D9D8735CDD5AEB1FA35933F4E2F31C0BF3EB81A053A4C8C1A5"
+  },
+  {
+    "path": "android-notices/androidx.cardview/cardview/1.0.0/cardview-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.cardview/cardview/1.0.0/cardview-1.0.0.pom",
+    "bytes": 1349,
+    "sha256": "E64EF4E08B58358FE27B599E6FE80A1B153DB014C644BEEE630AB271061C3E6C"
+  },
+  {
+    "path": "android-notices/androidx.collection/collection-jvm/1.4.2/collection-jvm-1.4.2.pom",
+    "storedPath": "android-dependency-sources/androidx.collection/collection-jvm/1.4.2/collection-jvm-1.4.2.pom",
+    "bytes": 2414,
+    "sha256": "ADBB379E2B160F08E63E341AD04BBCC7033F6D868EC51AC11E4334642A4E39EF"
+  },
+  {
+    "path": "android-notices/androidx.collection/collection-ktx/1.4.2/collection-ktx-1.4.2.pom",
+    "storedPath": "android-dependency-sources/androidx.collection/collection-ktx/1.4.2/collection-ktx-1.4.2.pom",
+    "bytes": 2086,
+    "sha256": "4B2D5F929A0F04DDA7B50697A29F51343217E257F0798289712C137E0DC41556"
+  },
+  {
+    "path": "android-notices/androidx.concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.concurrent/concurrent-futures/1.1.0/concurrent-futures-1.1.0.pom",
+    "bytes": 1888,
+    "sha256": "748A34EB5D13D19D187ADECAEA82667FDED5F1B0B98A655E13ED2E4A8B3D8AE6"
+  },
+  {
+    "path": "android-notices/androidx.constraintlayout/constraintlayout-core/1.0.0/constraintlayout-core-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.constraintlayout/constraintlayout-core/1.0.0/constraintlayout-core-1.0.0.pom",
+    "bytes": 1434,
+    "sha256": "93E01622E90B5879BB950FEDB5C417C8024555FDC779481BCEE21A3B5977CB8C"
+  },
+  {
+    "path": "android-notices/androidx.constraintlayout/constraintlayout/2.1.0/constraintlayout-2.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.constraintlayout/constraintlayout/2.1.0/constraintlayout-2.1.0.pom",
+    "bytes": 2044,
+    "sha256": "25104AF5AE91EFE5FE6C9178EEE35F6B02E31349505738CCEB4DF2DF8385B585"
+  },
+  {
+    "path": "android-notices/androidx.coordinatorlayout/coordinatorlayout/1.1.0/coordinatorlayout-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.coordinatorlayout/coordinatorlayout/1.1.0/coordinatorlayout-1.1.0.pom",
+    "bytes": 2187,
+    "sha256": "A67C52C9DDFAFF2FFB2FD4B97CD94FA382E837EA8A5874D029E0A04FA63E5CAF"
+  },
+  {
+    "path": "android-notices/androidx.core/core-ktx/1.13.0/core-ktx-1.13.0.pom",
+    "storedPath": "android-dependency-sources/androidx.core/core-ktx/1.13.0/core-ktx-1.13.0.pom",
+    "bytes": 2450,
+    "sha256": "7CF6D4FB2F61AB4924232B92D6580B65DF9103C0437CDAE60CE14388C3731210"
+  },
+  {
+    "path": "android-notices/androidx.core/core/1.13.0/core-1.13.0.pom",
+    "storedPath": "android-dependency-sources/androidx.core/core/1.13.0/core-1.13.0.pom",
+    "bytes": 3654,
+    "sha256": "4502E4ED8B59122021AC9A1C1312E2326E4B0F43F7ECBBBC9B50EE77429574D4"
+  },
+  {
+    "path": "android-notices/androidx.cursoradapter/cursoradapter/1.0.0/cursoradapter-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.cursoradapter/cursoradapter/1.0.0/cursoradapter-1.0.0.pom",
+    "bytes": 1611,
+    "sha256": "62D95C89850AF21030B19F14D5F7ECD6D8BCC9A3014C59002EC99624CAAC8100"
+  },
+  {
+    "path": "android-notices/androidx.customview/customview-poolingcontainer/1.0.0/customview-poolingcontainer-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.customview/customview-poolingcontainer/1.0.0/customview-poolingcontainer-1.0.0.pom",
+    "bytes": 2068,
+    "sha256": "9FA62196C4C4E79B6A58DBB38A8C022BEF8DB21989D7DAE2DA0F6F5B66289A9C"
+  },
+  {
+    "path": "android-notices/androidx.customview/customview/1.1.0/customview-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.customview/customview/1.1.0/customview-1.1.0.pom",
+    "bytes": 1957,
+    "sha256": "C814D435F73E9E6D169886D0EB96B5C5361FEB48449FBBB315C908C03C588C94"
+  },
+  {
+    "path": "android-notices/androidx.drawerlayout/drawerlayout/1.1.1/drawerlayout-1.1.1.pom",
+    "storedPath": "android-dependency-sources/androidx.drawerlayout/drawerlayout/1.1.1/drawerlayout-1.1.1.pom",
+    "bytes": 1986,
+    "sha256": "C12FA903BA53005962A72405F37896608718F41673FC4A62312E4536132F6F45"
+  },
+  {
+    "path": "android-notices/androidx.dynamicanimation/dynamicanimation/1.1.0/dynamicanimation-1.1.0-sources.jar/META-INF/androidx/dynamicanimation/dynamicanimation/LICENSE.txt",
+    "storedPath": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar/META-INF/androidx/annotation/annotation/LICENSE.txt",
+    "bytes": 10175,
+    "sha256": "809FA1ED21450F59827D1E9AEC720BBC4B687434FA22283C6CB5DD82A47AB9C0"
+  },
+  {
+    "path": "android-notices/androidx.dynamicanimation/dynamicanimation/1.1.0/dynamicanimation-1.1.0.aar/META-INF/androidx/dynamicanimation/dynamicanimation/LICENSE.txt",
+    "storedPath": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar/META-INF/androidx/annotation/annotation/LICENSE.txt",
+    "bytes": 10175,
+    "sha256": "809FA1ED21450F59827D1E9AEC720BBC4B687434FA22283C6CB5DD82A47AB9C0"
+  },
+  {
+    "path": "android-notices/androidx.dynamicanimation/dynamicanimation/1.1.0/dynamicanimation-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.dynamicanimation/dynamicanimation/1.1.0/dynamicanimation-1.1.0.pom",
+    "bytes": 2620,
+    "sha256": "CAECB7B379585D8E4070EBAFAE3974A137C6689DE8077F9165935B3605784A93"
+  },
+  {
+    "path": "android-notices/androidx.emoji2/emoji2-views-helper/1.3.0/emoji2-views-helper-1.3.0.pom",
+    "storedPath": "android-dependency-sources/androidx.emoji2/emoji2-views-helper/1.3.0/emoji2-views-helper-1.3.0.pom",
+    "bytes": 3230,
+    "sha256": "2673B0F5859D4361A4E9A30457852A6745D0C3C85B5E0412070483F3963EF526"
+  },
+  {
+    "path": "android-notices/androidx.emoji2/emoji2/1.3.0/emoji2-1.3.0.pom",
+    "storedPath": "android-dependency-sources/androidx.emoji2/emoji2/1.3.0/emoji2-1.3.0.pom",
+    "bytes": 3702,
+    "sha256": "14EBBEA8234F013211965FDD08B42EE907CE0075AF321018C8C2865C2E5DB0EB"
+  },
+  {
+    "path": "android-notices/androidx.fragment/fragment-ktx/1.3.6/fragment-ktx-1.3.6.pom",
+    "storedPath": "android-dependency-sources/androidx.fragment/fragment-ktx/1.3.6/fragment-ktx-1.3.6.pom",
+    "bytes": 3204,
+    "sha256": "9AB733BF4C9139749C5375949AFCDB840E71D1DAF53B31056141CCBA05D793B4"
+  },
+  {
+    "path": "android-notices/androidx.fragment/fragment/1.5.4/fragment-1.5.4.pom",
+    "storedPath": "android-dependency-sources/androidx.fragment/fragment/1.5.4/fragment-1.5.4.pom",
+    "bytes": 4234,
+    "sha256": "F8CA1877C66E642C554907E1CE5A493A897CA29270CB19E2BB6D424BA43B6C98"
+  },
+  {
+    "path": "android-notices/androidx.graphics/graphics-shapes-android/1.0.1/graphics-shapes-android-1.0.1-sources.jar/META-INF/androidx/graphics/graphics-shapes/LICENSE.txt",
+    "storedPath": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar/META-INF/androidx/annotation/annotation/LICENSE.txt",
+    "bytes": 10175,
+    "sha256": "809FA1ED21450F59827D1E9AEC720BBC4B687434FA22283C6CB5DD82A47AB9C0"
+  },
+  {
+    "path": "android-notices/androidx.graphics/graphics-shapes-android/1.0.1/graphics-shapes-android-1.0.1.pom",
+    "storedPath": "android-dependency-sources/androidx.graphics/graphics-shapes-android/1.0.1/graphics-shapes-android-1.0.1.pom",
+    "bytes": 5079,
+    "sha256": "81DE7BCC8549084D104D5AF33B120F93E10D45424A15A454CFA1F24304AA4D11"
+  },
+  {
+    "path": "android-notices/androidx.graphics/graphics-shapes-android/1.0.1/graphics-shapes-release.aar/META-INF/androidx/graphics/graphics-shapes/LICENSE.txt",
+    "storedPath": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar/META-INF/androidx/annotation/annotation/LICENSE.txt",
+    "bytes": 10175,
+    "sha256": "809FA1ED21450F59827D1E9AEC720BBC4B687434FA22283C6CB5DD82A47AB9C0"
+  },
+  {
+    "path": "android-notices/androidx.interpolator/interpolator/1.0.0/interpolator-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.interpolator/interpolator/1.0.0/interpolator-1.0.0.pom",
+    "bytes": 1608,
+    "sha256": "0DDC07CC39699F48ECD9EC894B5830C0F09E22E82959294EDF37217224C88B7B"
+  },
+  {
+    "path": "android-notices/androidx.lifecycle/lifecycle-common/2.6.2/lifecycle-common-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-common/2.6.2/lifecycle-common-2.6.2.pom",
+    "bytes": 6581,
+    "sha256": "57304CDAC4DA289A6ECDD0738E16B1D8858F1EF8E9FABE2D65A963719FD81DBA"
+  },
+  {
+    "path": "android-notices/androidx.lifecycle/lifecycle-livedata-core-ktx/2.6.2/lifecycle-livedata-core-ktx-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata-core-ktx/2.6.2/lifecycle-livedata-core-ktx-2.6.2.pom",
+    "bytes": 6147,
+    "sha256": "4C44C39DFE366934081F62F27CD975FC514D1F03985F59A218E842674AA2825B"
+  },
+  {
+    "path": "android-notices/androidx.lifecycle/lifecycle-livedata-core/2.6.2/lifecycle-livedata-core-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata-core/2.6.2/lifecycle-livedata-core-2.6.2.pom",
+    "bytes": 6490,
+    "sha256": "1FAF8EBF53F28B2F0AE2C2095371AE67D0CA16AC328FCE7F163609A43214B5A4"
+  },
+  {
+    "path": "android-notices/androidx.lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-livedata/2.6.2/lifecycle-livedata-2.6.2.pom",
+    "bytes": 6510,
+    "sha256": "D7C9E019CF68779387481877878F6C499D1786B85F2C0480E9264DD5097C51C0"
+  },
+  {
+    "path": "android-notices/androidx.lifecycle/lifecycle-process/2.6.2/lifecycle-process-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-process/2.6.2/lifecycle-process-2.6.2.pom",
+    "bytes": 6503,
+    "sha256": "1F14396EC764B44D37C143ADACEE01E5B68CB5F35A21BCD9CDEBD7C83EA7D2E9"
+  },
+  {
+    "path": "android-notices/androidx.lifecycle/lifecycle-runtime-ktx/2.6.2/lifecycle-runtime-ktx-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-runtime-ktx/2.6.2/lifecycle-runtime-ktx-2.6.2.pom",
+    "bytes": 6523,
+    "sha256": "69C6CA9FF9FC9C6940BD55EF91C5B7B57DEABAB686D2C64A5AF85152F29904CD"
+  },
+  {
+    "path": "android-notices/androidx.lifecycle/lifecycle-runtime/2.6.2/lifecycle-runtime-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-runtime/2.6.2/lifecycle-runtime-2.6.2.pom",
+    "bytes": 6877,
+    "sha256": "8175255546E2A5F510865F84ACE680660954730240B1905D9175B4345BEDA977"
+  },
+  {
+    "path": "android-notices/androidx.lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel-ktx/2.6.2/lifecycle-viewmodel-ktx-2.6.2.pom",
+    "bytes": 6353,
+    "sha256": "1D336FBF91471FC497AFDF9D875989261D08B564D021EAF275944865F526DCEF"
+  },
+  {
+    "path": "android-notices/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.6.2/lifecycle-viewmodel-savedstate-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel-savedstate/2.6.2/lifecycle-viewmodel-savedstate-2.6.2.pom",
+    "bytes": 7139,
+    "sha256": "7FC854440644CF52C35894D58D946B208E42769E8517D71A5EFCBA17865432DE"
+  },
+  {
+    "path": "android-notices/androidx.lifecycle/lifecycle-viewmodel/2.6.2/lifecycle-viewmodel-2.6.2.pom",
+    "storedPath": "android-dependency-sources/androidx.lifecycle/lifecycle-viewmodel/2.6.2/lifecycle-viewmodel-2.6.2.pom",
+    "bytes": 6087,
+    "sha256": "A9FB0B39A8360BEEF7BDC8F3953D4D78F3D85304FC80ADAC3C8EAF530D758050"
+  },
+  {
+    "path": "android-notices/androidx.loader/loader/1.0.0/loader-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.loader/loader/1.0.0/loader-1.0.0.pom",
+    "bytes": 2207,
+    "sha256": "C978D550808B47434AA49A63164110A50B55B0BCC6160A93A2E37D5110DF8C5E"
+  },
+  {
+    "path": "android-notices/androidx.preference/preference/1.2.1/preference-1.2.1.pom",
+    "storedPath": "android-dependency-sources/androidx.preference/preference/1.2.1/preference-1.2.1.pom",
+    "bytes": 3151,
+    "sha256": "0157B052E8433A6BAB5DF7FFE4FBF01BD10A55F18F111B37FAF7DFAFE14C7923"
+  },
+  {
+    "path": "android-notices/androidx.profileinstaller/profileinstaller/1.3.1/profileinstaller-1.3.1.pom",
+    "storedPath": "android-dependency-sources/androidx.profileinstaller/profileinstaller/1.3.1/profileinstaller-1.3.1.pom",
+    "bytes": 2418,
+    "sha256": "08263EB70A814A7CB26D11D3A83825F84C29F3E4B59F9134724E0E02E2BBD768"
+  },
+  {
+    "path": "android-notices/androidx.recyclerview/recyclerview/1.4.0/recyclerview-1.4.0-sources.jar/META-INF/androidx/recyclerview/recyclerview/LICENSE.txt",
+    "storedPath": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar/META-INF/androidx/annotation/annotation/LICENSE.txt",
+    "bytes": 10175,
+    "sha256": "809FA1ED21450F59827D1E9AEC720BBC4B687434FA22283C6CB5DD82A47AB9C0"
+  },
+  {
+    "path": "android-notices/androidx.recyclerview/recyclerview/1.4.0/recyclerview-1.4.0.aar/META-INF/androidx/recyclerview/recyclerview/LICENSE.txt",
+    "storedPath": "android-notices/androidx.annotation/annotation-jvm/1.9.1/annotation-jvm-1.9.1-sources.jar/META-INF/androidx/annotation/annotation/LICENSE.txt",
+    "bytes": 10175,
+    "sha256": "809FA1ED21450F59827D1E9AEC720BBC4B687434FA22283C6CB5DD82A47AB9C0"
+  },
+  {
+    "path": "android-notices/androidx.recyclerview/recyclerview/1.4.0/recyclerview-1.4.0.pom",
+    "storedPath": "android-dependency-sources/androidx.recyclerview/recyclerview/1.4.0/recyclerview-1.4.0.pom",
+    "bytes": 3106,
+    "sha256": "D551D4343861814E05380F67F8C2E63140B84DF37435FFD2EB53528A96045D63"
+  },
+  {
+    "path": "android-notices/androidx.resourceinspection/resourceinspection-annotation/1.0.1/resourceinspection-annotation-1.0.1.pom",
+    "storedPath": "android-dependency-sources/androidx.resourceinspection/resourceinspection-annotation/1.0.1/resourceinspection-annotation-1.0.1.pom",
+    "bytes": 1808,
+    "sha256": "B8EB4938ED95D7FCDAA2712EBCA363E46A0F9228B8BE7F23154DEF56846815DC"
+  },
+  {
+    "path": "android-notices/androidx.savedstate/savedstate-ktx/1.2.1/savedstate-ktx-1.2.1.pom",
+    "storedPath": "android-dependency-sources/androidx.savedstate/savedstate-ktx/1.2.1/savedstate-ktx-1.2.1.pom",
+    "bytes": 2236,
+    "sha256": "D09553211F6703B19AEFD608D6007C77132D27A281556A8E689D92764EC27D3B"
+  },
+  {
+    "path": "android-notices/androidx.savedstate/savedstate/1.2.1/savedstate-1.2.1.pom",
+    "storedPath": "android-dependency-sources/androidx.savedstate/savedstate/1.2.1/savedstate-1.2.1.pom",
+    "bytes": 2549,
+    "sha256": "0D33BC285DF1E12F22780F1624A6F0B38EA2A6181B0955EC6641CAF620C50CBF"
+  },
+  {
+    "path": "android-notices/androidx.slidingpanelayout/slidingpanelayout/1.2.0/slidingpanelayout-1.2.0.pom",
+    "storedPath": "android-dependency-sources/androidx.slidingpanelayout/slidingpanelayout/1.2.0/slidingpanelayout-1.2.0.pom",
+    "bytes": 2730,
+    "sha256": "283F5EAA6BECD4842C65176B6C9DE96BB284250FB9FBD78B4717FAC1AC5357EF"
+  },
+  {
+    "path": "android-notices/androidx.startup/startup-runtime/1.1.1/startup-runtime-1.1.1.pom",
+    "storedPath": "android-dependency-sources/androidx.startup/startup-runtime/1.1.1/startup-runtime-1.1.1.pom",
+    "bytes": 1949,
+    "sha256": "F4114B5C6859BB1BC3CAF281CB6D6F25998FA7F7292C64CEAEA74A93210E746B"
+  },
+  {
+    "path": "android-notices/androidx.tracing/tracing/1.0.0/tracing-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.tracing/tracing/1.0.0/tracing-1.0.0.pom",
+    "bytes": 1717,
+    "sha256": "CD0299A90D4720D78F1CFB5FF7505F4DBC1A70D05FE23FD9F4D4B77EA59CA05E"
+  },
+  {
+    "path": "android-notices/androidx.transition/transition/1.5.0/transition-1.5.0.pom",
+    "storedPath": "android-dependency-sources/androidx.transition/transition/1.5.0/transition-1.5.0.pom",
+    "bytes": 2674,
+    "sha256": "DB6C7497F0F094FF2EECFB329E1700658F0D6C56FB088482F7E9B774DE9AD53F"
+  },
+  {
+    "path": "android-notices/androidx.vectordrawable/vectordrawable-animated/1.1.0/vectordrawable-animated-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.vectordrawable/vectordrawable-animated/1.1.0/vectordrawable-animated-1.1.0.pom",
+    "bytes": 1798,
+    "sha256": "276A20116B705FB75B9003EE9496C56F6FD3B32375FB232472811EBA60A040BD"
+  },
+  {
+    "path": "android-notices/androidx.vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0.pom",
+    "storedPath": "android-dependency-sources/androidx.vectordrawable/vectordrawable/1.1.0/vectordrawable-1.1.0.pom",
+    "bytes": 1726,
+    "sha256": "5B0E2D5B2179E54804785CBC21CE5F473B5E1DDD55A57DA482E94DCD39492BB2"
+  },
+  {
+    "path": "android-notices/androidx.versionedparcelable/versionedparcelable/1.1.1/versionedparcelable-1.1.1.pom",
+    "storedPath": "android-dependency-sources/androidx.versionedparcelable/versionedparcelable/1.1.1/versionedparcelable-1.1.1.pom",
+    "bytes": 1643,
+    "sha256": "5F51E65873CA612DE3838FA90D2EE95B8D040EFD31B9C390A19BF94D615CDB2F"
+  },
+  {
+    "path": "android-notices/androidx.viewpager/viewpager/1.0.0/viewpager-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.viewpager/viewpager/1.0.0/viewpager-1.0.0.pom",
+    "bytes": 1997,
+    "sha256": "1F72F836339D03C6EB013F65075E76CA87075A577578EB4F95F74A3A5D253128"
+  },
+  {
+    "path": "android-notices/androidx.viewpager2/viewpager2/1.1.0-beta02/viewpager2-1.1.0-beta02.pom",
+    "storedPath": "android-dependency-sources/androidx.viewpager2/viewpager2/1.1.0-beta02/viewpager2-1.1.0-beta02.pom",
+    "bytes": 2754,
+    "sha256": "1C2485AAB537E5E9CC6FBEB289F0422C0BA89B44A78D5EBCF2CDC27C51F0F503"
+  },
+  {
+    "path": "android-notices/androidx.window/window/1.0.0/window-1.0.0.pom",
+    "storedPath": "android-dependency-sources/androidx.window/window/1.0.0/window-1.0.0.pom",
+    "bytes": 2575,
+    "sha256": "377FEE39DCF1AEFA6B2CAEECB3C9E33079010FD45DC070DBCBA57D54C5081F8A"
+  },
+  {
+    "path": "android-notices/com.android.tools/desugar_jdk_libs/2.1.5/desugar_jdk_libs-2.1.5.pom",
+    "storedPath": "android-dependency-sources/com.android.tools/desugar_jdk_libs/2.1.5/desugar_jdk_libs-2.1.5.pom",
+    "bytes": 1257,
+    "sha256": "2E195880F15D4545C8D60B2D2CAC52201CCF98DB7A29DB2577AD5826A930FCCA"
+  },
+  {
+    "path": "android-notices/com.android.tools/desugar_jdk_libs_configuration/2.1.5/desugar_jdk_libs_configuration-2.1.5.jar/LICENSE",
+    "storedPath": "android-notices/com.android.tools/desugar_jdk_libs_configuration/2.1.5/desugar_jdk_libs_configuration-2.1.5.jar/LICENSE",
+    "bytes": 1491,
+    "sha256": "68834F116F8FF545F05D14753357B620748156D60EE36B26BEAB4CB3F317EFE4"
+  },
+  {
+    "path": "android-notices/com.android.tools/desugar_jdk_libs_configuration/2.1.5/desugar_jdk_libs_configuration-2.1.5.pom",
+    "storedPath": "android-dependency-sources/com.android.tools/desugar_jdk_libs_configuration/2.1.5/desugar_jdk_libs_configuration-2.1.5.pom",
+    "bytes": 1067,
+    "sha256": "B2099735B93905D6F01B52E136D1364280CD6A72C6E7EA3BE274A6C67703F2B4"
+  },
+  {
+    "path": "android-notices/com.github.ByteHamster/SearchPreference/v2.5.1/SearchPreference-v2.5.1.pom",
+    "storedPath": "android-dependency-sources/com.github.ByteHamster/SearchPreference/v2.5.1/SearchPreference-v2.5.1.pom",
+    "bytes": 2223,
+    "sha256": "C3174126281F4898181E389773FD2203BD2D02D345DEBBDDBB16D6BA67A14B7C"
+  },
+  {
+    "path": "android-notices/com.github.PhilJay/MPAndroidChart/v3.1.0/MPAndroidChart-v3.1.0.pom",
+    "storedPath": "android-dependency-sources/com.github.PhilJay/MPAndroidChart/v3.1.0/MPAndroidChart-v3.1.0.pom",
+    "bytes": 811,
+    "sha256": "A738EAA8D368EAE78D8286BD5D440645BB21C8C9367FD5157B7652F7E5525C56"
+  },
+  {
+    "path": "android-notices/com.github.cgutman/ShieldControllerExtensions/1.0.1/ShieldControllerExtensions-1.0.1.pom",
+    "storedPath": "android-dependency-sources/com.github.cgutman/ShieldControllerExtensions/1.0.1/ShieldControllerExtensions-1.0.1.pom",
+    "bytes": 1386,
+    "sha256": "3F8F41B745C89123A05C770BAF0F0E7830F2D82A2D79288EFD90D668BCB4236C"
+  },
+  {
+    "path": "android-notices/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0.aar/LICENSE",
+    "storedPath": "android-notices/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0.aar/LICENSE",
+    "bytes": 13575,
+    "sha256": "71C6915D04265772A0339BED47276942C678B45CC01534210EBE6984FD1AEC65"
+  },
+  {
+    "path": "android-notices/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0.pom",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0.pom",
+    "bytes": 1657,
+    "sha256": "35E60B36FDEDF1181BC983A3D04506FC5D51A833AB5CC65F0C4C06B7897BBB11"
+  },
+  {
+    "path": "android-notices/com.google.ai.edge.litert/litert-gpu-api/1.4.0/litert-gpu-api-1.4.0.aar/LICENSE",
+    "storedPath": "android-notices/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0.aar/LICENSE",
+    "bytes": 13575,
+    "sha256": "71C6915D04265772A0339BED47276942C678B45CC01534210EBE6984FD1AEC65"
+  },
+  {
+    "path": "android-notices/com.google.ai.edge.litert/litert-gpu-api/1.4.0/litert-gpu-api-1.4.0.pom",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert-gpu-api/1.4.0/litert-gpu-api-1.4.0.pom",
+    "bytes": 1661,
+    "sha256": "F51AE2FE0DAB348E843E81D08B96DDD956F79ADF08CB67FAD5D45E4CAD9A7847"
+  },
+  {
+    "path": "android-notices/com.google.ai.edge.litert/litert-gpu/1.4.0/litert-gpu-1.4.0.aar/LICENSE",
+    "storedPath": "android-notices/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0.aar/LICENSE",
+    "bytes": 13575,
+    "sha256": "71C6915D04265772A0339BED47276942C678B45CC01534210EBE6984FD1AEC65"
+  },
+  {
+    "path": "android-notices/com.google.ai.edge.litert/litert-gpu/1.4.0/litert-gpu-1.4.0.pom",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert-gpu/1.4.0/litert-gpu-1.4.0.pom",
+    "bytes": 1981,
+    "sha256": "024B56C10D856D6CDDA88C41C7692189AB4B1C97887AAB88CB4E97AFC0651DF8"
+  },
+  {
+    "path": "android-notices/com.google.ai.edge.litert/litert/1.4.0/litert-1.4.0.aar/LICENSE",
+    "storedPath": "android-notices/com.google.ai.edge.litert/litert-api/1.4.0/litert-api-1.4.0.aar/LICENSE",
+    "bytes": 13575,
+    "sha256": "71C6915D04265772A0339BED47276942C678B45CC01534210EBE6984FD1AEC65"
+  },
+  {
+    "path": "android-notices/com.google.ai.edge.litert/litert/1.4.0/litert-1.4.0.pom",
+    "storedPath": "android-dependency-sources/com.google.ai.edge.litert/litert/1.4.0/litert-1.4.0.pom",
+    "bytes": 1813,
+    "sha256": "286847001F785EF08039D6245EC750E7DDA473C6374B15B141B12F0C9A6B149B"
+  },
+  {
+    "path": "android-notices/com.google.android.material/material/1.13.0/material-1.13.0.pom",
+    "storedPath": "android-dependency-sources/com.google.android.material/material/1.13.0/material-1.13.0.pom",
+    "bytes": 5660,
+    "sha256": "9C1F3C4600295CC5D7F6D6886AEA16D497F13F9AF4675442AD271E7C2FEBF772"
+  },
+  {
+    "path": "android-notices/com.google.code.gson/gson/2.13.1/gson-2.13.1.pom",
+    "storedPath": "android-dependency-sources/com.google.code.gson/gson/2.13.1/gson-2.13.1.pom",
+    "bytes": 13490,
+    "sha256": "C0F65722D75C0E58CD1835B3046046F606B5DA699904161F8DB6B78FEB9B401A"
+  },
+  {
+    "path": "android-notices/com.google.errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.pom",
+    "storedPath": "android-dependency-sources/com.google.errorprone/error_prone_annotations/2.38.0/error_prone_annotations-2.38.0.pom",
+    "bytes": 4252,
+    "sha256": "3007BEF8AFF3AE8EA12D81C3FEACB4F15979B2CF5C3E38FC9189A98DEA141167"
+  },
+  {
+    "path": "android-notices/com.google.guava/listenablefuture/1.0/listenablefuture-1.0.pom",
+    "storedPath": "android-dependency-sources/com.google.guava/listenablefuture/1.0/listenablefuture-1.0.pom",
+    "bytes": 2226,
+    "sha256": "53873CAF26BC1ED8A567EA6C939AB2AAA3F47A5E32D5CADE95DDF5080D23238A"
+  },
+  {
+    "path": "android-notices/com.squareup.okhttp3/okhttp/4.12.0/okhttp-4.12.0-sources.jar/okhttp3/internal/publicsuffix/NOTICE",
+    "storedPath": "android-notices/com.squareup.okhttp3/okhttp/4.12.0/okhttp-4.12.0-sources.jar/okhttp3/internal/publicsuffix/NOTICE",
+    "bytes": 218,
+    "sha256": "8A9C58FBDED5EA3474315E4A9824CA8B1486098A1A03E897E0B19419D5E1876A"
+  },
+  {
+    "path": "android-notices/com.squareup.okhttp3/okhttp/4.12.0/okhttp-4.12.0.jar/okhttp3/internal/publicsuffix/NOTICE",
+    "storedPath": "android-notices/com.squareup.okhttp3/okhttp/4.12.0/okhttp-4.12.0-sources.jar/okhttp3/internal/publicsuffix/NOTICE",
+    "bytes": 218,
+    "sha256": "8A9C58FBDED5EA3474315E4A9824CA8B1486098A1A03E897E0B19419D5E1876A"
+  },
+  {
+    "path": "android-notices/com.squareup.okhttp3/okhttp/4.12.0/okhttp-4.12.0.pom",
+    "storedPath": "android-dependency-sources/com.squareup.okhttp3/okhttp/4.12.0/okhttp-4.12.0.pom",
+    "bytes": 1816,
+    "sha256": "7C737040A9419522E7C50CC027416A70FE7C7629E52B219935ADE6B4119C7D38"
+  },
+  {
+    "path": "android-notices/com.squareup.okio/okio-jvm/3.6.0/okio-jvm-3.6.0.pom",
+    "storedPath": "android-dependency-sources/com.squareup.okio/okio-jvm/3.6.0/okio-jvm-3.6.0.pom",
+    "bytes": 1897,
+    "sha256": "61B4D7C515A0894FFAD925FD7052620C1425A86433FD35113B5FAB0DE890A57F"
+  },
+  {
+    "path": "android-notices/desugar-configuration/LICENSE",
+    "storedPath": "android-notices/com.android.tools/desugar_jdk_libs_configuration/2.1.5/desugar_jdk_libs_configuration-2.1.5.jar/LICENSE",
+    "bytes": 1491,
+    "sha256": "68834F116F8FF545F05D14753357B620748156D60EE36B26BEAB4CB3F317EFE4"
+  },
+  {
+    "path": "android-notices/desugar-jdk-libs/LICENSE",
+    "storedPath": "android-notices/desugar-jdk-libs/LICENSE",
+    "bytes": 19274,
+    "sha256": "4B9ABEBC4338048A7C2DC184E9F800DEB349366BDF28EB23C2677A77B4C87726"
+  },
+  {
+    "path": "android-notices/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7-sources.jar/META-INF/LICENSE.txt",
+    "storedPath": "android-notices/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7-sources.jar/META-INF/LICENSE.txt",
+    "bytes": 11560,
+    "sha256": "3DDF9BE5C28FE27DAD143A5DC76EEA25222AD1DD68934A047064E56ED2FA40C5"
+  },
+  {
+    "path": "android-notices/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7-sources.jar/META-INF/NOTICE.txt",
+    "storedPath": "android-notices/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7-sources.jar/META-INF/NOTICE.txt",
+    "bytes": 309,
+    "sha256": "87957E8BF911F2C0D5531020828CB6DA296D9B93C4CE6B4FC9906C3F41E486E4"
+  },
+  {
+    "path": "android-notices/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7.jar/META-INF/LICENSE.txt",
+    "storedPath": "android-notices/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7-sources.jar/META-INF/LICENSE.txt",
+    "bytes": 11560,
+    "sha256": "3DDF9BE5C28FE27DAD143A5DC76EEA25222AD1DD68934A047064E56ED2FA40C5"
+  },
+  {
+    "path": "android-notices/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7.jar/META-INF/NOTICE.txt",
+    "storedPath": "android-notices/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7-sources.jar/META-INF/NOTICE.txt",
+    "bytes": 309,
+    "sha256": "87957E8BF911F2C0D5531020828CB6DA296D9B93C4CE6B4FC9906C3F41E486E4"
+  },
+  {
+    "path": "android-notices/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7.pom",
+    "storedPath": "android-dependency-sources/org.apache.commons/commons-lang3/3.7/commons-lang3-3.7.pom",
+    "bytes": 27535,
+    "sha256": "16BF63E86F5EA0404E89ED0F654B0915BEA0030129AEA9531D74369B71F764DA"
+  },
+  {
+    "path": "android-notices/org.apache.commons/commons-text/1.3/commons-text-1.3-sources.jar/META-INF/LICENSE.txt",
+    "storedPath": "android-notices/org.apache.commons/commons-text/1.3/commons-text-1.3-sources.jar/META-INF/LICENSE.txt",
+    "bytes": 11358,
+    "sha256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30"
+  },
+  {
+    "path": "android-notices/org.apache.commons/commons-text/1.3/commons-text-1.3-sources.jar/META-INF/NOTICE.txt",
+    "storedPath": "android-notices/org.apache.commons/commons-text/1.3/commons-text-1.3-sources.jar/META-INF/NOTICE.txt",
+    "bytes": 173,
+    "sha256": "C0CAB441E4FD16472A238BDA841E058CA3BAC608AEC298C16F87F80A3053A2D0"
+  },
+  {
+    "path": "android-notices/org.apache.commons/commons-text/1.3/commons-text-1.3.jar/META-INF/LICENSE.txt",
+    "storedPath": "android-notices/org.apache.commons/commons-text/1.3/commons-text-1.3-sources.jar/META-INF/LICENSE.txt",
+    "bytes": 11358,
+    "sha256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30"
+  },
+  {
+    "path": "android-notices/org.apache.commons/commons-text/1.3/commons-text-1.3.jar/META-INF/NOTICE.txt",
+    "storedPath": "android-notices/org.apache.commons/commons-text/1.3/commons-text-1.3-sources.jar/META-INF/NOTICE.txt",
+    "bytes": 173,
+    "sha256": "C0CAB441E4FD16472A238BDA841E058CA3BAC608AEC298C16F87F80A3053A2D0"
+  },
+  {
+    "path": "android-notices/org.apache.commons/commons-text/1.3/commons-text-1.3.pom",
+    "storedPath": "android-dependency-sources/org.apache.commons/commons-text/1.3/commons-text-1.3.pom",
+    "bytes": 14261,
+    "sha256": "DEEB2BA9701E495DC31D32633EB86B94B24B0A96E0DC67FB87E7062F153027AA"
+  },
+  {
+    "path": "android-notices/org.bouncycastle/bcpkix-jdk18on/1.81/bcpkix-jdk18on-1.81.pom",
+    "storedPath": "android-dependency-sources/org.bouncycastle/bcpkix-jdk18on/1.81/bcpkix-jdk18on-1.81.pom",
+    "bytes": 1524,
+    "sha256": "826297085C365472F3D45CB1E2CC73CA5D38878BC84108F054597AFBF5903EE2"
+  },
+  {
+    "path": "android-notices/org.bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1-sources.jar/org/bouncycastle/LICENSE.java",
+    "storedPath": "android-notices/org.bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1-sources.jar/org/bouncycastle/LICENSE.java",
+    "bytes": 3270,
+    "sha256": "4329601171AE4473F51E71C2E7F7AD873085EF3487828845CF760E39D6948715"
+  },
+  {
+    "path": "android-notices/org.bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1-sources.jar/org/bouncycastle/asn1/x509/NoticeReference.java",
+    "storedPath": "android-notices/org.bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1-sources.jar/org/bouncycastle/asn1/x509/NoticeReference.java",
+    "bytes": 4348,
+    "sha256": "A5E3B032B68FE11E514BE212A66321E8C8F07F4B8D44FDCEE9925B384E9CE841"
+  },
+  {
+    "path": "android-notices/org.bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1.pom",
+    "storedPath": "android-dependency-sources/org.bouncycastle/bcprov-jdk18on/1.81.1/bcprov-jdk18on-1.81.1.pom",
+    "bytes": 1164,
+    "sha256": "BEFDF45EB55E5B31539D69CAD34E0E0B82892DC6CDC8E13C980D0ECDF5B8E2B1"
+  },
+  {
+    "path": "android-notices/org.bouncycastle/bcutil-jdk18on/1.81.1/bcutil-jdk18on-1.81.1.pom",
+    "storedPath": "android-dependency-sources/org.bouncycastle/bcutil-jdk18on/1.81.1/bcutil-jdk18on-1.81.1.pom",
+    "bytes": 1348,
+    "sha256": "B82F1716BDC40657A69CD6ED07C6C0D5A27E4DCB5D7D855EFEF2512539DB3CBE"
+  },
+  {
+    "path": "android-notices/org.jcodec/jcodec/0.2.5/jcodec-0.2.5.pom",
+    "storedPath": "android-dependency-sources/org.jcodec/jcodec/0.2.5/jcodec-0.2.5.pom",
+    "bytes": 4797,
+    "sha256": "30F132C786D253A720ACBC773FA800A4DFB23C8EB9BF7690BBBCC6AA33D4EE8A"
+  },
+  {
+    "path": "android-notices/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.9.10/kotlin-stdlib-jdk7-1.9.10.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.9.10/kotlin-stdlib-jdk7-1.9.10.pom",
+    "bytes": 1389,
+    "sha256": "C7FA67C7961320B89D85A3CA59A2E18C2C65850845595DCAE4B46AF6945EDCD5"
+  },
+  {
+    "path": "android-notices/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.9.10/kotlin-stdlib-jdk8-1.9.10.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.9.10/kotlin-stdlib-jdk8-1.9.10.pom",
+    "bytes": 1581,
+    "sha256": "5F4B94DD3065A7764C37FA15DE2AD6D81F40D59F8CB33F17D181C6384FB7A72E"
+  },
+  {
+    "path": "android-notices/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlin/kotlin-stdlib/1.9.24/kotlin-stdlib-1.9.24.pom",
+    "bytes": 2847,
+    "sha256": "B9CEAD4C222DEE90C74F6F013D316A9E50F811A0293313C3351AECB2F7CCED5F"
+  },
+  {
+    "path": "android-notices/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/kotlinx-coroutines-android-1.6.4.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlinx/kotlinx-coroutines-android/1.6.4/kotlinx-coroutines-android-1.6.4.pom",
+    "bytes": 2226,
+    "sha256": "49F7E32474D64396ECE2C014DBDC2204D665CFA8FD73E69A6A1B3FAB138198B7"
+  },
+  {
+    "path": "android-notices/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains.kotlinx/kotlinx-coroutines-core-jvm/1.6.4/kotlinx-coroutines-core-jvm-1.6.4.pom",
+    "bytes": 2217,
+    "sha256": "09D960F85922903C2E52E126B17E9FA5020B425C469EC61944B3C01835547224"
+  },
+  {
+    "path": "android-notices/org.jetbrains/annotations/13.0/annotations-13.0.pom",
+    "storedPath": "android-dependency-sources/org.jetbrains/annotations/13.0/annotations-13.0.pom",
+    "bytes": 4930,
+    "sha256": "965AEB2BEDFF369819BDDE1BF7A0B3B89B8247DD69C88B86375D76163BB8C397"
+  },
+  {
+    "path": "android-notices/org.jmdns/jmdns/3.6.2/jmdns-3.6.2.pom",
+    "storedPath": "android-dependency-sources/org.jmdns/jmdns/3.6.2/jmdns-3.6.2.pom",
+    "bytes": 9466,
+    "sha256": "37C9CEB90BB73F8F874B9F5A3978B63D6E10A2D8D6621F75AFD2D1E4985EDC1F"
+  },
+  {
+    "path": "android-notices/org.jspecify/jspecify/1.0.0/jspecify-1.0.0.pom",
+    "storedPath": "android-dependency-sources/org.jspecify/jspecify/1.0.0/jspecify-1.0.0.pom",
+    "bytes": 1511,
+    "sha256": "CDAB929A3B95211F43D2090C5E2D0DFE8465960E378BC32B35841DAB324433A6"
+  },
+  {
+    "path": "android-notices/org.opencv/opencv/4.12.0/opencv-4.12.0.pom",
+    "storedPath": "android-dependency-sources/org.opencv/opencv/4.12.0/opencv-4.12.0.pom",
+    "bytes": 1795,
+    "sha256": "8DD51688225BAD81734200C5715A438E157EC9345DA541BAE415C4894518C7A2"
+  },
+  {
+    "path": "android-notices/org.slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7-sources.jar/META-INF/LICENSE.txt",
+    "storedPath": "android-notices/org.slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7-sources.jar/META-INF/LICENSE.txt",
+    "bytes": 1135,
+    "sha256": "226597F6ED1FF28910719F4C03264EC30D9C7E8636094649763C0166F6A02DCC"
+  },
+  {
+    "path": "android-notices/org.slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar/META-INF/LICENSE.txt",
+    "storedPath": "android-notices/org.slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7-sources.jar/META-INF/LICENSE.txt",
+    "bytes": 1135,
+    "sha256": "226597F6ED1FF28910719F4C03264EC30D9C7E8636094649763C0166F6A02DCC"
+  },
+  {
+    "path": "android-notices/org.slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.pom",
+    "storedPath": "android-dependency-sources/org.slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.pom",
+    "bytes": 2698,
+    "sha256": "2D403CCF0E0A02D5C1A8667B0E2A33C8DFC6038AB287B9671DD681C205267981"
+  },
+  {
+    "path": "downloads/AMF-16f7d73e0b45.tar.gz",
+    "storedPath": "downloads/AMF-16f7d73e0b45.tar.gz",
+    "bytes": 178978418,
+    "sha256": "4718172EA414A8219EF0E0C7863E127EE0EE6F3094662008F44BFD73AB77A23A"
+  },
+  {
+    "path": "downloads/FFmpeg-6400860b9d4b.tar.gz",
+    "storedPath": "downloads/FFmpeg-6400860b9d4b.tar.gz",
+    "bytes": 15918221,
+    "sha256": "504379E404CB0F4C5314D61444922BA5579180A4107981A4B3DAD47674A8F337"
+  },
+  {
+    "path": "downloads/SVT-AV1-efc905a7c2ed.tar.gz",
+    "storedPath": "downloads/SVT-AV1-efc905a7c2ed.tar.gz",
+    "bytes": 10906083,
+    "sha256": "50A897D58470B06F99B386DC691AB63E802962421E6ABDB75E4D234A3E73CD6A"
+  },
+  {
+    "path": "downloads/build-deps-c0a89a8.tar.gz",
+    "storedPath": "downloads/build-deps-c0a89a8.tar.gz",
+    "bytes": 28691,
+    "sha256": "374B8B47B8C3AF9678E30686EF4B577EAC748188B8A3A96632402D2F5434402A"
+  },
+  {
+    "path": "downloads/desugar-configuration-c331a820ddae7dea41f41a04375b784486d0f705.tar.gz",
+    "storedPath": "downloads/desugar-configuration-c331a820ddae7dea41f41a04375b784486d0f705.tar.gz",
+    "bytes": 7267003,
+    "sha256": "F4540AC6B6531AB5191DB221A0CB1A465F014F4FE3CD7EEE343142FD1FD047E6"
+  },
+  {
+    "path": "downloads/desugar-jdk-libs-73170c345e6a762fc6a1f0301bb15218850023ef.tar.gz",
+    "storedPath": "downloads/desugar-jdk-libs-73170c345e6a762fc6a1f0301bb15218850023ef.tar.gz",
+    "bytes": 18251068,
+    "sha256": "4CD2FAA88ECB2450522FD4F0DCD11D6DF878D7197B2276FB35532C50267F7A64"
+  },
+  {
+    "path": "downloads/make-4.4.1-3-x86_64.pkg.tar.zst",
+    "storedPath": "downloads/make-4.4.1-3-x86_64.pkg.tar.zst",
+    "bytes": 514683,
+    "sha256": "AF0BDBA17F06FE037F0194069ADAA31A8FE45F1A11381501896AEA1FAE37BD5D"
+  },
+  {
+    "path": "downloads/mingw-w64-ucrt-x86_64-nasm-3.02-1-any.pkg.tar.zst",
+    "storedPath": "downloads/mingw-w64-ucrt-x86_64-nasm-3.02-1-any.pkg.tar.zst",
+    "bytes": 452146,
+    "sha256": "E60CF678BEDEE3D6C9A9264F8DEC5897520E5FF7E3AE80C2B90B2628C5F51D58"
+  },
+  {
+    "path": "downloads/nv-codec-headers-22441b505d9d.tar.gz",
+    "storedPath": "downloads/nv-codec-headers-22441b505d9d.tar.gz",
+    "bytes": 77625,
+    "sha256": "DC28F764FBC72F6AC2A96FCACE252E6ECC84B308B8D4400820203CC901BAE596"
+  },
+  {
+    "path": "downloads/openssl-3.5.9.tar.gz",
+    "storedPath": "downloads/openssl-3.5.9.tar.gz",
+    "bytes": 53279637,
+    "sha256": "603F5602E2EEF00D77FBD429D34DCD5822BB301757A1BC9CDB24C670F1EB859A"
+  },
+  {
+    "path": "downloads/opus-1.6.1.tar.gz",
+    "storedPath": "downloads/opus-1.6.1.tar.gz",
+    "bytes": 10472813,
+    "sha256": "6FFCB593207BE92584DF15B32466ED64BBEC99109F007C82205F0194572411A1"
+  },
+  {
+    "path": "downloads/x264-b35605ace3dd.tar.gz",
+    "storedPath": "downloads/x264-b35605ace3dd.tar.gz",
+    "bytes": 1040327,
+    "sha256": "CD71A7515B0E9A012E1AC9B1F8415BEBCAF6FC97D4DB32286642AC4C0FBE24F9"
+  },
+  {
+    "path": "downloads/x265_git-1d117bed4747.tar.gz",
+    "storedPath": "downloads/x265_git-1d117bed4747.tar.gz",
+    "bytes": 1727480,
+    "sha256": "2FC3A96C2423DB101F29B714D3551F1126A35C94DC5F5160633C70D482D1AF6D"
+  },
+  {
+    "path": "gradle-wrapper.jar",
+    "storedPath": "gradle-wrapper.jar",
+    "bytes": 59821,
+    "sha256": "575098DB54A998FF1C6770B352C3B16766C09848BEE7555DAB09AFC34E8CF590"
+  },
+  {
+    "path": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/.SRCINFO",
+    "bytes": 522,
+    "sha256": "9706D6AA11E12BA36EBDC2D56F916AD1F2291821A81AD1D6743716AB4520502B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/MinHook-1.3.4.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/MinHook-1.3.4.tar.gz",
+    "bytes": 29674,
+    "sha256": "1AEBEAE4CA898330C507860ACC2FCA2EB335FE446A3A2B8444C3BF8B2660A14E"
+  },
+  {
+    "path": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/PKGBUILD",
+    "bytes": 1101,
+    "sha256": "DCBE0AD04CF5DDADDB8E9410A9A0331B168C398BE0ACD78C8843EBBEAE2CA146"
+  },
+  {
+    "path": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO.txt",
+    "bytes": 462,
+    "sha256": "9D6CCB39FEC152B9950434940524B133831B6A0282E3B31FACE6BB05D6985E84"
+  },
+  {
+    "path": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/.SRCINFO",
+    "bytes": 1684,
+    "sha256": "B4BCB0E399C14EB3A42811ECD9AD48FF510D68805B5F132D5567593735071B8C"
+  },
+  {
+    "path": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/0001-Fix-building-with-cmake-on-MINGW.patch",
+    "storedPath": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/0001-Fix-building-with-cmake-on-MINGW.patch",
+    "bytes": 756,
+    "sha256": "FB32EA452E02196552DAE815EB44BE5B18D849B0F6E24ECF5CF7BE15E42AD85B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/0002-No-Arch-in-library-name-tag.patch",
+    "storedPath": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/0002-No-Arch-in-library-name-tag.patch",
+    "bytes": 257,
+    "sha256": "EE45D199C0E578A8D670EE6C6FA46466A53A02690C94F9221C67BBC9AB3387DC"
+  },
+  {
+    "path": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/PKGBUILD",
+    "bytes": 4275,
+    "sha256": "E4EB71CD62D6AB8DC5B2BB689849353C36F2B208524898255240F937A008EA3F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/SOURCEINFO.txt",
+    "bytes": 1624,
+    "sha256": "C1C4A31399204C3D8CADE6BDBAC509A56B9B1749CD251286F81364C8B377A4DF"
+  },
+  {
+    "path": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/boost-1.92.0-cmake.tar.xz",
+    "storedPath": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/boost-1.92.0-cmake.tar.xz",
+    "bytes": 107878596,
+    "sha256": "9BED76128D4E46755DBE818487788C6FCEB6F72B378F4DAA49B7E1E600D9088D"
+  },
+  {
+    "path": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli/.SRCINFO",
+    "bytes": 649,
+    "sha256": "22B170B7B4FBF74AC9A40F02118E1D71F520880D97CBCF673250704D8ABFCAD5"
+  },
+  {
+    "path": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli/PKGBUILD",
+    "bytes": 3059,
+    "sha256": "894120DAC11E7FFFD72224148E22D424075FABF23A8CAFBF4F2C5390C73755C9"
+  },
+  {
+    "path": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli/SOURCEINFO.txt",
+    "bytes": 589,
+    "sha256": "F7CE0C16374D467F482941972F2524BA1DFBA6F99B6F636FC4F65AA1568ADFD3"
+  },
+  {
+    "path": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli/brotli-1.2.0.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli/brotli-1.2.0.tar.gz",
+    "bytes": 646315,
+    "sha256": "816C96E8E8F193B40151DAD7E8FF37B1221D019DBCB9C35CD3FADBFE6477DFEC"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/.SRCINFO",
+    "bytes": 862,
+    "sha256": "97665AA59852F8EA11ED6D5A68E1A11DC1D14688DBCE58711C431EA13A6652CC"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/PKGBUILD",
+    "bytes": 3857,
+    "sha256": "37FBC393B4F7FCFD34EDB546F8B87A530831312184EA73B5120121B3C87EFA5B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/SOURCEINFO.txt",
+    "bytes": 802,
+    "sha256": "2E6982CE9428AE7D2181B7152CC95EF4856570AED9CBF7C7A560CB1411B3828A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/HEAD",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/HEAD",
+    "bytes": 23,
+    "sha256": "F6F2B945F6C411B02BA3DA9C7ACE88DCF71B6AF65BA2E0D89AA82900042B5A10"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/config",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/config",
+    "bytes": 234,
+    "sha256": "B273FA95DFCA15588D6EC196D6324D153D98290C709D7B3A25CC44DF2ED5E0EB"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/description",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/description",
+    "bytes": 73,
+    "sha256": "85AB6C163D43A17EA9CF7788308BCA1466F1B0A8D1CC92E26E9BF63DA4062AEE"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/applypatch-msg.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/applypatch-msg.sample",
+    "bytes": 478,
+    "sha256": "0223497A0B8B033AA58A3A521B8629869386CF7AB0E2F101963D328AA62193F7"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/commit-msg.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/commit-msg.sample",
+    "bytes": 1972,
+    "sha256": "EFC1401B0E99D1FF51494D154D98B46C1E99059BCD8BF9F73CECDE19FD3EB23B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/fsmonitor-watchman.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/fsmonitor-watchman.sample",
+    "bytes": 4611,
+    "sha256": "9159720099AD5595B8E66645CBFD47763C1E920F46E0B50AE75E642BBEC57EF0"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/post-update.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/post-update.sample",
+    "bytes": 189,
+    "sha256": "81765AF2DAEF323061DCBC5E61FC16481CB74B3BAC9AD8A174B186523586F6C5"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-applypatch.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-applypatch.sample",
+    "bytes": 424,
+    "sha256": "E15C5B469EA3E0A695BEA6F2C82BCF8E62821074939DDD85B77E0007FF165475"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-commit.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-commit.sample",
+    "bytes": 1649,
+    "sha256": "57185B7B9F05239D7AB52DB045F5B89EB31348D7B2177EAB214F5EB872E1971B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-merge-commit.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-merge-commit.sample",
+    "bytes": 416,
+    "sha256": "D3825A70337940EBBD0A5C072984E13245920CDF8898BD225C8D27A6DFC9CB53"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-push.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-push.sample",
+    "bytes": 1374,
+    "sha256": "ECCE9C7E04D3F5DD9D8ADA81753DD1D549A9634B26770042B58DDA00217D086A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-rebase.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-rebase.sample",
+    "bytes": 4898,
+    "sha256": "4FEBCE867790052338076F4E66CC47EFB14879D18097D1D61C8261859EAAA7B3"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-receive.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-receive.sample",
+    "bytes": 544,
+    "sha256": "A4C3D2B9C7BB3FD8D1441C31BD4EE71A595D66B44FCF49DDB310252320169989"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/prepare-commit-msg.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/prepare-commit-msg.sample",
+    "bytes": 1492,
+    "sha256": "E9DDCAA4189FDDD25ED97FC8C789ECA7B6CA16390B2392AE3276F0C8E1AA4619"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/push-to-checkout.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/push-to-checkout.sample",
+    "bytes": 2783,
+    "sha256": "A53D0741798B287C6DD7AFA64AEE473F305E65D3F49463BB9D7408EC3B12BF5F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/sendemail-validate.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/sendemail-validate.sample",
+    "bytes": 2308,
+    "sha256": "44EBFC923DC5466BC009602F0ECF067B9C65459ABFE8868DDC49B78E6CED7A92"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/update.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/update.sample",
+    "bytes": 3650,
+    "sha256": "8D5F2FA83E103CF08B57EAA67521DF9194F45CBDBCB37DA52AD586097A14D106"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/info/exclude",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/info/exclude",
+    "bytes": 240,
+    "sha256": "6671FE83B7A07C8932EE89164D1F2793B2318058EB8B98DC5C06EE0A5A3B0EC1"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.idx",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.idx",
+    "bytes": 2774192,
+    "sha256": "6A21FDE517786BAC8B0C4DD31E4BDE3464008824FAE94AA5899DA356516D5E0F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.pack",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.pack",
+    "bytes": 55102456,
+    "sha256": "BE3B54BDA742D35F5081D850F3A821E87CECA60AA799C5413DCC726C8A743BFC"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.rev",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.rev",
+    "bytes": 396212,
+    "sha256": "8B28E59C24ABF56FA282E63F0C9FC9F593C2E21368AE49833AA424A7A578F8B0"
+  },
+  {
+    "path": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/packed-refs",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/packed-refs",
+    "bytes": 7465,
+    "sha256": "7E6C2B434FD22C556A2716922C75F199B035099BC15261CFB0975E3613CC5B49"
+  },
+  {
+    "path": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/.SRCINFO",
+    "bytes": 3917,
+    "sha256": "81D5E3981C8461192C78F8C85554E834BFB0DAE85337D66812537C90FC67865D"
+  },
+  {
+    "path": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/0001-Make-cURL-relocatable.patch",
+    "storedPath": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/0001-Make-cURL-relocatable.patch",
+    "bytes": 4020,
+    "sha256": "787AEED169B188C966C10C3BB8A55A12347B200EEBB877BBDDE7DBC21598204A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/PKGBUILD",
+    "bytes": 8006,
+    "sha256": "06B87103F789C1198E114248F13F23FC892CAC828891D9500A13DD81ACFB8D04"
+  },
+  {
+    "path": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/SOURCEINFO.txt",
+    "bytes": 3857,
+    "sha256": "7E9C18727F56306758189793105692F508B1E2D678648CD7BF78AE4F24BC5D2F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/curl-8.23.0.tar.xz",
+    "storedPath": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/curl-8.23.0.tar.xz",
+    "bytes": 2990916,
+    "sha256": "8DADD7D2536A314F982AD05A651B713F426BF7D02CC2C76CFFB9796F2218E6C5"
+  },
+  {
+    "path": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/curl-8.23.0.tar.xz.asc",
+    "storedPath": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/curl-8.23.0.tar.xz.asc",
+    "bytes": 488,
+    "sha256": "DBA1562FEC2BF698A1226054E6757940E4BF2AB87B3B222A5E7B91348F0B82E2"
+  },
+  {
+    "path": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/pathtools.c",
+    "storedPath": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/pathtools.c",
+    "bytes": 15662,
+    "sha256": "EBF471173F5EE9C4416C10A78760CEA8AFAF1A4A6E653977321E8547CE7BF3C0"
+  },
+  {
+    "path": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/pathtools.h",
+    "storedPath": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/pathtools.h",
+    "bytes": 2277,
+    "sha256": "1585EF1B61CF53A2CA27049C11D49E0834683DFDA798F03547761375DF482A90"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/.SRCINFO",
+    "bytes": 10268,
+    "sha256": "4D9B566461498752F800AFA8D70E870E7BA5A520660B5F383AA5FB42ABF1B4C0"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0002-i386-Keep-SEH-enabled-for-Win64-sysv_abi-functions.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0002-i386-Keep-SEH-enabled-for-Win64-sysv_abi-functions.patch",
+    "bytes": 3389,
+    "sha256": "FDF4E90A56FC195A8F9A969AF39335F158A29F29D42D33C00D908FC47CF5AD24"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0003-Windows-Follow-Posix-dir-exists-semantics-more-close.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0003-Windows-Follow-Posix-dir-exists-semantics-more-close.patch",
+    "bytes": 4138,
+    "sha256": "3FC35067823F87E48DD3BFD265E7593000DC110FA9AD5F16C81B896765FC897A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0007-Build-EXTRA_GNATTOOLS-for-Ada.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0007-Build-EXTRA_GNATTOOLS-for-Ada.patch",
+    "bytes": 1267,
+    "sha256": "90D5CB570083F9DEA4AC0F0F87E3E8D2230F5052E6F9B946061A20A224A9D195"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0008-Prettify-linking-no-undefined.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0008-Prettify-linking-no-undefined.patch",
+    "bytes": 1404,
+    "sha256": "8D2D53AE26B777D90189240494DE1B895C5EFA1EBDCDFBF5774F29FC742499D9"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0011-Enable-shared-gnat-implib.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0011-Enable-shared-gnat-implib.patch",
+    "bytes": 1474,
+    "sha256": "5EF4148ACC4A2B7ED648D4FE75FAB5545E84B4B93A12D6BA4E4EA6061DD635FA"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0012-Handle-spaces-in-path-for-default-manifest.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0012-Handle-spaces-in-path-for-default-manifest.patch",
+    "bytes": 2243,
+    "sha256": "E98805EAD7D78EE2A92F237894C4B2B7DDC1688E1B517D8C04F28D440202E40F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0014-gcc-9-branch-clone_function_name_1-Retain-any-stdcall-suffix.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0014-gcc-9-branch-clone_function_name_1-Retain-any-stdcall-suffix.patch",
+    "bytes": 3690,
+    "sha256": "FD9BDECB2BBC4796BBC9F00B708DAC42EF9E3464A06D6D27E5475CEE117DE5BE"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0020-libgomp-Don-t-hard-code-MS-printf-attributes.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0020-libgomp-Don-t-hard-code-MS-printf-attributes.patch",
+    "bytes": 1608,
+    "sha256": "AD1F7B5E7AFAAEC008B7CBD14FEEA13A10989FA91BDA7003AF72D457619BB199"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0021-bootstrap-gnattools-Pass-target-sysroot-flags-to-boo.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0021-bootstrap-gnattools-Pass-target-sysroot-flags-to-boo.patch",
+    "bytes": 5086,
+    "sha256": "76455C46EEC4DF95A80BBF7E5BCD2D165F300976C79C1BAF0BF7ED20F000CDD4"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0022-mingw-Remove-outdated-mingw-stuff.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0022-mingw-Remove-outdated-mingw-stuff.patch",
+    "bytes": 5553,
+    "sha256": "EC05F8F26698DAE4E0E0B58189CBF509185AD6D40B4950B33E28B638BF70C7AE"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0023-Ada-Don-t-export-gnat1-s-symbols-on-PE-hosts.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0023-Ada-Don-t-export-gnat1-s-symbols-on-PE-hosts.patch",
+    "bytes": 2560,
+    "sha256": "395DD4DF29C295F917AA4A136A0AA72AF34EEE6320ECC2D92EE717397578398D"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0024-libgfortran-Guard-locale-restoration-for-formatted-I0.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0024-libgfortran-Guard-locale-restoration-for-formatted-I0.patch",
+    "bytes": 2138,
+    "sha256": "976D14F803A211B19D9BF0169C08D4FDE05AF5CC18073F2FC8EFC9A3CB17890A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0025-libgfortran-Copy-LC_NUMERIC-string-for-formatted-IO.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0025-libgfortran-Copy-LC_NUMERIC-string-for-formatted-IO.patch",
+    "bytes": 1980,
+    "sha256": "F591EFC820A2C72AEFB83179F7CBD3F4654231B68700486BD04EE32E2DB61DE5"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0140-gcc-diagnostic-color.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0140-gcc-diagnostic-color.patch",
+    "bytes": 1275,
+    "sha256": "C94004DAB1685A6FA9124DE86AAE742DF4136A2E9FF5D5E1AD87ECDC35FBCEF4"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0200-add-m-no-align-vector-insn-option-for-i386.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/0200-add-m-no-align-vector-insn-option-for-i386.patch",
+    "bytes": 7553,
+    "sha256": "1484911163634F30324827619C873A6267B377ABBA0DF8BBEDFD128163C53EA4"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/2001-fix-building-rust-on-mingw-w64.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/2001-fix-building-rust-on-mingw-w64.patch",
+    "bytes": 343,
+    "sha256": "A411F59953553A3D01DD64C79B1ACBB91ECA092C4CB01BFD26B1C51C3EB798E8"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/3001-fix-codeview-crashes.patch",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/3001-fix-codeview-crashes.patch",
+    "bytes": 4097,
+    "sha256": "F21F9AB731E9CAB8FD4CA8C289497F859EF7004E6FA0507877DC2559AC2071C3"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/PKGBUILD",
+    "bytes": 26394,
+    "sha256": "1A123EA062E01BEB611C4375999492B0F41EF2D92D03E38CB29E7C23E855AD45"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/SOURCEINFO.txt",
+    "bytes": 10208,
+    "sha256": "41D4A699FE5EE0B8ED07ACD66D40C4DB197244A0CAAFF6185F661EC487936052"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/gcc-16.2.0.tar.xz",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/gcc-16.2.0.tar.xz",
+    "bytes": 107200820,
+    "sha256": "E6738E29597F733270731AA90600F37FFDC045079DFC27EC7E8192CC81085C3E"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/gcc-16.2.0.tar.xz.sig",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/gcc-16.2.0.tar.xz.sig",
+    "bytes": 310,
+    "sha256": "43D73202DCEDE15D31001C6BA0D28723014EF57E4DC815631772DAADBE23BCD2"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/gdbinit",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/gdbinit",
+    "bytes": 180,
+    "sha256": "BCE81824FC89E5E62CCA350DE4C17A27E27A18A1A1AD5CA3492AEC1FC5AF3234"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/.SRCINFO",
+    "bytes": 2530,
+    "sha256": "98322E06DC8D20C5CA2C433CED0EB0D6E80ADC838976F488DE1B8878781F3972"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/0005-Fix-compilation-of-pthread_sigmask.c.patch",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/0005-Fix-compilation-of-pthread_sigmask.c.patch",
+    "bytes": 453,
+    "sha256": "CBC2F533012D646521AFA20F8B256917FCE040741FF42CF53FB6DD7123A6670A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/0021-replace-fsync.patch",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/0021-replace-fsync.patch",
+    "bytes": 551,
+    "sha256": "380DBDDEE2F9E2FEEE4C1435E8A942B5D11D0125E60C3350EBB10C19B19011AA"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/0022-libasprintf.patch",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/0022-libasprintf.patch",
+    "bytes": 983,
+    "sha256": "C354F6A7021069C99B90F1C6D6F6A4CCF40A01E9F6742B866DF2B5A7286CB868"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/0024-disable-gnu-format.patch",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/0024-disable-gnu-format.patch",
+    "bytes": 704,
+    "sha256": "CE7CCF6DD3A492CAB322253CD67310899B546ECCC25821C25CBC047A1A984633"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/0030-fix-build-with-mingw-w64-clang.patch",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/0030-fix-build-with-mingw-w64-clang.patch",
+    "bytes": 367,
+    "sha256": "9B1B4F0C65B3BC1A3103C921A02C203CECF533D145F0BD90023406E760F81749"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/122-Use-LF-as-newline-in-envsubst.patch",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/122-Use-LF-as-newline-in-envsubst.patch",
+    "bytes": 863,
+    "sha256": "EC39103D851262C02C27B7038F3C538E03AFAEFC6AA050311D62519D192FF38C"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/PKGBUILD",
+    "bytes": 8260,
+    "sha256": "853EF80A50588F29355722A4513F24CF1A5F8DE06E0B5EE326580464DB539741"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/SOURCEINFO.txt",
+    "bytes": 2470,
+    "sha256": "D605B14B843A501F206A82626B4A65BDF7CF9D60E98EA494B541190047C1E560"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/gettext-1.0.tar.lz",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/gettext-1.0.tar.lz",
+    "bytes": 10261665,
+    "sha256": "D6342CBE1411A2FE7D139BFED80C2D63B1BABC92ACFEDC72501CC105184F61EE"
+  },
+  {
+    "path": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/gettext-1.0.tar.lz.sig",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/gettext-1.0.tar.lz.sig",
+    "bytes": 228,
+    "sha256": "39FAE6A06678F1D34F0AD8CCB670435B48AF3B062CF8F0B50D39159AC3D1C0B1"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/.SRCINFO",
+    "bytes": 996,
+    "sha256": "31084B8723C11323A2057E5374B90D02C3780425216CCCC61BE451A4BAFB15C0"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/0001-remove-ireference-boolean.patch",
+    "storedPath": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/0001-remove-ireference-boolean.patch",
+    "bytes": 7600,
+    "sha256": "CAD48616325B5E70AFA4E02424021FC8D54E17DCBF86EAE3DF990D3500080236"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/PKGBUILD",
+    "bytes": 3020,
+    "sha256": "A54230F1F04C609102CCBC7470455DACDDA41F76766E60F86F67CF77A98A6C0E"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/SOURCEINFO.txt",
+    "bytes": 936,
+    "sha256": "66F72B19E9F3DB66EDFE10360D27BEA3A7EBBFAA2D503F450CC9B171A22DBF7B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/HEAD",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/HEAD",
+    "bytes": 23,
+    "sha256": "F6F2B945F6C411B02BA3DA9C7ACE88DCF71B6AF65BA2E0D89AA82900042B5A10"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/config",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/config",
+    "bytes": 234,
+    "sha256": "B273FA95DFCA15588D6EC196D6324D153D98290C709D7B3A25CC44DF2ED5E0EB"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/description",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/description",
+    "bytes": 73,
+    "sha256": "85AB6C163D43A17EA9CF7788308BCA1466F1B0A8D1CC92E26E9BF63DA4062AEE"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/applypatch-msg.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/applypatch-msg.sample",
+    "bytes": 478,
+    "sha256": "0223497A0B8B033AA58A3A521B8629869386CF7AB0E2F101963D328AA62193F7"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/commit-msg.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/commit-msg.sample",
+    "bytes": 1972,
+    "sha256": "EFC1401B0E99D1FF51494D154D98B46C1E99059BCD8BF9F73CECDE19FD3EB23B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/fsmonitor-watchman.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/fsmonitor-watchman.sample",
+    "bytes": 4611,
+    "sha256": "9159720099AD5595B8E66645CBFD47763C1E920F46E0B50AE75E642BBEC57EF0"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/post-update.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/post-update.sample",
+    "bytes": 189,
+    "sha256": "81765AF2DAEF323061DCBC5E61FC16481CB74B3BAC9AD8A174B186523586F6C5"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/pre-applypatch.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-applypatch.sample",
+    "bytes": 424,
+    "sha256": "E15C5B469EA3E0A695BEA6F2C82BCF8E62821074939DDD85B77E0007FF165475"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/pre-commit.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-commit.sample",
+    "bytes": 1649,
+    "sha256": "57185B7B9F05239D7AB52DB045F5B89EB31348D7B2177EAB214F5EB872E1971B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/pre-merge-commit.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-merge-commit.sample",
+    "bytes": 416,
+    "sha256": "D3825A70337940EBBD0A5C072984E13245920CDF8898BD225C8D27A6DFC9CB53"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/pre-push.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-push.sample",
+    "bytes": 1374,
+    "sha256": "ECCE9C7E04D3F5DD9D8ADA81753DD1D549A9634B26770042B58DDA00217D086A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/pre-rebase.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-rebase.sample",
+    "bytes": 4898,
+    "sha256": "4FEBCE867790052338076F4E66CC47EFB14879D18097D1D61C8261859EAAA7B3"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/pre-receive.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-receive.sample",
+    "bytes": 544,
+    "sha256": "A4C3D2B9C7BB3FD8D1441C31BD4EE71A595D66B44FCF49DDB310252320169989"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/prepare-commit-msg.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/prepare-commit-msg.sample",
+    "bytes": 1492,
+    "sha256": "E9DDCAA4189FDDD25ED97FC8C789ECA7B6CA16390B2392AE3276F0C8E1AA4619"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/push-to-checkout.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/push-to-checkout.sample",
+    "bytes": 2783,
+    "sha256": "A53D0741798B287C6DD7AFA64AEE473F305E65D3F49463BB9D7408EC3B12BF5F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/sendemail-validate.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/sendemail-validate.sample",
+    "bytes": 2308,
+    "sha256": "44EBFC923DC5466BC009602F0ECF067B9C65459ABFE8868DDC49B78E6CED7A92"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/hooks/update.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/update.sample",
+    "bytes": 3650,
+    "sha256": "8D5F2FA83E103CF08B57EAA67521DF9194F45CBDBCB37DA52AD586097A14D106"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/info/exclude",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/info/exclude",
+    "bytes": 240,
+    "sha256": "6671FE83B7A07C8932EE89164D1F2793B2318058EB8B98DC5C06EE0A5A3B0EC1"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.idx",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.idx",
+    "bytes": 2774192,
+    "sha256": "6A21FDE517786BAC8B0C4DD31E4BDE3464008824FAE94AA5899DA356516D5E0F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.pack",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.pack",
+    "bytes": 55102456,
+    "sha256": "BE3B54BDA742D35F5081D850F3A821E87CECA60AA799C5413DCC726C8A743BFC"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.rev",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/objects/pack/pack-73f67195fe104f4302adda5fa1cfe49dc89a55cc.rev",
+    "bytes": 396212,
+    "sha256": "8B28E59C24ABF56FA282E63F0C9FC9F593C2E21368AE49833AA424A7A578F8B0"
+  },
+  {
+    "path": "source-recipes/mingw-w64-headers-14.0.0.r495.g63ebe6cdb-1/mingw-w64-headers/mingw-w64/packed-refs",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/packed-refs",
+    "bytes": 7465,
+    "sha256": "7E6C2B434FD22C556A2716922C75F199B035099BC15261CFB0975E3613CC5B49"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/.SRCINFO",
+    "bytes": 1940,
+    "sha256": "BA0DFAF8C6852293D21BE3886EDEED835DE9799905BBA48111217E507D9972CE"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0001-Add-visibility-attributes-for-MinGW.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0001-Add-visibility-attributes-for-MinGW.patch",
+    "bytes": 1891,
+    "sha256": "9398CA8E46E415DF9A1C64DFA2CCE3FD0FAA55DE3F2CB386EEB2DC886A0E6243"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0003-do-not-dllimport-inline-functions.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0003-do-not-dllimport-inline-functions.patch",
+    "bytes": 43517,
+    "sha256": "7FB999C249629DDB906933D394294137A9F2975D4778641BF4F20200DD791D6E"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0004-dllexport-a-missing-symbol.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0004-dllexport-a-missing-symbol.patch",
+    "bytes": 479,
+    "sha256": "3BFAC4BFD1A98BB5DA4207A7DC9885C40C481C30065911F8AF805CB172C4346B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0012-libprefix.mingw.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0012-libprefix.mingw.patch",
+    "bytes": 3958,
+    "sha256": "E7ECDAFE85E18A4A4B5F29BBFDE38776521A848E5B65089A2379B90E59F1592D"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0014-mingwize-pkgdata.mingw.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0014-mingwize-pkgdata.mingw.patch",
+    "bytes": 1761,
+    "sha256": "D9F5F756443D7D14175ACA06F4F1BB33237B58907E5DB7A6FF7E38D2C4EA7957"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0015-debug.mingw.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0015-debug.mingw.patch",
+    "bytes": 1682,
+    "sha256": "0181F9FF8B7DD0A423869D8772DA0A4FEEA64188347EB0DEE7EB059AEA92131C"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0016-icu-pkgconfig.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0016-icu-pkgconfig.patch",
+    "bytes": 2027,
+    "sha256": "87EBE8962F8C387714F2A697A664A0C49AED2331B988548069D0C211ABC36E05"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0021-mingw-static-libraries-without-s.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0021-mingw-static-libraries-without-s.patch",
+    "bytes": 840,
+    "sha256": "D8612F40B1731D9A94290AFCF80C896184A2F15B8AE8F23B3643C64F6CABFA2F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0023-fix-twice-include-platform_make_fragment.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/0023-fix-twice-include-platform_make_fragment.patch",
+    "bytes": 260,
+    "sha256": "12AA647CFF22A721BDBCEB4E77F5E66C6616E0E050DCA8172ACFD3365553FFF4"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/PKGBUILD",
+    "bytes": 3761,
+    "sha256": "52929939E457053452D531274A12F7FEFB3B2F87B4E656AD7954763855119DF2"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/SOURCEINFO.txt",
+    "bytes": 1880,
+    "sha256": "375A0E16A2269E9944F6821E9246AF33B6333D9D20E993B7FB6503C1AF18F09D"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/icu4c-78.3-sources.tgz",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/icu4c-78.3-sources.tgz",
+    "bytes": 27977255,
+    "sha256": "3A2E7A47604BA702F345878308E6FEFECA612EE895CF4A5F222E7955FABFE0C0"
+  },
+  {
+    "path": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/reverse_of_ICU-22610.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/reverse_of_ICU-22610.patch",
+    "bytes": 4271,
+    "sha256": "C515E2B37E230895080D36207DFE078EB638F974220BAA487EDE2593E820944C"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/.SRCINFO",
+    "bytes": 1638,
+    "sha256": "0A6EACA4B054FBC935D8F66E0432A5E29ABED083D25707D47938CA009947015F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/0002-fix-cr-for-awk-in-configure.all.patch",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/0002-fix-cr-for-awk-in-configure.all.patch",
+    "bytes": 415,
+    "sha256": "89D5C0F666E50A0186CFB142BA7B77E8FE1AC4D65BDFD9AE14AE8D2F0045A87C"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/0003-add-cp65001-as-utf8-alias.patch",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/0003-add-cp65001-as-utf8-alias.patch",
+    "bytes": 518,
+    "sha256": "CB2B1CCA44C9B9BD11C3BD33997C10D22DFF263542275324C88F34B59910EF87"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/PKGBUILD",
+    "bytes": 4906,
+    "sha256": "9B3212D06910560FB59E017E0B73A29D392A5082D3A47A613E61509BD7DCD475"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/SOURCEINFO.txt",
+    "bytes": 1578,
+    "sha256": "7C4F06FE146E95DF67E85A7FD32FF52BC6F0014897AD16EDCD129C0893C18BAF"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/fix-pointer-buf.patch",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/fix-pointer-buf.patch",
+    "bytes": 1664,
+    "sha256": "6B6E2393840F4DC6067587165777B1A07978F4C05247D7C1010A45AD251BBEEB"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/iconv.pc",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/iconv.pc",
+    "bytes": 240,
+    "sha256": "56E7EC406BF42EB66B1D972F20D229F7A76BA00C38C7B4403BF348875704BAAE"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/libiconv-1.19.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/libiconv-1.19.tar.gz",
+    "bytes": 5921103,
+    "sha256": "88DD96A8C0464ECA144FC791AE60CD31CD8EE78321E67397E25FC095C4A19AA6"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/libiconv-1.19.tar.gz.sig",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/libiconv-1.19.tar.gz.sig",
+    "bytes": 228,
+    "sha256": "30374A9CF2846418FC34977EB2B92094C3EDB76021D57DE541699E2B5E32DC9B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/.SRCINFO",
+    "bytes": 981,
+    "sha256": "0D4AFD632026E8886746CCAC585D8B5562869477C968553FEE8444451B3660F4"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/PKGBUILD",
+    "bytes": 2471,
+    "sha256": "CF6DEF1817D6A38B49C66FC4CBE36CD56705D9B8952DAE13E06D60DA703983FF"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/SOURCEINFO.txt",
+    "bytes": 921,
+    "sha256": "D5999F63DAC18425DFCE5623DE262C2A62364A99552FEEEC025EA3577621E982"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/libidn2-2.3.8.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/libidn2-2.3.8.tar.gz",
+    "bytes": 2234804,
+    "sha256": "F557911BF6171621E1F72FF35F5B1825BB35B52ED45325DCDEE931E5D3C0787A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/libidn2-2.3.8.tar.gz.sig",
+    "storedPath": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/libidn2-2.3.8.tar.gz.sig",
+    "bytes": 1223,
+    "sha256": "268AD6787ED902FBA2154BCD64347269AF6C4298BDEED8D7DB59DF7B65FD31F2"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl/.SRCINFO",
+    "bytes": 898,
+    "sha256": "C4520E93D2644781DFF596681008EC2BAA22CADC884FCF050E210F9FE798AFD1"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl/PKGBUILD",
+    "bytes": 2483,
+    "sha256": "84F8E19B62B3037D82F1F20BC041B9C1A83F8D82EEFFE158BBF3D7F50DF286C3"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl/SOURCEINFO.txt",
+    "bytes": 838,
+    "sha256": "A6C71C2AFF4CC4E092EDD8FA1BE1131A9CC26E21104946F4C7F3BC95B8975F21"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl/libpsl-0.21.5.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl/libpsl-0.21.5.tar.gz",
+    "bytes": 7624251,
+    "sha256": "1DCC9CEAE8B128F3C0B3F654DECD0E1E891AFC6FF81098F227EF260449DAE208"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/.SRCINFO",
+    "bytes": 1175,
+    "sha256": "E425AD209AB8BD8E333BA43E656CEA538872CAE11113FCF0A83FBB6790AEDDB7"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/PKGBUILD",
+    "bytes": 2608,
+    "sha256": "187EA90E8D6671C06397C56153BE4803B0FBECF17F8851C58B97047516B98910"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/SOURCEINFO.txt",
+    "bytes": 1115,
+    "sha256": "C73B0A2CA15FCD5E1CEFFCFE459EAD54EE40FC25EAE462D2ABF0F65A5532855E"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/libssh2-1.11.1.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/libssh2-1.11.1.tar.gz",
+    "bytes": 1093012,
+    "sha256": "D9EC76CBE34DB98EEC3539FE2C899D26B0C837CB3EB466A56B0F109CABF658F7"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/libssh2-1.11.1.tar.gz.asc",
+    "storedPath": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/libssh2-1.11.1.tar.gz.asc",
+    "bytes": 488,
+    "sha256": "F5618C9356A1D5A8059D6CF64015D86547F06B2B8B1F542FBBAF381A736C8075"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/.SRCINFO",
+    "bytes": 795,
+    "sha256": "49F69753E92D6DA3A1AAF0DA942E8F40F5FA226E9A3B5B4F4F2133FEB4419F3B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/PKGBUILD",
+    "bytes": 2120,
+    "sha256": "E612DB993601F9DAF35D4B527F93AAD9792B7886735113AC46393A77C17264D7"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/SOURCEINFO.txt",
+    "bytes": 735,
+    "sha256": "DB0F19651485AECADC7E60E1B5C128794181FFA4CFDC38DA9CE8A617EACDEB92"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/libunistring-1.4.2.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/libunistring-1.4.2.tar.gz",
+    "bytes": 5046603,
+    "sha256": "E82664B170064E62331962126B259D452D53B227BB4A93AB20040D846FEC01D8"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/libunistring-1.4.2.tar.gz.sig",
+    "storedPath": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/libunistring-1.4.2.tar.gz.sig",
+    "bytes": 228,
+    "sha256": "BDA305FEA27509F6A9A340C56DFD7E572C565AB3C5075519ADDDB2FBE55FF1F4"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/.SRCINFO",
+    "bytes": 1094,
+    "sha256": "CD29938F46B3399260A9998768677D5E472643A5BC5BD54E198DD7DA9CE887B6"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/0001-fix-pkgconfig-file.patch",
+    "storedPath": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/0001-fix-pkgconfig-file.patch",
+    "bytes": 329,
+    "sha256": "F23CA1CCBAA9C8E3FD4FD7320996E5BE2753CFCDC6E2A25F6DEF08222A5691CD"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/0002-cmake-install-vars-sh.patch",
+    "storedPath": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/0002-cmake-install-vars-sh.patch",
+    "bytes": 549,
+    "sha256": "B9B1CDCB531EE0B6B1D7EEF8BBFB1DF8CA1FFE72D76961050DD912203EDECC67"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/0003-cmake-fix-32bit-install.patch",
+    "storedPath": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/0003-cmake-fix-32bit-install.patch",
+    "bytes": 234,
+    "sha256": "21B2CC2F466F636940C8EF81F50DFF177AFF96D60DC4BC57F58C5C9F016502FE"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/PKGBUILD",
+    "bytes": 3015,
+    "sha256": "25E2112AC24D70E385BDF6B2152D3C362F0B590DCD1EFF6C07BED79C5BF5BE65"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/SOURCEINFO.txt",
+    "bytes": 1034,
+    "sha256": "5D355956851772F7283A084F27267C14F2B37C2174F87D828971869D3E46871D"
+  },
+  {
+    "path": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/libvpl-2.17.0.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/libvpl-2.17.0.tar.gz",
+    "bytes": 12974961,
+    "sha256": "4DE3E2FAF1E8307FB282E4A43F443191810F6A6B0A484FFFA7995BA1C814C6EC"
+  },
+  {
+    "path": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/.SRCINFO",
+    "bytes": 1110,
+    "sha256": "E35381A56918F4B5D3389E175682D87914CAA76B767615A446C60341BA2E3219"
+  },
+  {
+    "path": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/002-python-module-build.patch",
+    "storedPath": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/002-python-module-build.patch",
+    "bytes": 867,
+    "sha256": "79857B7808ECE306CFAE0BFB6C072A0022AABA1D8624273D51ED4E4FC741509C"
+  },
+  {
+    "path": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/PKGBUILD",
+    "bytes": 2871,
+    "sha256": "E51F25B5D8C3AA287A3CE7613A14EDB763B4A86163E8176A68C72743ED584DFB"
+  },
+  {
+    "path": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/SOURCEINFO.txt",
+    "bytes": 1050,
+    "sha256": "C570466FC8C345031D49C99AC16D10253948B5C42B99AF0BBC5872D4907878AC"
+  },
+  {
+    "path": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/miniupnpc-2.3.3.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/miniupnpc-2.3.3.tar.gz",
+    "bytes": 141281,
+    "sha256": "D52A0AFA614AD6C088CC9DDFF1AE7D29C8C595AC5FDD321170A05F41E634BD1A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/miniupnpc-2.3.3.tar.gz.sig",
+    "storedPath": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/miniupnpc-2.3.3.tar.gz.sig",
+    "bytes": 543,
+    "sha256": "7B4BD557BA44DED425E3DBE8DCFAD37828041A4F622909EC881E1D282D933E77"
+  },
+  {
+    "path": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus/.SRCINFO",
+    "bytes": 937,
+    "sha256": "BA36A7472937BA590E0A31BC9E15D0474F2E084BC988448E58F2B744CE8ED72F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus/001-aarch64-features.patch",
+    "storedPath": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus/001-aarch64-features.patch",
+    "bytes": 1101,
+    "sha256": "5FB0F28264492D6512ACB6EEC7B5E147C922751F6DF30D1317114048ECA01516"
+  },
+  {
+    "path": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus/PKGBUILD",
+    "bytes": 2900,
+    "sha256": "1BF6A9F3BD44097537BB97FB22F4089EB4844921DCA0C9EB11E0B2C63F313E6C"
+  },
+  {
+    "path": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus/SOURCEINFO.txt",
+    "bytes": 877,
+    "sha256": "5814AEC590E186F2011E4A27E4A3939D8D9E5AAD96A4F68EE0DA50BBD3CC9A09"
+  },
+  {
+    "path": "source-recipes/mingw-w64-opus-1.6.1-2/mingw-w64-opus/opus-1.6.1.tar.gz",
+    "storedPath": "downloads/opus-1.6.1.tar.gz",
+    "bytes": 10472813,
+    "sha256": "6FFCB593207BE92584DF15B32466ED64BBEC99109F007C82205F0194572411A1"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/.SRCINFO",
+    "bytes": 1384,
+    "sha256": "03A4EDA711FDCDD84A58FD5921A55121B9C6BA7EE852C2E3E151E344910F52BA"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/0001-Define-__-de-register_frame_info-in-fake-libgcc_s.patch",
+    "storedPath": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/0001-Define-__-de-register_frame_info-in-fake-libgcc_s.patch",
+    "bytes": 1789,
+    "sha256": "2E779BCC60A1422B23E0CFDB5C0F6851F2382592BB4675D08A6BDEF78D5E5C10"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/PKGBUILD",
+    "bytes": 4478,
+    "sha256": "1ED2E13D4E8B360C72BE2063C1045B8C4F3A0BC4B35DEC8B6932581D2E8AD2E8"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/SOURCEINFO.txt",
+    "bytes": 1324,
+    "sha256": "1AA0FDFBEE9DFB12341E988EFA219BC2894F84ABF5FFA63C2B0B5AA9A83739C3"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/HEAD",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/HEAD",
+    "bytes": 23,
+    "sha256": "F6F2B945F6C411B02BA3DA9C7ACE88DCF71B6AF65BA2E0D89AA82900042B5A10"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/config",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/config",
+    "bytes": 234,
+    "sha256": "B273FA95DFCA15588D6EC196D6324D153D98290C709D7B3A25CC44DF2ED5E0EB"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/description",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/description",
+    "bytes": 73,
+    "sha256": "85AB6C163D43A17EA9CF7788308BCA1466F1B0A8D1CC92E26E9BF63DA4062AEE"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/applypatch-msg.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/applypatch-msg.sample",
+    "bytes": 478,
+    "sha256": "0223497A0B8B033AA58A3A521B8629869386CF7AB0E2F101963D328AA62193F7"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/commit-msg.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/commit-msg.sample",
+    "bytes": 1972,
+    "sha256": "EFC1401B0E99D1FF51494D154D98B46C1E99059BCD8BF9F73CECDE19FD3EB23B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/fsmonitor-watchman.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/fsmonitor-watchman.sample",
+    "bytes": 4611,
+    "sha256": "9159720099AD5595B8E66645CBFD47763C1E920F46E0B50AE75E642BBEC57EF0"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/post-update.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/post-update.sample",
+    "bytes": 189,
+    "sha256": "81765AF2DAEF323061DCBC5E61FC16481CB74B3BAC9AD8A174B186523586F6C5"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/pre-applypatch.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-applypatch.sample",
+    "bytes": 424,
+    "sha256": "E15C5B469EA3E0A695BEA6F2C82BCF8E62821074939DDD85B77E0007FF165475"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/pre-commit.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-commit.sample",
+    "bytes": 1649,
+    "sha256": "57185B7B9F05239D7AB52DB045F5B89EB31348D7B2177EAB214F5EB872E1971B"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/pre-merge-commit.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-merge-commit.sample",
+    "bytes": 416,
+    "sha256": "D3825A70337940EBBD0A5C072984E13245920CDF8898BD225C8D27A6DFC9CB53"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/pre-push.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-push.sample",
+    "bytes": 1374,
+    "sha256": "ECCE9C7E04D3F5DD9D8ADA81753DD1D549A9634B26770042B58DDA00217D086A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/pre-rebase.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-rebase.sample",
+    "bytes": 4898,
+    "sha256": "4FEBCE867790052338076F4E66CC47EFB14879D18097D1D61C8261859EAAA7B3"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/pre-receive.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/pre-receive.sample",
+    "bytes": 544,
+    "sha256": "A4C3D2B9C7BB3FD8D1441C31BD4EE71A595D66B44FCF49DDB310252320169989"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/prepare-commit-msg.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/prepare-commit-msg.sample",
+    "bytes": 1492,
+    "sha256": "E9DDCAA4189FDDD25ED97FC8C789ECA7B6CA16390B2392AE3276F0C8E1AA4619"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/push-to-checkout.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/push-to-checkout.sample",
+    "bytes": 2783,
+    "sha256": "A53D0741798B287C6DD7AFA64AEE473F305E65D3F49463BB9D7408EC3B12BF5F"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/sendemail-validate.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/sendemail-validate.sample",
+    "bytes": 2308,
+    "sha256": "44EBFC923DC5466BC009602F0ECF067B9C65459ABFE8868DDC49B78E6CED7A92"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/hooks/update.sample",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/hooks/update.sample",
+    "bytes": 3650,
+    "sha256": "8D5F2FA83E103CF08B57EAA67521DF9194F45CBDBCB37DA52AD586097A14D106"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/info/exclude",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/info/exclude",
+    "bytes": 240,
+    "sha256": "6671FE83B7A07C8932EE89164D1F2793B2318058EB8B98DC5C06EE0A5A3B0EC1"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/objects/pack/pack-11ec23bebf5e9473aeb27139f9cdc9652e93f0b3.idx",
+    "storedPath": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/objects/pack/pack-11ec23bebf5e9473aeb27139f9cdc9652e93f0b3.idx",
+    "bytes": 2774192,
+    "sha256": "4CB798BE1FF7E5954D9B3FE2CB4F72C68381B9BEDF20DB5F394F86FD31CD17E2"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/objects/pack/pack-11ec23bebf5e9473aeb27139f9cdc9652e93f0b3.pack",
+    "storedPath": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/objects/pack/pack-11ec23bebf5e9473aeb27139f9cdc9652e93f0b3.pack",
+    "bytes": 55103632,
+    "sha256": "D2FCCE2D530F55D3175C6E63E05984261A938D87292E46F95B9E0AAED71528E5"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/objects/pack/pack-11ec23bebf5e9473aeb27139f9cdc9652e93f0b3.rev",
+    "storedPath": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/objects/pack/pack-11ec23bebf5e9473aeb27139f9cdc9652e93f0b3.rev",
+    "bytes": 396212,
+    "sha256": "793B203D51EABC928A943B8AADD59CDDD61EB142133C7A07568D092C1CC5D45A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-winpthreads-14.0.0.r495.g63ebe6cdb-1/mingw-w64-winpthreads/mingw-w64/packed-refs",
+    "storedPath": "source-recipes/mingw-w64-crt-14.0.0.r495.g63ebe6cdb-1/mingw-w64-crt/mingw-w64/packed-refs",
+    "bytes": 7465,
+    "sha256": "7E6C2B434FD22C556A2716922C75F199B035099BC15261CFB0975E3613CC5B49"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/.SRCINFO",
+    "bytes": 1915,
+    "sha256": "904202054EE9C88F991B3FF107E3F225FE87310253575273D459DBB4801709A3"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/01-zlib-1.2.11-1-buildsys.mingw.patch",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/01-zlib-1.2.11-1-buildsys.mingw.patch",
+    "bytes": 9316,
+    "sha256": "B58B353D976D6FDD9A5094E60FA39439D4F14E9BF8BE4A8BD475F2CD47F10226"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/03-dont-put-sodir-into-L.mingw.patch",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/03-dont-put-sodir-into-L.mingw.patch",
+    "bytes": 172,
+    "sha256": "7287D12DB57DCF0F66964C861100BF06EBE1DDCB243E7EE0773FCAB1B2935596"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/04-fix-largefile-support.patch",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/04-fix-largefile-support.patch",
+    "bytes": 756,
+    "sha256": "8E1CDF8EDFC6AC08B0E660CA42A977942A88FAB3FF59C01C87BA96500E2C3E63"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/07-Add-no-undefined-to-link-to-enable-build-shared-vers.patch",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/07-Add-no-undefined-to-link-to-enable-build-shared-vers.patch",
+    "bytes": 722,
+    "sha256": "FB83292F494F649EA7F1835AA4ABEA61ACC593D7F90625741D42CD99CAC0E075"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/08-Add-bzip2-library-to-pkg-config-file.patch",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/08-Add-bzip2-library-to-pkg-config-file.patch",
+    "bytes": 616,
+    "sha256": "0BE98A7E660E7C068856F08B9E92D6C73A6B0D88C3E29A9716140B147F7C23C5"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/1165.patch",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/1165.patch",
+    "bytes": 693,
+    "sha256": "0774E1368851504115F732F66230CA4A8A9CD60D4BA014502F65CC19B0B4D8BC"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/PKGBUILD",
+    "bytes": 4262,
+    "sha256": "8A4A54A964EAB7EFA313E2FAA8267052BC237EF61F8ADF82A55CC93F4028DB8A"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/SOURCEINFO.txt",
+    "bytes": 1855,
+    "sha256": "B3F7DAC59C9A035D6F3714D49593750008C4F8635C796D80FDD4E7ABE0186236"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/zlib-1.3.2.tar.xz",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/zlib-1.3.2.tar.xz",
+    "bytes": 1320064,
+    "sha256": "D7A0654783A4DA529D1BB793B7AD9C3318020AF77667BCAE35F95D0E42A792F3"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/zlib-1.3.2.tar.xz.asc",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/zlib-1.3.2.tar.xz.asc",
+    "bytes": 235,
+    "sha256": "03CE710347E2F84FA7ED0A6AE6A93467B08031A3022FC296DA40220A83B96667"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/.SRCINFO",
+    "storedPath": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/.SRCINFO",
+    "bytes": 972,
+    "sha256": "5CCB47FA07BF7AA8D21D4B99CD2A1D05F63F829809C670BCF8B251F3B5E495A6"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/PKGBUILD",
+    "storedPath": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/PKGBUILD",
+    "bytes": 2187,
+    "sha256": "EF88E168F729B6E57BDCCB8D566A1CBC1B0B1FD4EF86B26CC4C441236E496388"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/SOURCEINFO-errors.txt",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/SOURCEINFO-errors.txt",
+    "bytes": 0,
+    "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/SOURCEINFO.txt",
+    "storedPath": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/SOURCEINFO.txt",
+    "bytes": 912,
+    "sha256": "90CB567E0B0901BC99B59830D2EBCDDD1BB3EA5C46B15669EC2F200798F8328D"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/zstd-1.4.0-fileio-mingw.patch",
+    "storedPath": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/zstd-1.4.0-fileio-mingw.patch",
+    "bytes": 1166,
+    "sha256": "283E584477A8F70C9BEA86A500486DD11DFCB59B22690FD94DEB44A3F95A6668"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/zstd-1.5.7.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/zstd-1.5.7.tar.gz",
+    "bytes": 2434947,
+    "sha256": "EB33E51F49A15E023950CD7825CA74A4A2B43DB8354825AC24FC1B7EE09E6FA3"
+  },
+  {
+    "path": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/zstd-1.5.7.tar.gz.sig",
+    "storedPath": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/zstd-1.5.7.tar.gz.sig",
+    "bytes": 858,
+    "sha256": "24425933FB954F4608AE9383BC37AD8398E50364C1EC30BBDB5ADBFE88209FB1"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-MinHook/MinHook-1.3.4.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-MinHook-1.3.4-2/mingw-w64-MinHook/MinHook-1.3.4.tar.gz",
+    "bytes": 29674,
+    "sha256": "1AEBEAE4CA898330C507860ACC2FCA2EB335FE446A3A2B8444C3BF8B2660A14E"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-boost/boost-1.92.0-cmake.tar.xz",
+    "storedPath": "source-recipes/mingw-w64-boost-1.92.0-4/mingw-w64-boost/boost-1.92.0-cmake.tar.xz",
+    "bytes": 107878596,
+    "sha256": "9BED76128D4E46755DBE818487788C6FCEB6F72B378F4DAA49B7E1E600D9088D"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-brotli/brotli-1.2.0.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-brotli-1.2.0-1/mingw-w64-brotli/brotli-1.2.0.tar.gz",
+    "bytes": 646315,
+    "sha256": "816C96E8E8F193B40151DAD7E8FF37B1221D019DBCB9C35CD3FADBFE6477DFEC"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-curl/curl-8.23.0.tar.xz",
+    "storedPath": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/curl-8.23.0.tar.xz",
+    "bytes": 2990916,
+    "sha256": "8DADD7D2536A314F982AD05A651B713F426BF7D02CC2C76CFFB9796F2218E6C5"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-curl/curl-8.23.0.tar.xz.asc",
+    "storedPath": "source-recipes/mingw-w64-curl-8.23.0-1/mingw-w64-curl/curl-8.23.0.tar.xz.asc",
+    "bytes": 488,
+    "sha256": "DBA1562FEC2BF698A1226054E6757940E4BF2AB87B3B222A5E7B91348F0B82E2"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-gcc/gcc-16.2.0.tar.xz",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/gcc-16.2.0.tar.xz",
+    "bytes": 107200820,
+    "sha256": "E6738E29597F733270731AA90600F37FFDC045079DFC27EC7E8192CC81085C3E"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-gcc/gcc-16.2.0.tar.xz.sig",
+    "storedPath": "source-recipes/mingw-w64-gcc-16.2.0-6/mingw-w64-gcc/gcc-16.2.0.tar.xz.sig",
+    "bytes": 310,
+    "sha256": "43D73202DCEDE15D31001C6BA0D28723014EF57E4DC815631772DAADBE23BCD2"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-gettext/gettext-1.0.tar.lz",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/gettext-1.0.tar.lz",
+    "bytes": 10261665,
+    "sha256": "D6342CBE1411A2FE7D139BFED80C2D63B1BABC92ACFEDC72501CC105184F61EE"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-gettext/gettext-1.0.tar.lz.sig",
+    "storedPath": "source-recipes/mingw-w64-gettext-1.0-1/mingw-w64-gettext/gettext-1.0.tar.lz.sig",
+    "bytes": 228,
+    "sha256": "39FAE6A06678F1D34F0AD8CCB670435B48AF3B062CF8F0B50D39159AC3D1C0B1"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-icu/icu4c-78.3-sources.tgz",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/icu4c-78.3-sources.tgz",
+    "bytes": 27977255,
+    "sha256": "3A2E7A47604BA702F345878308E6FEFECA612EE895CF4A5F222E7955FABFE0C0"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-icu/reverse_of_ICU-22610.patch",
+    "storedPath": "source-recipes/mingw-w64-icu-78.3-4/mingw-w64-icu/reverse_of_ICU-22610.patch",
+    "bytes": 4271,
+    "sha256": "C515E2B37E230895080D36207DFE078EB638F974220BAA487EDE2593E820944C"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-libiconv/libiconv-1.19.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/libiconv-1.19.tar.gz",
+    "bytes": 5921103,
+    "sha256": "88DD96A8C0464ECA144FC791AE60CD31CD8EE78321E67397E25FC095C4A19AA6"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-libiconv/libiconv-1.19.tar.gz.sig",
+    "storedPath": "source-recipes/mingw-w64-libiconv-1.19-1/mingw-w64-libiconv/libiconv-1.19.tar.gz.sig",
+    "bytes": 228,
+    "sha256": "30374A9CF2846418FC34977EB2B92094C3EDB76021D57DE541699E2B5E32DC9B"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-libidn2/libidn2-2.3.8.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/libidn2-2.3.8.tar.gz",
+    "bytes": 2234804,
+    "sha256": "F557911BF6171621E1F72FF35F5B1825BB35B52ED45325DCDEE931E5D3C0787A"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-libidn2/libidn2-2.3.8.tar.gz.sig",
+    "storedPath": "source-recipes/mingw-w64-libidn2-2.3.8-4/mingw-w64-libidn2/libidn2-2.3.8.tar.gz.sig",
+    "bytes": 1223,
+    "sha256": "268AD6787ED902FBA2154BCD64347269AF6C4298BDEED8D7DB59DF7B65FD31F2"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-libpsl/libpsl-0.21.5.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libpsl-0.21.5-3/mingw-w64-libpsl/libpsl-0.21.5.tar.gz",
+    "bytes": 7624251,
+    "sha256": "1DCC9CEAE8B128F3C0B3F654DECD0E1E891AFC6FF81098F227EF260449DAE208"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-libssh2/libssh2-1.11.1.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/libssh2-1.11.1.tar.gz",
+    "bytes": 1093012,
+    "sha256": "D9EC76CBE34DB98EEC3539FE2C899D26B0C837CB3EB466A56B0F109CABF658F7"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-libssh2/libssh2-1.11.1.tar.gz.asc",
+    "storedPath": "source-recipes/mingw-w64-libssh2-1.11.1-2/mingw-w64-libssh2/libssh2-1.11.1.tar.gz.asc",
+    "bytes": 488,
+    "sha256": "F5618C9356A1D5A8059D6CF64015D86547F06B2B8B1F542FBBAF381A736C8075"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-libunistring/libunistring-1.4.2.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/libunistring-1.4.2.tar.gz",
+    "bytes": 5046603,
+    "sha256": "E82664B170064E62331962126B259D452D53B227BB4A93AB20040D846FEC01D8"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-libunistring/libunistring-1.4.2.tar.gz.sig",
+    "storedPath": "source-recipes/mingw-w64-libunistring-1.4.2-1/mingw-w64-libunistring/libunistring-1.4.2.tar.gz.sig",
+    "bytes": 228,
+    "sha256": "BDA305FEA27509F6A9A340C56DFD7E572C565AB3C5075519ADDDB2FBE55FF1F4"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-libvpl/libvpl-2.17.0.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-libvpl-2.17.0-1/mingw-w64-libvpl/libvpl-2.17.0.tar.gz",
+    "bytes": 12974961,
+    "sha256": "4DE3E2FAF1E8307FB282E4A43F443191810F6A6B0A484FFFA7995BA1C814C6EC"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-miniupnpc/miniupnpc-2.3.3.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/miniupnpc-2.3.3.tar.gz",
+    "bytes": 141281,
+    "sha256": "D52A0AFA614AD6C088CC9DDFF1AE7D29C8C595AC5FDD321170A05F41E634BD1A"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-miniupnpc/miniupnpc-2.3.3.tar.gz.sig",
+    "storedPath": "source-recipes/mingw-w64-miniupnpc-2.3.3-4/mingw-w64-miniupnpc/miniupnpc-2.3.3.tar.gz.sig",
+    "bytes": 543,
+    "sha256": "7B4BD557BA44DED425E3DBE8DCFAD37828041A4F622909EC881E1D282D933E77"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-opus/opus-1.6.1.tar.gz",
+    "storedPath": "downloads/opus-1.6.1.tar.gz",
+    "bytes": 10472813,
+    "sha256": "6FFCB593207BE92584DF15B32466ED64BBEC99109F007C82205F0194572411A1"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-zlib/1165.patch",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/1165.patch",
+    "bytes": 693,
+    "sha256": "0774E1368851504115F732F66230CA4A8A9CD60D4BA014502F65CC19B0B4D8BC"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-zlib/zlib-1.3.2.tar.xz",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/zlib-1.3.2.tar.xz",
+    "bytes": 1320064,
+    "sha256": "D7A0654783A4DA529D1BB793B7AD9C3318020AF77667BCAE35F95D0E42A792F3"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-zlib/zlib-1.3.2.tar.xz.asc",
+    "storedPath": "source-recipes/mingw-w64-zlib-1.3.2-2/mingw-w64-zlib/zlib-1.3.2.tar.xz.asc",
+    "bytes": 235,
+    "sha256": "03CE710347E2F84FA7ED0A6AE6A93467B08031A3022FC296DA40220A83B96667"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-zstd/zstd-1.5.7.tar.gz",
+    "storedPath": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/zstd-1.5.7.tar.gz",
+    "bytes": 2434947,
+    "sha256": "EB33E51F49A15E023950CD7825CA74A4A2B43DB8354825AC24FC1B7EE09E6FA3"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64-zstd/zstd-1.5.7.tar.gz.sig",
+    "storedPath": "source-recipes/mingw-w64-zstd-1.5.7-2/mingw-w64-zstd/zstd-1.5.7.tar.gz.sig",
+    "bytes": 858,
+    "sha256": "24425933FB954F4608AE9383BC37AD8398E50364C1EC30BBDB5ADBFE88209FB1"
+  },
+  {
+    "path": "upstream-source-archives/mingw-w64/63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296.tar",
+    "storedPath": "upstream-source-archives/mingw-w64/63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296.tar",
+    "bytes": 140308480,
+    "sha256": "050019E987BF67AE3BCDC3E8497CA3C8302793676B22B07C394E70B88082EE50"
+  }
+]

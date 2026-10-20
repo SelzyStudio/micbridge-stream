@@ -1,0 +1,679 @@
+{
+  "status": "passed",
+  "inputs": [
+    {
+      "package": "mingw-w64-boost",
+      "source": "https://github.com/boostorg/boost/releases/download/boost-1.92.0/boost-1.92.0-cmake.tar.xz",
+      "expectedSha256": "9bed76128d4e46755dbe818487788c6fceb6f72b378f4daa49b7e1e600d9088d",
+      "status": "verified-remote-input",
+      "sha256": "9bed76128d4e46755dbe818487788c6fceb6f72b378f4daa49b7e1e600d9088d",
+      "archive": "upstream-source-archives/mingw-w64-boost/boost-1.92.0-cmake.tar.xz",
+      "bytes": 107878596
+    },
+    {
+      "package": "mingw-w64-boost",
+      "source": "0001-Fix-building-with-cmake-on-MINGW.patch",
+      "expectedSha256": "fb32ea452e02196552dae815eb44be5b18d849b0f6e24ecf5cf7be15e42ad85b",
+      "status": "verified-local-input",
+      "sha256": "fb32ea452e02196552dae815eb44be5b18d849b0f6e24ecf5cf7be15e42ad85b"
+    },
+    {
+      "package": "mingw-w64-boost",
+      "source": "0002-No-Arch-in-library-name-tag.patch",
+      "expectedSha256": "ee45d199c0e578a8d670ee6c6fa46466a53a02690c94f9221c67bbc9ab3387dc",
+      "status": "verified-local-input",
+      "sha256": "ee45d199c0e578a8d670ee6c6fa46466a53a02690c94f9221c67bbc9ab3387dc"
+    },
+    {
+      "package": "mingw-w64-brotli",
+      "source": "https://github.com/google/brotli/archive/v1.2.0/brotli-1.2.0.tar.gz",
+      "expectedSha256": "816c96e8e8f193b40151dad7e8ff37b1221d019dbcb9c35cd3fadbfe6477dfec",
+      "status": "verified-remote-input",
+      "sha256": "816c96e8e8f193b40151dad7e8ff37b1221d019dbcb9c35cd3fadbfe6477dfec",
+      "archive": "upstream-source-archives/mingw-w64-brotli/brotli-1.2.0.tar.gz",
+      "bytes": 646315
+    },
+    {
+      "package": "mingw-w64-crt",
+      "source": "mingw-w64::git+https://git.code.sf.net/p/mingw-w64/mingw-w64#commit=63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296",
+      "expectedSha256": "050019e987bf67ae3bcdc3e8497ca3c8302793676b22b07c394e70b88082ee50",
+      "status": "verified-remote-input",
+      "sha256": "050019e987bf67ae3bcdc3e8497ca3c8302793676b22b07c394e70b88082ee50",
+      "archive": "upstream-source-archives/mingw-w64/63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296.tar",
+      "commit": "63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296"
+    },
+    {
+      "package": "mingw-w64-curl",
+      "source": "https://github.com/curl/curl/releases/download/curl-8_23_0/curl-8.23.0.tar.xz",
+      "expectedSha256": "8dadd7d2536a314f982ad05a651b713f426bf7d02cc2c76cffb9796f2218e6c5",
+      "status": "verified-remote-input",
+      "sha256": "8dadd7d2536a314f982ad05a651b713f426bf7d02cc2c76cffb9796f2218e6c5",
+      "archive": "upstream-source-archives/mingw-w64-curl/curl-8.23.0.tar.xz",
+      "bytes": 2990916
+    },
+    {
+      "package": "mingw-w64-curl",
+      "source": "https://github.com/curl/curl/releases/download/curl-8_23_0/curl-8.23.0.tar.xz.asc",
+      "expectedSha256": "SKIP",
+      "status": "archived-signature-not-independently-pgp-verified",
+      "sha256": "dba1562fec2bf698a1226054e6757940e4bf2ab87b3b222a5e7b91348f0b82e2",
+      "archive": "upstream-source-archives/mingw-w64-curl/curl-8.23.0.tar.xz.asc",
+      "bytes": 488
+    },
+    {
+      "package": "mingw-w64-curl",
+      "source": "pathtools.c",
+      "expectedSha256": "ebf471173f5ee9c4416c10a78760cea8afaf1a4a6e653977321e8547ce7bf3c0",
+      "status": "verified-local-input",
+      "sha256": "ebf471173f5ee9c4416c10a78760cea8afaf1a4a6e653977321e8547ce7bf3c0"
+    },
+    {
+      "package": "mingw-w64-curl",
+      "source": "pathtools.h",
+      "expectedSha256": "1585ef1b61cf53a2ca27049c11d49e0834683dfda798f03547761375df482a90",
+      "status": "verified-local-input",
+      "sha256": "1585ef1b61cf53a2ca27049c11d49e0834683dfda798f03547761375df482a90"
+    },
+    {
+      "package": "mingw-w64-curl",
+      "source": "0001-Make-cURL-relocatable.patch",
+      "expectedSha256": "787aeed169b188c966c10c3bb8a55a12347b200eebb877bbdde7dbc21598204a",
+      "status": "verified-local-input",
+      "sha256": "787aeed169b188c966c10c3bb8a55a12347b200eebb877bbdde7dbc21598204a"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz",
+      "expectedSha256": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e",
+      "status": "verified-remote-input",
+      "sha256": "e6738e29597f733270731aa90600f37ffdc045079dfc27ec7e8192cc81085c3e",
+      "archive": "upstream-source-archives/mingw-w64-gcc/gcc-16.2.0.tar.xz",
+      "bytes": 107200820
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "https://ftp.gnu.org/gnu/gcc/gcc-16.2.0/gcc-16.2.0.tar.xz.sig",
+      "expectedSha256": "SKIP",
+      "status": "archived-signature-not-independently-pgp-verified",
+      "sha256": "43d73202dcede15d31001c6ba0d28723014ef57e4dc815631772daadbe23bcd2",
+      "archive": "upstream-source-archives/mingw-w64-gcc/gcc-16.2.0.tar.xz.sig",
+      "bytes": 310
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "gdbinit",
+      "expectedSha256": "bce81824fc89e5e62cca350de4c17a27e27a18a1a1ad5ca3492aec1fc5af3234",
+      "status": "verified-local-input",
+      "sha256": "bce81824fc89e5e62cca350de4c17a27e27a18a1a1ad5ca3492aec1fc5af3234"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0002-i386-Keep-SEH-enabled-for-Win64-sysv_abi-functions.patch",
+      "expectedSha256": "fdf4e90a56fc195a8f9a969af39335f158a29f29d42d33c00d908fc47cf5ad24",
+      "status": "verified-local-input",
+      "sha256": "fdf4e90a56fc195a8f9a969af39335f158a29f29d42d33c00d908fc47cf5ad24"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0003-Windows-Follow-Posix-dir-exists-semantics-more-close.patch",
+      "expectedSha256": "3fc35067823f87e48dd3bfd265e7593000dc110fa9ad5f16c81b896765fc897a",
+      "status": "verified-local-input",
+      "sha256": "3fc35067823f87e48dd3bfd265e7593000dc110fa9ad5f16c81b896765fc897a"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0007-Build-EXTRA_GNATTOOLS-for-Ada.patch",
+      "expectedSha256": "90d5cb570083f9dea4ac0f0f87e3e8d2230f5052e6f9b946061a20a224a9d195",
+      "status": "verified-local-input",
+      "sha256": "90d5cb570083f9dea4ac0f0f87e3e8d2230f5052e6f9b946061a20a224a9d195"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0008-Prettify-linking-no-undefined.patch",
+      "expectedSha256": "8d2d53ae26b777d90189240494de1b895c5efa1ebdcdfbf5774f29fc742499d9",
+      "status": "verified-local-input",
+      "sha256": "8d2d53ae26b777d90189240494de1b895c5efa1ebdcdfbf5774f29fc742499d9"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0011-Enable-shared-gnat-implib.patch",
+      "expectedSha256": "5ef4148acc4a2b7ed648d4fe75fab5545e84b4b93a12d6ba4e4ea6061dd635fa",
+      "status": "verified-local-input",
+      "sha256": "5ef4148acc4a2b7ed648d4fe75fab5545e84b4b93a12d6ba4e4ea6061dd635fa"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0012-Handle-spaces-in-path-for-default-manifest.patch",
+      "expectedSha256": "e98805ead7d78ee2a92f237894c4b2b7ddc1688e1b517d8c04f28d440202e40f",
+      "status": "verified-local-input",
+      "sha256": "e98805ead7d78ee2a92f237894c4b2b7ddc1688e1b517d8c04f28d440202e40f"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0014-gcc-9-branch-clone_function_name_1-Retain-any-stdcall-suffix.patch",
+      "expectedSha256": "fd9bdecb2bbc4796bbc9f00b708dac42ef9e3464a06d6d27e5475cee117de5be",
+      "status": "verified-local-input",
+      "sha256": "fd9bdecb2bbc4796bbc9f00b708dac42ef9e3464a06d6d27e5475cee117de5be"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0020-libgomp-Don-t-hard-code-MS-printf-attributes.patch",
+      "expectedSha256": "ad1f7b5e7afaaec008b7cbd14feea13a10989fa91bda7003af72d457619bb199",
+      "status": "verified-local-input",
+      "sha256": "ad1f7b5e7afaaec008b7cbd14feea13a10989fa91bda7003af72d457619bb199"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0021-bootstrap-gnattools-Pass-target-sysroot-flags-to-boo.patch",
+      "expectedSha256": "76455c46eec4df95a80bbf7e5bcd2d165f300976c79c1baf0bf7ed20f000cdd4",
+      "status": "verified-local-input",
+      "sha256": "76455c46eec4df95a80bbf7e5bcd2d165f300976c79c1baf0bf7ed20f000cdd4"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0022-mingw-Remove-outdated-mingw-stuff.patch",
+      "expectedSha256": "ec05f8f26698dae4e0e0b58189cbf509185ad6d40b4950b33e28b638bf70c7ae",
+      "status": "verified-local-input",
+      "sha256": "ec05f8f26698dae4e0e0b58189cbf509185ad6d40b4950b33e28b638bf70c7ae"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0023-Ada-Don-t-export-gnat1-s-symbols-on-PE-hosts.patch",
+      "expectedSha256": "395dd4df29c295f917aa4a136a0aa72af34eee6320ecc2d92ee717397578398d",
+      "status": "verified-local-input",
+      "sha256": "395dd4df29c295f917aa4a136a0aa72af34eee6320ecc2d92ee717397578398d"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0024-libgfortran-Guard-locale-restoration-for-formatted-I0.patch",
+      "expectedSha256": "976d14f803a211b19d9bf0169c08d4fde05af5cc18073f2fc8efc9a3cb17890a",
+      "status": "verified-local-input",
+      "sha256": "976d14f803a211b19d9bf0169c08d4fde05af5cc18073f2fc8efc9a3cb17890a"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0025-libgfortran-Copy-LC_NUMERIC-string-for-formatted-IO.patch",
+      "expectedSha256": "f591efc820a2c72aefb83179f7cbd3f4654231b68700486bd04ee32e2db61de5",
+      "status": "verified-local-input",
+      "sha256": "f591efc820a2c72aefb83179f7cbd3f4654231b68700486bd04ee32e2db61de5"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0140-gcc-diagnostic-color.patch",
+      "expectedSha256": "c94004dab1685a6fa9124de86aae742df4136a2e9ff5d5e1ad87ecdc35fbcef4",
+      "status": "verified-local-input",
+      "sha256": "c94004dab1685a6fa9124de86aae742df4136a2e9ff5d5e1ad87ecdc35fbcef4"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "0200-add-m-no-align-vector-insn-option-for-i386.patch",
+      "expectedSha256": "1484911163634f30324827619c873a6267b377abba0df8bbedfd128163c53ea4",
+      "status": "verified-local-input",
+      "sha256": "1484911163634f30324827619c873a6267b377abba0df8bbedfd128163c53ea4"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "2001-fix-building-rust-on-mingw-w64.patch",
+      "expectedSha256": "a411f59953553a3d01dd64c79b1acbb91eca092c4cb01bfd26b1c51c3eb798e8",
+      "status": "verified-local-input",
+      "sha256": "a411f59953553a3d01dd64c79b1acbb91eca092c4cb01bfd26b1c51c3eb798e8"
+    },
+    {
+      "package": "mingw-w64-gcc",
+      "source": "3001-fix-codeview-crashes.patch",
+      "expectedSha256": "f21f9ab731e9cab8fd4ca8c289497f859ef7004e6fa0507877dc2559ac2071c3",
+      "status": "verified-local-input",
+      "sha256": "f21f9ab731e9cab8fd4ca8c289497f859ef7004e6fa0507877dc2559ac2071c3"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "https://ftp.gnu.org/pub/gnu/gettext/gettext-1.0.tar.lz",
+      "expectedSha256": "d6342cbe1411a2fe7d139bfed80c2d63b1babc92acfedc72501cc105184f61ee",
+      "status": "verified-remote-input",
+      "sha256": "d6342cbe1411a2fe7d139bfed80c2d63b1babc92acfedc72501cc105184f61ee",
+      "archive": "upstream-source-archives/mingw-w64-gettext/gettext-1.0.tar.lz",
+      "bytes": 10261665
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "https://ftp.gnu.org/pub/gnu/gettext/gettext-1.0.tar.lz.sig",
+      "expectedSha256": "SKIP",
+      "status": "archived-signature-not-independently-pgp-verified",
+      "sha256": "39fae6a06678f1d34f0ad8ccb670435b48af3b062cf8f0b50d39159ac3d1c0b1",
+      "archive": "upstream-source-archives/mingw-w64-gettext/gettext-1.0.tar.lz.sig",
+      "bytes": 228
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "0005-Fix-compilation-of-pthread_sigmask.c.patch",
+      "expectedSha256": "cbc2f533012d646521afa20f8b256917fce040741ff42cf53fb6dd7123a6670a",
+      "status": "verified-local-input",
+      "sha256": "cbc2f533012d646521afa20f8b256917fce040741ff42cf53fb6dd7123a6670a"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "122-Use-LF-as-newline-in-envsubst.patch",
+      "expectedSha256": "ec39103d851262c02c27b7038f3c538e03afaefc6aa050311d62519d192ff38c",
+      "status": "verified-local-input",
+      "sha256": "ec39103d851262c02c27b7038f3c538e03afaefc6aa050311d62519d192ff38c"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "0021-replace-fsync.patch",
+      "expectedSha256": "380dbddee2f9e2feee4c1435e8a942b5d11d0125e60c3350ebb10c19b19011aa",
+      "status": "verified-local-input",
+      "sha256": "380dbddee2f9e2feee4c1435e8a942b5d11d0125e60c3350ebb10c19b19011aa"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "0022-libasprintf.patch",
+      "expectedSha256": "c354f6a7021069c99b90f1c6d6f6a4ccf40a01e9f6742b866df2b5a7286cb868",
+      "status": "verified-local-input",
+      "sha256": "c354f6a7021069c99b90f1c6d6f6a4ccf40a01e9f6742b866df2b5a7286cb868"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "0024-disable-gnu-format.patch",
+      "expectedSha256": "ce7ccf6dd3a492cab322253cd67310899b546eccc25821c25cbc047a1a984633",
+      "status": "verified-local-input",
+      "sha256": "ce7ccf6dd3a492cab322253cd67310899b546eccc25821c25cbc047a1a984633"
+    },
+    {
+      "package": "mingw-w64-gettext",
+      "source": "0030-fix-build-with-mingw-w64-clang.patch",
+      "expectedSha256": "9b1b4f0c65b3bc1a3103c921a02c203cecf533d145f0bd90023406e760f81749",
+      "status": "verified-local-input",
+      "sha256": "9b1b4f0c65b3bc1a3103c921a02c203cecf533d145f0bd90023406e760f81749"
+    },
+    {
+      "package": "mingw-w64-headers",
+      "source": "mingw-w64::git+https://git.code.sf.net/p/mingw-w64/mingw-w64#commit=63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296",
+      "expectedSha256": "050019e987bf67ae3bcdc3e8497ca3c8302793676b22b07c394e70b88082ee50",
+      "status": "verified-remote-input",
+      "sha256": "050019e987bf67ae3bcdc3e8497ca3c8302793676b22b07c394e70b88082ee50",
+      "archive": "upstream-source-archives/mingw-w64/63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296.tar",
+      "commit": "63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296"
+    },
+    {
+      "package": "mingw-w64-headers",
+      "source": "0001-remove-ireference-boolean.patch",
+      "expectedSha256": "cad48616325b5e70afa4e02424021fc8d54e17dcbf86eae3df990d3500080236",
+      "status": "verified-local-input",
+      "sha256": "cad48616325b5e70afa4e02424021fc8d54e17dcbf86eae3df990d3500080236"
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "https://github.com/unicode-org/icu/releases/download/release-78.3/icu4c-78.3-sources.tgz",
+      "expectedSha256": "3a2e7a47604ba702f345878308e6fefeca612ee895cf4a5f222e7955fabfe0c0",
+      "status": "verified-remote-input",
+      "sha256": "3a2e7a47604ba702f345878308e6fefeca612ee895cf4a5f222e7955fabfe0c0",
+      "archive": "upstream-source-archives/mingw-w64-icu/icu4c-78.3-sources.tgz",
+      "bytes": 27977255
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "https://sources.debian.org/data/main/i/icu/76.1-4/debian/patches/reverse_of_ICU-22610.patch",
+      "expectedSha256": "c515e2b37e230895080d36207dfe078eb638f974220baa487ede2593e820944c",
+      "status": "verified-remote-input",
+      "sha256": "c515e2b37e230895080d36207dfe078eb638f974220baa487ede2593e820944c",
+      "archive": "upstream-source-archives/mingw-w64-icu/reverse_of_ICU-22610.patch",
+      "bytes": 4271
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "0001-Add-visibility-attributes-for-MinGW.patch",
+      "expectedSha256": "9398ca8e46e415df9a1c64dfa2cce3fd0faa55de3f2cb386eeb2dc886a0e6243",
+      "status": "verified-local-input",
+      "sha256": "9398ca8e46e415df9a1c64dfa2cce3fd0faa55de3f2cb386eeb2dc886a0e6243"
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "0003-do-not-dllimport-inline-functions.patch",
+      "expectedSha256": "7fb999c249629ddb906933d394294137a9f2975d4778641bf4f20200dd791d6e",
+      "status": "verified-local-input",
+      "sha256": "7fb999c249629ddb906933d394294137a9f2975d4778641bf4f20200dd791d6e"
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "0004-dllexport-a-missing-symbol.patch",
+      "expectedSha256": "3bfac4bfd1a98bb5da4207a7dc9885c40c481c30065911f8af805cb172c4346b",
+      "status": "verified-local-input",
+      "sha256": "3bfac4bfd1a98bb5da4207a7dc9885c40c481c30065911f8af805cb172c4346b"
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "0012-libprefix.mingw.patch",
+      "expectedSha256": "e7ecdafe85e18a4a4b5f29bbfde38776521a848e5b65089a2379b90e59f1592d",
+      "status": "verified-local-input",
+      "sha256": "e7ecdafe85e18a4a4b5f29bbfde38776521a848e5b65089a2379b90e59f1592d"
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "0014-mingwize-pkgdata.mingw.patch",
+      "expectedSha256": "d9f5f756443d7d14175aca06f4f1bb33237b58907e5db7a6ff7e38d2c4ea7957",
+      "status": "verified-local-input",
+      "sha256": "d9f5f756443d7d14175aca06f4f1bb33237b58907e5db7a6ff7e38d2c4ea7957"
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "0015-debug.mingw.patch",
+      "expectedSha256": "0181f9ff8b7dd0a423869d8772da0a4feea64188347eb0dee7eb059aea92131c",
+      "status": "verified-local-input",
+      "sha256": "0181f9ff8b7dd0a423869d8772da0a4feea64188347eb0dee7eb059aea92131c"
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "0016-icu-pkgconfig.patch",
+      "expectedSha256": "87ebe8962f8c387714f2a697a664a0c49aed2331b988548069d0c211abc36e05",
+      "status": "verified-local-input",
+      "sha256": "87ebe8962f8c387714f2a697a664a0c49aed2331b988548069d0c211abc36e05"
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "0021-mingw-static-libraries-without-s.patch",
+      "expectedSha256": "d8612f40b1731d9a94290afcf80c896184a2f15b8ae8f23b3643c64f6cabfa2f",
+      "status": "verified-local-input",
+      "sha256": "d8612f40b1731d9a94290afcf80c896184a2f15b8ae8f23b3643c64f6cabfa2f"
+    },
+    {
+      "package": "mingw-w64-icu",
+      "source": "0023-fix-twice-include-platform_make_fragment.patch",
+      "expectedSha256": "12aa647cff22a721bdbceb4e77f5e66c6616e0e050dca8172acfd3365553fff4",
+      "status": "verified-local-input",
+      "sha256": "12aa647cff22a721bdbceb4e77f5e66c6616e0e050dca8172acfd3365553fff4"
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz",
+      "expectedSha256": "88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6",
+      "status": "verified-remote-input",
+      "sha256": "88dd96a8c0464eca144fc791ae60cd31cd8ee78321e67397e25fc095c4a19aa6",
+      "archive": "upstream-source-archives/mingw-w64-libiconv/libiconv-1.19.tar.gz",
+      "bytes": 5921103
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.19.tar.gz.sig",
+      "expectedSha256": "SKIP",
+      "status": "archived-signature-not-independently-pgp-verified",
+      "sha256": "30374a9cf2846418fc34977eb2b92094c3edb76021d57de541699e2b5e32dc9b",
+      "archive": "upstream-source-archives/mingw-w64-libiconv/libiconv-1.19.tar.gz.sig",
+      "bytes": 228
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "0003-add-cp65001-as-utf8-alias.patch",
+      "expectedSha256": "cb2b1cca44c9b9bd11c3bd33997c10d22dff263542275324c88f34b59910ef87",
+      "status": "verified-local-input",
+      "sha256": "cb2b1cca44c9b9bd11c3bd33997c10d22dff263542275324c88f34b59910ef87"
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "0002-fix-cr-for-awk-in-configure.all.patch",
+      "expectedSha256": "89d5c0f666e50a0186cfb142ba7b77e8fe1ac4d65bdfd9ae14ae8d2f0045a87c",
+      "status": "verified-local-input",
+      "sha256": "89d5c0f666e50a0186cfb142ba7b77e8fe1ac4d65bdfd9ae14ae8d2f0045a87c"
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "fix-pointer-buf.patch",
+      "expectedSha256": "6b6e2393840f4dc6067587165777b1a07978f4c05247d7c1010a45ad251bbeeb",
+      "status": "verified-local-input",
+      "sha256": "6b6e2393840f4dc6067587165777b1a07978f4c05247d7c1010a45ad251bbeeb"
+    },
+    {
+      "package": "mingw-w64-libiconv",
+      "source": "iconv.pc",
+      "expectedSha256": "56e7ec406bf42eb66b1d972f20d229f7a76ba00c38c7b4403bf348875704baae",
+      "status": "verified-local-input",
+      "sha256": "56e7ec406bf42eb66b1d972f20d229f7a76ba00c38c7b4403bf348875704baae"
+    },
+    {
+      "package": "mingw-w64-libidn2",
+      "source": "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.8.tar.gz",
+      "expectedSha256": "f557911bf6171621e1f72ff35f5b1825bb35b52ed45325dcdee931e5d3c0787a",
+      "status": "verified-remote-input",
+      "sha256": "f557911bf6171621e1f72ff35f5b1825bb35b52ed45325dcdee931e5d3c0787a",
+      "archive": "upstream-source-archives/mingw-w64-libidn2/libidn2-2.3.8.tar.gz",
+      "bytes": 2234804
+    },
+    {
+      "package": "mingw-w64-libidn2",
+      "source": "https://ftp.gnu.org/gnu/libidn/libidn2-2.3.8.tar.gz.sig",
+      "expectedSha256": "SKIP",
+      "status": "archived-signature-not-independently-pgp-verified",
+      "sha256": "268ad6787ed902fba2154bcd64347269af6c4298bdeed8d7db59df7b65fd31f2",
+      "archive": "upstream-source-archives/mingw-w64-libidn2/libidn2-2.3.8.tar.gz.sig",
+      "bytes": 1223
+    },
+    {
+      "package": "mingw-w64-libpsl",
+      "source": "https://github.com/rockdaboot/libpsl/releases/download/0.21.5/libpsl-0.21.5.tar.gz",
+      "expectedSha256": "1dcc9ceae8b128f3c0b3f654decd0e1e891afc6ff81098f227ef260449dae208",
+      "status": "verified-remote-input",
+      "sha256": "1dcc9ceae8b128f3c0b3f654decd0e1e891afc6ff81098f227ef260449dae208",
+      "archive": "upstream-source-archives/mingw-w64-libpsl/libpsl-0.21.5.tar.gz",
+      "bytes": 7624251
+    },
+    {
+      "package": "mingw-w64-libssh2",
+      "source": "https://libssh2.org/download/libssh2-1.11.1.tar.gz",
+      "expectedSha256": "d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7",
+      "status": "verified-remote-input",
+      "sha256": "d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7",
+      "archive": "upstream-source-archives/mingw-w64-libssh2/libssh2-1.11.1.tar.gz",
+      "bytes": 1093012
+    },
+    {
+      "package": "mingw-w64-libssh2",
+      "source": "https://libssh2.org/download/libssh2-1.11.1.tar.gz.asc",
+      "expectedSha256": "SKIP",
+      "status": "archived-signature-not-independently-pgp-verified",
+      "sha256": "f5618c9356a1d5a8059d6cf64015d86547f06b2b8b1f542fbbaf381a736c8075",
+      "archive": "upstream-source-archives/mingw-w64-libssh2/libssh2-1.11.1.tar.gz.asc",
+      "bytes": 488
+    },
+    {
+      "package": "mingw-w64-libunistring",
+      "source": "https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.2.tar.gz",
+      "expectedSha256": "e82664b170064e62331962126b259d452d53b227bb4a93ab20040d846fec01d8",
+      "status": "verified-remote-input",
+      "sha256": "e82664b170064e62331962126b259d452d53b227bb4a93ab20040d846fec01d8",
+      "archive": "upstream-source-archives/mingw-w64-libunistring/libunistring-1.4.2.tar.gz",
+      "bytes": 5046603
+    },
+    {
+      "package": "mingw-w64-libunistring",
+      "source": "https://ftp.gnu.org/gnu/libunistring/libunistring-1.4.2.tar.gz.sig",
+      "expectedSha256": "SKIP",
+      "status": "archived-signature-not-independently-pgp-verified",
+      "sha256": "bda305fea27509f6a9a340c56dfd7e572c565ab3c5075519adddb2fbe55ff1f4",
+      "archive": "upstream-source-archives/mingw-w64-libunistring/libunistring-1.4.2.tar.gz.sig",
+      "bytes": 228
+    },
+    {
+      "package": "mingw-w64-libvpl",
+      "source": "https://github.com/intel/libvpl/archive/v2.17.0/libvpl-2.17.0.tar.gz",
+      "expectedSha256": "4de3e2faf1e8307fb282e4a43f443191810f6a6b0a484fffa7995ba1c814c6ec",
+      "status": "verified-remote-input",
+      "sha256": "4de3e2faf1e8307fb282e4a43f443191810f6a6b0a484fffa7995ba1c814c6ec",
+      "archive": "upstream-source-archives/mingw-w64-libvpl/libvpl-2.17.0.tar.gz",
+      "bytes": 12974961
+    },
+    {
+      "package": "mingw-w64-libvpl",
+      "source": "0001-fix-pkgconfig-file.patch",
+      "expectedSha256": "f23ca1ccbaa9c8e3fd4fd7320996e5be2753cfcdc6e2a25f6def08222a5691cd",
+      "status": "verified-local-input",
+      "sha256": "f23ca1ccbaa9c8e3fd4fd7320996e5be2753cfcdc6e2a25f6def08222a5691cd"
+    },
+    {
+      "package": "mingw-w64-libvpl",
+      "source": "0002-cmake-install-vars-sh.patch",
+      "expectedSha256": "b9b1cdcb531ee0b6b1d7eef8bbfb1df8ca1ffe72d76961050dd912203edecc67",
+      "status": "verified-local-input",
+      "sha256": "b9b1cdcb531ee0b6b1d7eef8bbfb1df8ca1ffe72d76961050dd912203edecc67"
+    },
+    {
+      "package": "mingw-w64-libvpl",
+      "source": "0003-cmake-fix-32bit-install.patch",
+      "expectedSha256": "21b2cc2f466f636940c8ef81f50dff177aff96d60dc4bc57f58c5c9f016502fe",
+      "status": "verified-local-input",
+      "sha256": "21b2cc2f466f636940c8ef81f50dff177aff96d60dc4bc57f58c5c9f016502fe"
+    },
+    {
+      "package": "mingw-w64-MinHook",
+      "source": "MinHook-1.3.4.tar.gz::https://github.com/TsudaKageyu/MinHook/archive/v1.3.4.tar.gz",
+      "expectedSha256": "1aebeae4ca898330c507860acc2fca2eb335fe446a3a2b8444c3bf8b2660a14e",
+      "status": "verified-remote-input",
+      "sha256": "1aebeae4ca898330c507860acc2fca2eb335fe446a3a2b8444c3bf8b2660a14e",
+      "archive": "upstream-source-archives/mingw-w64-MinHook/MinHook-1.3.4.tar.gz",
+      "bytes": 29674
+    },
+    {
+      "package": "mingw-w64-miniupnpc",
+      "source": "https://miniupnp.tuxfamily.org/files/miniupnpc-2.3.3.tar.gz",
+      "expectedSha256": "d52a0afa614ad6c088cc9ddff1ae7d29c8c595ac5fdd321170a05f41e634bd1a",
+      "status": "verified-remote-input",
+      "sha256": "d52a0afa614ad6c088cc9ddff1ae7d29c8c595ac5fdd321170a05f41e634bd1a",
+      "archive": "upstream-source-archives/mingw-w64-miniupnpc/miniupnpc-2.3.3.tar.gz",
+      "bytes": 141281
+    },
+    {
+      "package": "mingw-w64-miniupnpc",
+      "source": "https://miniupnp.tuxfamily.org/files/miniupnpc-2.3.3.tar.gz.sig",
+      "expectedSha256": "SKIP",
+      "status": "archived-signature-not-independently-pgp-verified",
+      "sha256": "7b4bd557ba44ded425e3dbe8dcfad37828041a4f622909ec881e1d282d933e77",
+      "archive": "upstream-source-archives/mingw-w64-miniupnpc/miniupnpc-2.3.3.tar.gz.sig",
+      "bytes": 543
+    },
+    {
+      "package": "mingw-w64-miniupnpc",
+      "source": "002-python-module-build.patch",
+      "expectedSha256": "79857b7808ece306cfae0bfb6c072a0022aaba1d8624273d51ed4e4fc741509c",
+      "status": "verified-local-input",
+      "sha256": "79857b7808ece306cfae0bfb6c072a0022aaba1d8624273d51ed4e4fc741509c"
+    },
+    {
+      "package": "mingw-w64-opus",
+      "source": "https://downloads.xiph.org/releases/opus/opus-1.6.1.tar.gz",
+      "expectedSha256": "6ffcb593207be92584df15b32466ed64bbec99109f007c82205f0194572411a1",
+      "status": "verified-remote-input",
+      "sha256": "6ffcb593207be92584df15b32466ed64bbec99109f007c82205f0194572411a1",
+      "archive": "upstream-source-archives/mingw-w64-opus/opus-1.6.1.tar.gz",
+      "bytes": 10472813
+    },
+    {
+      "package": "mingw-w64-opus",
+      "source": "001-aarch64-features.patch",
+      "expectedSha256": "5fb0f28264492d6512acb6eec7b5e147c922751f6df30d1317114048eca01516",
+      "status": "verified-local-input",
+      "sha256": "5fb0f28264492d6512acb6eec7b5e147c922751f6df30d1317114048eca01516"
+    },
+    {
+      "package": "mingw-w64-winpthreads",
+      "source": "mingw-w64::git+https://git.code.sf.net/p/mingw-w64/mingw-w64#commit=63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296",
+      "expectedSha256": "050019e987bf67ae3bcdc3e8497ca3c8302793676b22b07c394e70b88082ee50",
+      "status": "verified-remote-input",
+      "sha256": "050019e987bf67ae3bcdc3e8497ca3c8302793676b22b07c394e70b88082ee50",
+      "archive": "upstream-source-archives/mingw-w64/63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296.tar",
+      "commit": "63ebe6cdb3ec4d5c586b7f0f0c03dd502e44c296"
+    },
+    {
+      "package": "mingw-w64-winpthreads",
+      "source": "0001-Define-__-de-register_frame_info-in-fake-libgcc_s.patch",
+      "expectedSha256": "2e779bcc60a1422b23e0cfdb5c0f6851f2382592bb4675d08a6bdef78d5e5c10",
+      "status": "verified-local-input",
+      "sha256": "2e779bcc60a1422b23e0cfdb5c0f6851f2382592bb4675d08a6bdef78d5e5c10"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "https://github.com/madler/zlib/releases/download/v1.3.2/zlib-1.3.2.tar.xz",
+      "expectedSha256": "d7a0654783a4da529d1bb793b7ad9c3318020af77667bcae35f95d0e42a792f3",
+      "status": "verified-remote-input",
+      "sha256": "d7a0654783a4da529d1bb793b7ad9c3318020af77667bcae35f95d0e42a792f3",
+      "archive": "upstream-source-archives/mingw-w64-zlib/zlib-1.3.2.tar.xz",
+      "bytes": 1320064
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "https://github.com/madler/zlib/releases/download/v1.3.2/zlib-1.3.2.tar.xz.asc",
+      "expectedSha256": "SKIP",
+      "status": "archived-signature-not-independently-pgp-verified",
+      "sha256": "03ce710347e2f84fa7ed0a6ae6a93467b08031a3022fc296da40220a83b96667",
+      "archive": "upstream-source-archives/mingw-w64-zlib/zlib-1.3.2.tar.xz.asc",
+      "bytes": 235
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "01-zlib-1.2.11-1-buildsys.mingw.patch",
+      "expectedSha256": "b58b353d976d6fdd9a5094e60fa39439d4f14e9bf8be4a8bd475f2cd47f10226",
+      "status": "verified-local-input",
+      "sha256": "b58b353d976d6fdd9a5094e60fa39439d4f14e9bf8be4a8bd475f2cd47f10226"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "03-dont-put-sodir-into-L.mingw.patch",
+      "expectedSha256": "7287d12db57dcf0f66964c861100bf06ebe1ddcb243e7ee0773fcab1b2935596",
+      "status": "verified-local-input",
+      "sha256": "7287d12db57dcf0f66964c861100bf06ebe1ddcb243e7ee0773fcab1b2935596"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "04-fix-largefile-support.patch",
+      "expectedSha256": "8e1cdf8edfc6ac08b0e660ca42a977942a88fab3ff59c01c87ba96500e2c3e63",
+      "status": "verified-local-input",
+      "sha256": "8e1cdf8edfc6ac08b0e660ca42a977942a88fab3ff59c01c87ba96500e2c3e63"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "07-Add-no-undefined-to-link-to-enable-build-shared-vers.patch",
+      "expectedSha256": "fb83292f494f649ea7f1835aa4abea61acc593d7f90625741d42cd99cac0e075",
+      "status": "verified-local-input",
+      "sha256": "fb83292f494f649ea7f1835aa4abea61acc593d7f90625741d42cd99cac0e075"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "08-Add-bzip2-library-to-pkg-config-file.patch",
+      "expectedSha256": "0be98a7e660e7c068856f08b9e92d6c73a6b0d88c3e29a9716140b147f7c23c5",
+      "status": "verified-local-input",
+      "sha256": "0be98a7e660e7c068856f08b9e92d6c73a6b0d88c3e29a9716140b147f7c23c5"
+    },
+    {
+      "package": "mingw-w64-zlib",
+      "source": "https://patch-diff.githubusercontent.com/raw/madler/zlib/pull/1165.patch",
+      "expectedSha256": "0774e1368851504115f732f66230ca4a8a9cd60d4ba014502f65cc19b0b4d8bc",
+      "status": "verified-remote-input",
+      "sha256": "0774e1368851504115f732f66230ca4a8a9cd60d4ba014502f65cc19b0b4d8bc",
+      "archive": "upstream-source-archives/mingw-w64-zlib/1165.patch",
+      "bytes": 693
+    },
+    {
+      "package": "mingw-w64-zstd",
+      "source": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz",
+      "expectedSha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+      "status": "verified-remote-input",
+      "sha256": "eb33e51f49a15e023950cd7825ca74a4a2b43db8354825ac24fc1b7ee09e6fa3",
+      "archive": "upstream-source-archives/mingw-w64-zstd/zstd-1.5.7.tar.gz",
+      "bytes": 2434947
+    },
+    {
+      "package": "mingw-w64-zstd",
+      "source": "https://github.com/facebook/zstd/releases/download/v1.5.7/zstd-1.5.7.tar.gz.sig",
+      "expectedSha256": "SKIP",
+      "status": "archived-signature-not-independently-pgp-verified",
+      "sha256": "24425933fb954f4608ae9383bc37ad8398e50364c1ec30bbdb5adbfe88209fb1",
+      "archive": "upstream-source-archives/mingw-w64-zstd/zstd-1.5.7.tar.gz.sig",
+      "bytes": 858
+    },
+    {
+      "package": "mingw-w64-zstd",
+      "source": "zstd-1.4.0-fileio-mingw.patch",
+      "expectedSha256": "283e584477a8f70c9bea86a500486dd11dfcb59b22690fd94deb44a3f95a6668",
+      "status": "verified-local-input",
+      "sha256": "283e584477a8f70c9bea86a500486dd11dfcb59b22690fd94deb44a3f95a6668"
+    }
+  ],
+  "failures": []
+}

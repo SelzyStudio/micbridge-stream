@@ -1,0 +1,48 @@
+{
+  "version": "1.0.0-rc1",
+  "repositories": [
+    {
+      "name": "apollo",
+      "upstream": "https://github.com/logabell/apollo-microphone",
+      "baseCommit": "997940627f8942f8091610280ceffead55bbf0ce",
+      "modifiedSource": "sources/apollo",
+      "omittedPrebuiltOrLocalFiles": [
+        "gh-pages-template/.readthedocs.yaml",
+        "gh-pages-template/_config.yml",
+        "gh-pages-template/assets/img/banners/AdobeStock_231616343.jpeg",
+        "gh-pages-template/assets/img/banners/AdobeStock_231616343_1920x1280.jpg",
+        "gh-pages-template/assets/img/banners/AdobeStock_303330124.jpeg",
+        "gh-pages-template/assets/img/banners/AdobeStock_303330124_1920x1280.jpg",
+        "gh-pages-template/assets/img/banners/AdobeStock_305732536.jpeg",
+        "gh-pages-template/assets/img/banners/AdobeStock_305732536_1920x1280.jpg",
+        "gh-pages-template/assets/img/navbar-avatar.png",
+        "gh-pages-template/assets/img/screenshots/01-sunshine-welcome-page.png",
+        "gh-pages-template/index.html"
+      ]
+    },
+    {
+      "name": "artemis",
+      "upstream": "https://github.com/logabell/moonlight-android",
+      "baseCommit": "f16c1b5df58ee1ec37e3f62d4ca1cb61064a28e8",
+      "modifiedSource": "sources/artemis",
+      "omittedPrebuiltOrLocalFiles": [
+        "app/src/main/jni/moonlight-core/libopus/arm64-v8a/libopus.a",
+        "app/src/main/jni/moonlight-core/libopus/armeabi-v7a/libopus.a",
+        "app/src/main/jni/moonlight-core/libopus/x86/libopus.a",
+        "app/src/main/jni/moonlight-core/libopus/x86_64/libopus.a",
+        "app/src/main/jni/moonlight-core/openssl/arm64-v8a/libcrypto.a",
+        "app/src/main/jni/moonlight-core/openssl/arm64-v8a/libssl.a",
+        "app/src/main/jni/moonlight-core/openssl/armeabi-v7a/libcrypto.a",
+        "app/src/main/jni/moonlight-core/openssl/armeabi-v7a/libssl.a",
+        "app/src/main/jni/moonlight-core/openssl/x86/libcrypto.a",
+        "app/src/main/jni/moonlight-core/openssl/x86/libssl.a",
+        "app/src/main/jni/moonlight-core/openssl/x86_64/libcrypto.a",
+        "app/src/main/jni/moonlight-core/openssl/x86_64/libssl.a",
+        "gradle/wrapper/gradle-wrapper.jar"
+      ]
+    }
+  ],
+  "recursiveSubmodules": "dependency-locks/SUBMODULE-SOURCES.json",
+  "modifiedFilesAreAuthoritative": true,
+  "patchLimitation": "Tracked diff patches are supplemental; newly added files and nested submodules are present in full source snapshots."
+}

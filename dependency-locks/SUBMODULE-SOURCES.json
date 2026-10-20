@@ -1,0 +1,72 @@
+[
+  {
+    "path": "apollo/third-party/Simple-Web-Server",
+    "commit": "5b29c7004cc53252a8eff06d62899c8847ada971",
+    "url": "https://github.com/ClassicOldSong/Simple-Web-Server"
+  },
+  {
+    "path": "apollo/third-party/ViGEmClient",
+    "commit": "8d71f6740ffff4671cdadbca255ce528e3cd3fef",
+    "url": "https://github.com/LizardByte/Virtual-Gamepad-Emulation-Client.git"
+  },
+  {
+    "path": "apollo/third-party/build-deps",
+    "commit": "a9a7f86328963837e30e21c8901faba00fe81542",
+    "url": "https://github.com/LizardByte/build-deps.git"
+  },
+  {
+    "path": "apollo/third-party/googletest",
+    "commit": "52eb8108c5bdec04579160ae17225d66034bd723",
+    "url": "https://github.com/google/googletest.git"
+  },
+  {
+    "path": "apollo/third-party/libdisplaydevice",
+    "commit": "f31e46d8736fa6932d34c1417111e60ca507b29f",
+    "url": "https://github.com/LizardByte/libdisplaydevice.git"
+  },
+  {
+    "path": "apollo/third-party/moonlight-common-c",
+    "commit": "784fa1d0f501155ab01fea7cefe8a0e9c9628b77",
+    "url": "https://github.com/ClassicOldSong/moonlight-common-c"
+  },
+  {
+    "path": "apollo/third-party/moonlight-common-c/enet",
+    "commit": "c7353c059373f8d3fc83d451f8f1a477be3dc94e",
+    "url": "https://github.com/cgutman/enet.git"
+  },
+  {
+    "path": "apollo/third-party/moonlight-common-c/nanors/deps/simde",
+    "commit": "595b743dcebc05756244a66dcd78e9d64c07b3b7",
+    "url": "https://github.com/simd-everywhere/simde-no-tests.git"
+  },
+  {
+    "path": "apollo/third-party/nanors",
+    "commit": "19f07b513e924e471cadd141943c1ec4adc8d0e0",
+    "url": "https://github.com/sleepybishop/nanors.git"
+  },
+  {
+    "path": "apollo/third-party/nv-codec-headers",
+    "commit": "22441b505d9d9afc1e3002290820909846c24bdc",
+    "url": "https://github.com/FFmpeg/nv-codec-headers.git"
+  },
+  {
+    "path": "apollo/third-party/nvapi-open-source-sdk",
+    "commit": "cce4e90b629f712ae6eebafac97739bd1196cdef",
+    "url": "https://github.com/LizardByte/nvapi-open-source-sdk.git"
+  },
+  {
+    "path": "apollo/third-party/tray",
+    "commit": "0309a7cb84aad25079b60c40d1eae0bacd05b26d",
+    "url": "https://github.com/LizardByte/tray.git"
+  },
+  {
+    "path": "artemis/app/src/main/jni/moonlight-core/moonlight-common-c",
+    "commit": "7850932dcb618a4658f17e72b68ba58d84cb6401",
+    "url": "https://github.com/logabell/moonlight-common-c"
+  },
+  {
+    "path": "artemis/app/src/main/jni/moonlight-core/moonlight-common-c/enet",
+    "commit": "115a10baa1d7f291ff5b870765610fd3b4a6e43c",
+    "url": "https://github.com/cgutman/enet.git"
+  }
+]

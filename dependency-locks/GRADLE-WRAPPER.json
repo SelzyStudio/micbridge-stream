@@ -1,0 +1,6 @@
+{
+  "file": "gradle-wrapper.jar",
+  "sha256": "575098DB54A998FF1C6770B352C3B16766C09848BEE7555DAB09AFC34E8CF590",
+  "version": "8.13",
+  "purpose": "Gradle build launcher; included in companion inputs, not source-only GitHub tree"
+}

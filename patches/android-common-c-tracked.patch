@@ -1,0 +1,355 @@
+diff --git a/src/Connection.c b/src/Connection.c
+index 8173bdc..75c41d1 100644
+--- a/src/Connection.c
++++ b/src/Connection.c
+@@ -1,10 +1,12 @@
+ #include "Limelight-internal.h"
++#include "ConnectionStopPolicy.h"
+ 
+ static int stage = STAGE_NONE;
+ static ConnListenerConnectionTerminated originalTerminationCallback;
+ static bool alreadyTerminated;
+ static PLT_THREAD terminationCallbackThread;
+ static int terminationCallbackErrorCode;
++static LC_CONNECTION_STOP_POLICY connectionStopPolicy;
+ 
+ // Common globals
+ char* RemoteAddrString;
+@@ -68,6 +70,27 @@ void LiInterruptConnection(void) {
+     ConnectionInterrupted = true;
+ }
+ 
++// Android calls this while holding its bridge ownership lock, before publishing
++// the new owner. Cancellation after publication must survive native start entry.
++void LiPrepareConnectionStart(void) {
++    ConnectionInterrupted = false;
++    CspPrepareStart(&connectionStopPolicy);
++}
++
++void LiInterruptConnectionForReconnect(void) {
++    CspRequestRecovery(&connectionStopPolicy);
++    LiInterruptConnection();
++}
++
++bool isConnectionRecoveryStopRequested(void) {
++    return CspIsRecoveryRequested(&connectionStopPolicy);
++}
++
++void LiStopConnectionForReconnect(void) {
++    LiInterruptConnectionForReconnect();
++    LiStopConnection();
++}
++
+ // Stop the connection by undoing the step at the current stage and those before it
+ void LiStopConnection(void) {
+     // Disable termination callbacks now
+@@ -76,11 +99,12 @@ void LiStopConnection(void) {
+     // Set the interrupted flag
+     LiInterruptConnection();
+ 
+-    if (stage == STAGE_MICROPHONE_STREAM_INIT) {
+-        Limelog("Stopping microphone stream...");
+-        destroyMicrophoneStream();
++    // Microphone UDP keepalives run on the control thread. Retire the stage
++    // now, but keep its socket open until stopControlStream has joined that
++    // thread; otherwise an in-flight sendto could target a reused descriptor.
++    bool microphoneStageWasInitialized = stage == STAGE_MICROPHONE_STREAM_INIT;
++    if (microphoneStageWasInitialized) {
+         stage--;
+-        Limelog("done\n");
+     }
+     if (stage == STAGE_INPUT_STREAM_START) {
+         Limelog("Stopping input stream...");
+@@ -106,6 +130,11 @@ void LiStopConnection(void) {
+         stage--;
+         Limelog("done\n");
+     }
++    if (microphoneStageWasInitialized) {
++        Limelog("Stopping microphone stream...");
++        destroyMicrophoneStream();
++        Limelog("done\n");
++    }
+     if (stage == STAGE_INPUT_STREAM_INIT) {
+         Limelog("Cleaning up input stream...");
+         destroyInputStream();
+@@ -220,6 +249,15 @@ int LiStartConnection(PSERVER_INFORMATION serverInfo, PSTREAM_CONFIGURATION stre
+     void* audioContext, int arFlags) {
+     int err;
+ 
++    if (!CspBeginStart(&connectionStopPolicy)) {
++        ConnectionInterrupted = false;
++    }
++    if (ConnectionInterrupted) {
++        // A prepared owner can be cancelled before this native call begins.
++        // No stage or socket exists yet, so do not reset that cancellation.
++        return -1;
++    }
++
+     if (drCallbacks != NULL && (drCallbacks->capabilities & CAPABILITY_PULL_RENDERER) && drCallbacks->submitDecodeUnit) {
+         Limelog("CAPABILITY_PULL_RENDERER cannot be set with a submitDecodeUnit callback\n");
+         LC_ASSERT(false);
+@@ -289,7 +327,6 @@ int LiStartConnection(PSERVER_INFORMATION serverInfo, PSTREAM_CONFIGURATION stre
+     }
+ 
+     alreadyTerminated = false;
+-    ConnectionInterrupted = false;
+     
+     // Validate the audio configuration
+     if (MAGIC_BYTE_FROM_AUDIO_CONFIG(StreamConfig.audioConfiguration) != 0xCA ||
+diff --git a/src/ControlStream.c b/src/ControlStream.c
+index 2f0bcbe..40bcfe1 100644
+--- a/src/ControlStream.c
++++ b/src/ControlStream.c
+@@ -1,4 +1,5 @@
+ #include "Limelight-internal.h"
++#include "BackgroundStreamControl.h"
+ 
+ // This is a private header, but it just contains some time macros
+ #include <enet/time.h>
+@@ -102,6 +103,8 @@ static uint32_t lastSeenFrame;
+ static bool stopping;
+ static bool disconnectPending;
+ static bool encryptedControlStream;
++static LC_BACKGROUND_STREAM_CONTROL backgroundControl;
++static bool sendPendingBackgroundState(void);
+ static bool hdrEnabled;
+ static SS_HDR_METADATA hdrMetadata;
+ 
+@@ -321,6 +324,7 @@ static bool supportsIdrFrameRequest;
+ // Initializes the control stream
+ int initializeControlStream(void) {
+     stopping = false;
++    BscInitialize(&backgroundControl);
+     PltCreateEvent(&idrFrameRequiredEvent);
+     LbqInitializeLinkedBlockingQueue(&invalidReferenceFrameTuples, 20);
+     LbqInitializeLinkedBlockingQueue(&frameFecStatusQueue, 8); // Limits number of frame status reports per periodic ping interval
+@@ -1421,6 +1425,15 @@ static void lossStatsThreadFunc(void* context) {
+                 }
+             }
+ 
++            // This schedules no new thread or wakeup and never records audio.
++            pollMicrophoneKeepalive(PltGetMillis());
++
++            if (!sendPendingBackgroundState()) {
++                Limelog("Background media control send failed\n");
++                ListenerCallbacks.connectionTerminated(LastSocketFail());
++                return;
++            }
++
+             // Send the message (and don't expect a response)
+             //
+             // NB: We send this periodic message as reliable to ensure the RTT is recomputed
+@@ -1638,9 +1651,17 @@ int stopControlStream(void) {
+     }
+ 
+     if (peer != NULL) {
+-        // Gracefully disconnect to ensure the remote host receives all of our final
+-        // outbound traffic, including any key up events that might be sent.
+-        gracefullyDisconnectEnetPeer(client, peer, CONTROL_STREAM_LINGER_TIMEOUT_SEC * 1000);
++        if (isConnectionRecoveryStopRequested()) {
++            // The old route is lost. Sending best-effort termination is useful, but
++            // waiting for its ACK only delays the replacement authenticated session.
++            // All old worker threads have already been joined above.
++            enet_peer_disconnect_now(peer, 0);
++            Limelog("Closed lost control route without waiting for disconnect acknowledgement\n");
++        }
++        else {
++            // Ordinary user exits still deliver final reliable traffic (such as key up).
++            gracefullyDisconnectEnetPeer(client, peer, CONTROL_STREAM_LINGER_TIMEOUT_SEC * 1000);
++        }
+         peer = NULL;
+     }
+     if (client != NULL) {
+@@ -2050,6 +2071,37 @@ bool LiGetHdrMetadata(PSS_HDR_METADATA metadata) {
+     return true;
+ }
+ 
++void notifyBackgroundVideoFrameReceived(void) {
++    BscNotifyFirstFrame(&backgroundControl);
++}
++
++int LiSetStreamBackground(bool background) {
++    if (stopping || peer == NULL || client == NULL) {
++        return -1;
++    }
++    if (!IS_SUNSHINE() || !encryptedControlStream ||
++        !(SunshineFeatureFlags & LI_FF_BACKGROUND_STREAM_CONTROL)) {
++        return -2;
++    }
++    BscRequest(&backgroundControl, background);
++    return 0;
++}
++
++// Only the keepalive thread sends: JNI never blocks on ENet, and the first
++// full keyframe guarantee prevents hidden startup from timing out on video.
++static bool sendPendingBackgroundState(void) {
++    uint8_t payload[4];
++    if (!BscPrepare(&backgroundControl, payload)) {
++        return true;
++    }
++    if (!sendMessageAndForget(0x3003, sizeof(payload), payload,
++                              CTRL_CHANNEL_SERVERCTL, ENET_PACKET_FLAG_RELIABLE, false)) {
++        return false;
++    }
++    BscCommit(&backgroundControl, payload);
++    return true;
++}
++
+ // Send a server cmd request to the streaming machine
+ int LiSendExecServerCmd(uint8_t cmdId) {
+     uint8_t payload[4] = {cmdId, 0, 0, 0};
+@@ -2074,4 +2126,4 @@ int LiSendEmptyPayload() {
+         ENET_PACKET_FLAG_RELIABLE,
+         false
+     );
+-}
+\ No newline at end of file
++}
+diff --git a/src/Limelight-internal.h b/src/Limelight-internal.h
+index 609ba9b..48faae0 100644
+--- a/src/Limelight-internal.h
++++ b/src/Limelight-internal.h
+@@ -111,6 +111,7 @@ extern uint32_t EncryptionFeaturesEnabled;
+ 
+ int serviceEnetHost(ENetHost* client, ENetEvent* event, enet_uint32 timeoutMs);
+ int gracefullyDisconnectEnetPeer(ENetHost* host, ENetPeer* peer, enet_uint32 lingerTimeoutMs);
++bool isConnectionRecoveryStopRequested(void);
+ int extractVersionQuadFromString(const char* string, int* quad);
+ bool isReferenceFrameInvalidationSupportedByDecoder(void);
+ bool isReferenceFrameInvalidationEnabled(void);
+@@ -146,6 +147,8 @@ void notifyFrameLost(unsigned int frameNumber, bool speculative);
+ void initializeVideoStream(void);
+ void destroyVideoStream(void);
+ void notifyKeyFrameReceived(void);
++void notifyBackgroundVideoFrameReceived(void);
++void pollMicrophoneKeepalive(uint64_t nowMs);
+ int startVideoStream(void* rendererContext, int drFlags);
+ void stopVideoStream(void);
+ 
+diff --git a/src/Limelight.h b/src/Limelight.h
+index 57ce358..877eb6b 100644
+--- a/src/Limelight.h
++++ b/src/Limelight.h
+@@ -556,10 +556,21 @@ int LiStartConnection(PSERVER_INFORMATION serverInfo, PSTREAM_CONFIGURATION stre
+ // This function stops streaming. This function is not thread-safe.
+ void LiStopConnection(void);
+ 
++// Optional adapter hook before publishing a new native owner. Not thread-safe.
++// A following LiStartConnection preserves interruption requested after this call.
++void LiPrepareConnectionStart(void);
++
++// Recovery-only close for a lost route. Joins and resource disposal are unchanged;
++// the old ENet peer is closed without waiting up to two seconds for an ACK.
++void LiStopConnectionForReconnect(void);
++
+ // This function interrupts a pending LiStartConnection() call. This interruption happens asynchronously
+ // so it is not safe to start another connection before the first LiStartConnection() call returns.
+ void LiInterruptConnection(void);
+ 
++// Asynchronous owner-checked counterpart for an in-flight start on a lost route.
++void LiInterruptConnectionForReconnect(void);
++
+ // Use to get a user-visible string to display initialization progress
+ // from the integer passed to the ConnListenerStageXXX callbacks
+ const char* LiGetStageName(int stage);
+@@ -587,6 +598,11 @@ bool LiGetEstimatedRttInfo(uint32_t* estimatedRtt, uint32_t* estimatedRttVarianc
+ // This function sends a request to the server to execute the requested cmd id.
+ int LiSendExecServerCmd(uint8_t cmdId);
+ 
++// Queue an authenticated per-session video/audio pause. 0 means accepted,
++// -2 unsupported host, -1 not connected. Actual send occurs on the control
++// thread, after the first complete keyframe has arrived when pausing.
++int LiSetStreamBackground(bool background);
++
+ // This function sends an empty payload to the server.
+ // This method exists here for workaround client side wifi sleeps.
+ int LiSendEmptyPayload();
+@@ -988,6 +1004,7 @@ void LiRequestIdrFrame(void);
+ 
+ // This function returns any extended feature flags supported by the host.
+ #define LI_FF_PEN_TOUCH_EVENTS        0x01 // LiSendTouchEvent()/LiSendPenEvent() supported
++#define LI_FF_BACKGROUND_STREAM_CONTROL 0x04 // Authenticated video/audio pause supported
+ #define LI_FF_CONTROLLER_TOUCH_EVENTS 0x02 // LiSendControllerTouchEvent() supported
+ uint32_t LiGetHostFeatureFlags(void);
+ 
+diff --git a/src/MicrophoneStream.c b/src/MicrophoneStream.c
+index d3f54bf..16ae0ca 100644
+--- a/src/MicrophoneStream.c
++++ b/src/MicrophoneStream.c
+@@ -1,5 +1,6 @@
+ #include "Limelight-internal.h"
+ #include "PlatformSockets.h"
++#include "MicrophoneKeepalive.h"
+ 
+ #define MIC_IV_LEN 16
+ #define MIC_HEADER_FLAGS 0x00
+@@ -10,6 +11,7 @@ static PPLT_CRYPTO_CONTEXT micEncryptionCtx = NULL;
+ static uint32_t micRiKeyId = 0;
+ static uint16_t micSequenceNumber = 0;
+ static uint32_t micTimestamp = 0;
++static LC_MIC_KEEPALIVE_STATE micKeepalive;
+ 
+ #pragma pack(push, 1)
+ typedef struct _MICROPHONE_PACKET_HEADER {
+@@ -26,6 +28,7 @@ int initializeMicrophoneStream(void) {
+         return 0;
+     }
+ 
++    MkaInitialize(&micKeepalive, PltGetMillis());
+     micEncryptionCtx = PltCreateCryptoContext();
+     if (micEncryptionCtx == NULL) {
+         return -1;
+@@ -43,10 +46,15 @@ int initializeMicrophoneStream(void) {
+         return LastSocketFail();
+     }
+ 
++    // The control thread starts before microphone initialization. Publish only
++    // after every socket/config field that its heartbeat uses is ready.
++    MkaPublishReady(&micKeepalive);
+     return 0;
+ }
+ 
+ void destroyMicrophoneStream(void) {
++    // Connection.c joins the control thread before closing this socket.
++    MkaWithdrawReady(&micKeepalive);
+     if (micSocket != INVALID_SOCKET) {
+         closeSocket(micSocket);
+         micSocket = INVALID_SOCKET;
+@@ -62,6 +70,25 @@ void destroyMicrophoneStream(void) {
+     micTimestamp = 0;
+ }
+ 
++void pollMicrophoneKeepalive(uint64_t nowMs) {
++    uint8_t payload[MIC_KEEPALIVE_BYTES];
++    if (!MkaPrepare(&micKeepalive, nowMs,
++                    StreamConfig.enableMic && MicPortNumber != 0,
++                    (EncryptionFeaturesEnabled & SS_ENC_MICROPHONE) != 0,
++                    IS_SUNSHINE() && (SunshineFeatureFlags & LI_FF_BACKGROUND_STREAM_CONTROL),
++                    ConnectionInterrupted, payload)) {
++        return;
++    }
++    LC_SOCKADDR destination;
++    memcpy(&destination, &RemoteAddr, sizeof(destination));
++    SET_PORT(&destination, MicPortNumber);
++    // Use the media socket itself so NAT keeps this exact UDP binding alive.
++    // The host ignores four-byte datagrams before parsing any microphone data.
++    // Like audio/video pings, a transient heartbeat send error is nonfatal.
++    sendto(micSocket, (const char*)payload, sizeof(payload), 0,
++           (struct sockaddr*)&destination, AddrLen);
++}
++
+ int LiSendMicrophoneOpusData(const unsigned char* opusData, int opusLength) {
+     return LiSendMicrophoneOpusDataEx(opusData, opusLength, MIC_DEFAULT_FRAME_DURATION_SAMPLES);
+ }
+diff --git a/src/VideoStream.c b/src/VideoStream.c
+index a2def84..0a0c77b 100644
+--- a/src/VideoStream.c
++++ b/src/VideoStream.c
+@@ -249,6 +249,7 @@ static void VideoReceiveThreadProc(void* context) {
+ void notifyKeyFrameReceived(void) {
+     // Remember that we got a full frame successfully
+     receivedFullFrame = true;
++    notifyBackgroundVideoFrameReceived();
+ }
+ 
+ // Decoder thread proc
