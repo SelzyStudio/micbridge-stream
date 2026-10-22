@@ -1,5 +1,7 @@
 # Selzy Studio — MicBridge Stream / Host
 
+**한국어** · [English](README.en.md)
+
 Android 마이크를 원격 Windows PC에 전달하는 비공식 Apollo·Artemis 수정판입니다. **Selzy Studio**에서 배포하는 **1.0.0-rc1 시험판**입니다.
 
 배포 브랜드: **[Selzy Studio](https://github.com/SelzyStudio)** · 게시 계정: [@selzystudio-01](https://github.com/selzystudio-01).
