@@ -19,6 +19,10 @@ Distribution brand: **[Selzy Studio](https://github.com/SelzyStudio)** · Publis
 
 Use the [MicBridge Auto Input add-on](https://github.com/SelzyStudio/micbridge-stream/releases/tag/auto-input-v1.0.0-rc1) to select Steam Streaming Microphone on connection and restore previous inputs when the session ends. The APK and host packages remain unchanged. See [setup and validation limits](sources/auto-input/README.en.md).
 
+## Optional PC output switching
+
+Use the [MicBridge Auto Output add-on](https://github.com/SelzyStudio/micbridge-stream/releases/tag/auto-output-v1.0.0-rc1) to select Steam Streaming Speakers on connection and restore previous outputs after disconnection. It is independent of the microphone add-on. See [setup and validation scope](sources/auto-output/README.en.md).
+
 ## Features
 
 - Android microphone forwarding; screen streaming, PC audio, and microphone forwarding pause while the app is in the background and resume when it returns to the foreground

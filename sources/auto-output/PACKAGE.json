@@ -1,0 +1,12 @@
+{
+  "product": "Selzy Studio MicBridge Auto Output",
+  "version": "1.0.0-rc1",
+  "releaseTag": "auto-output-v1.0.0-rc1",
+  "architecture": "windows-x64",
+  "executableSha256": "5FA675ADB8E7B1F3859CF17E7D6329CA6DA4CC6E32EF800C943C19D15FE3ABE6",
+  "publisherBrand": "Selzy Studio",
+  "githubPublisher": "selzystudio-01",
+  "authenticodeSigned": false,
+  "license": "GPL-3.0",
+  "repository": "https://github.com/SelzyStudio/micbridge-stream"
+}

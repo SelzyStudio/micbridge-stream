@@ -1,0 +1,62 @@
+{
+  "product": "Selzy Studio MicBridge Auto Output",
+  "version": "1.0.0-rc1",
+  "releaseTag": "auto-output-v1.0.0-rc1",
+  "reviewDateLocal": "2026-10-29",
+  "reviewTimezone": "Asia/Seoul",
+  "architecture": "windows-x64",
+  "executableSha256": "5FA675ADB8E7B1F3859CF17E7D6329CA6DA4CC6E32EF800C943C19D15FE3ABE6",
+  "authenticodeSigned": false,
+  "regressionTests": {
+    "passed": 39,
+    "adapter": "fake render endpoints; no real audio mutations"
+  },
+  "reviewFixes": [
+    "Recognize Apollo sequential per-role Console/Steam cleanup without overwriting saved originals",
+    "Persist the final idle baseline before deleting the recovery journal; retain recovery on write failure"
+  ],
+  "realWindowsRouting": {
+    "earlierImplementationPassed": true,
+    "earlierExecutableSha256": "1ADFF56A61690FC83DF32DAABDBF2C0E75636E7DAE31B768101ED73C7EDF9726",
+    "outputRolesSwitched": 3,
+    "allSixInputOutputRolesRestored": true,
+    "microphoneRolesUnchanged": true,
+    "shortReconnectPreservedSteam": true,
+    "trigger": "synthetic lifecycle log with real Windows endpoints",
+    "repeatedAfterPublicationFixes": false
+  },
+  "nativeReadOnlyProbe": {
+    "candidatePassed": true,
+    "audioDefaultsChanged": false
+  },
+  "phoneSmoke": {
+    "earlierImplementationUserReportedPassed": true,
+    "repeatedAfterPublicationFixes": false
+  },
+  "distributionScripts": {
+    "syntaxChecked": true,
+    "pathStartupChecksPassed": 10,
+    "logFixturesPassed": 7,
+    "existingInstallRejectedBeforeChanges": true,
+    "fullInstallUpgradeUninstallTested": false
+  },
+  "workingInstallation": {
+    "replacedForPublication": false,
+    "apolloChanged": false,
+    "apkChanged": false,
+    "microphoneHelperChanged": false
+  },
+  "limitations": [
+    "Not tested on other physical PCs or phones",
+    "Undocumented Windows IPolicyConfig interface and specific Apollo log format",
+    "Manual selection of the original Console endpoint during the cleanup guard is indistinguishable from Apollo cleanup",
+    "Very brief driver loss and return between observations can be missed",
+    "Hard-kill recovery occurs on a later helper start",
+    "Unsigned prerelease; clean scans do not guarantee absence of threats"
+  ],
+  "defender": {
+    "checkedAtUtc": "2026-10-28T15:30:54.6938797Z",
+    "exitCode": 0,
+    "executableSha256": "5FA675ADB8E7B1F3859CF17E7D6329CA6DA4CC6E32EF800C943C19D15FE3ABE6"
+  }
+}

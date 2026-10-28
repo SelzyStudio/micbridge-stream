@@ -19,6 +19,10 @@ Android 마이크를 원격 Windows PC에 전달하는 비공식 Apollo·Artemis
 
 원격 연결 때 Steam Streaming Microphone으로 바꾸고 종료 후 원래 입력을 복원하려면 [MicBridge Auto Input 추가 기능](https://github.com/SelzyStudio/micbridge-stream/releases/tag/auto-input-v1.0.0-rc1)을 설치하세요. APK·호스트는 그대로 사용합니다. [설치·검증 범위](sources/auto-input/README.ko.md).
 
+## 선택적 PC 출력 자동 전환
+
+원격 연결 때 Steam Streaming Speakers를 선택하고 종료 후 원래 스피커를 복원하려면 [MicBridge Auto Output 추가 기능](https://github.com/SelzyStudio/micbridge-stream/releases/tag/auto-output-v1.0.0-rc1)을 사용하세요. 기존 마이크 추가 기능과 독립적으로 설치합니다. [설치·검증 범위](sources/auto-output/README.ko.md).
+
 ## 기능
 
 - Android 마이크 전달, 백그라운드에서 화면·PC 소리·마이크 일시 중지 후 복귀

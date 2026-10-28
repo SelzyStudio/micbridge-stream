@@ -1,0 +1,7 @@
+/build/
+/MicBridge-AutoOutput.exe
+/status.json
+/switch.log
+/original-output.json*
+/output-baseline.json*
+/installation.json

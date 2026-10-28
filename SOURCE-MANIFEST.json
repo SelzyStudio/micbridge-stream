@@ -191,13 +191,13 @@
   },
   {
     "path": "README.ko.md",
-    "sha256": "149F1A17F41E189423A251CE2ECC4327000CFCC51479B6E1751508E98F951EFC",
-    "bytes": 4765
+    "sha256": "CE78768459319FDC8F644B7A5F7E845BD802B1CE74AB387558B44D47EFF7C04A",
+    "bytes": 5183
   },
   {
     "path": "README.md",
-    "sha256": "149F1A17F41E189423A251CE2ECC4327000CFCC51479B6E1751508E98F951EFC",
-    "bytes": 4765
+    "sha256": "CE78768459319FDC8F644B7A5F7E845BD802B1CE74AB387558B44D47EFF7C04A",
+    "bytes": 5183
   },
   {
     "path": "scripts/Bootstrap-PublicSourceBuild.py",
@@ -8966,8 +8966,8 @@
   },
   {
     "path": "README.en.md",
-    "sha256": "B26B65BAF5AB05CE076E874DE57D241BE8EBF75234980D52202E19B1529F599F",
-    "bytes": 5036
+    "sha256": "E3222189A027736C1EAE0266C9C8587CC93C46D109F166626EF1CAEB54D33566",
+    "bytes": 5409
   },
   {
     "path": "sources/auto-input/.gitignore",
@@ -9038,5 +9038,90 @@
     "path": "sources/auto-input/VALIDATION.json",
     "sha256": "6994C4D36500D5887882941191B7CEABA3D5F0655830DB02267D6F85A7BC6F38",
     "bytes": 1678
+  },
+  {
+    "path": "docs/releases/AUTO-OUTPUT-1.0.0-rc1.ko.md",
+    "sha256": "59FBB4F4BF6621763DA446668C5AC33C3D76D60E8BF9E25A47E784D6F997F2D4",
+    "bytes": 2995
+  },
+  {
+    "path": "sources/auto-output/.gitignore",
+    "sha256": "BA9BFD8E814AF70246CE5B8677E4BFC7CB8F859CF83EBAA0F919B18418689E93",
+    "bytes": 124
+  },
+  {
+    "path": "sources/auto-output/AssemblyInfo.cs",
+    "sha256": "06D519E1FC3EE2EE278A53447881DC18B9627B38170AC6F025CA6E102A113DB3",
+    "bytes": 468
+  },
+  {
+    "path": "sources/auto-output/Build.ps1",
+    "sha256": "B77A0665DC7894AE4878DDC64B23AAAD20F23D873EE7DF8765FC7CCCB9A7AF89",
+    "bytes": 1144
+  },
+  {
+    "path": "sources/auto-output/CoreAudio.cs",
+    "sha256": "01B7D3D06ABED1D57CB506197BC76F297C3B90DA6374A995883F33360BFDB0A5",
+    "bytes": 9633
+  },
+  {
+    "path": "sources/auto-output/Disable.ps1",
+    "sha256": "138B5619355D8B15D47803E91381B782FC9519D36B87DAF280E6792C527BA031",
+    "bytes": 3986
+  },
+  {
+    "path": "sources/auto-output/Install.ps1",
+    "sha256": "2417ECCA25EC9B0F8AEF387984BE42F2511DDE6AE6619BDA4EDCBAE2A26B41D7",
+    "bytes": 11842
+  },
+  {
+    "path": "sources/auto-output/LICENSE",
+    "sha256": "3972DC9744F6499F0F9B2DBF76696F2AE7AD8AF9B23DDE66D6AF86C9DFB36986",
+    "bytes": 35149
+  },
+  {
+    "path": "sources/auto-output/NOTICE.md",
+    "sha256": "24CD538B50D8C3C744A7E8FF24B3EB570857D1F2C8A2A04E95BED479679AF7FA",
+    "bytes": 1266
+  },
+  {
+    "path": "sources/auto-output/OutputRouting.cs",
+    "sha256": "5EB07A33B02ED04BE258900E6678B824F5F62A6CD42A2F32C096FA730A1EF910",
+    "bytes": 11403
+  },
+  {
+    "path": "sources/auto-output/OutputTests.cs",
+    "sha256": "92C96DB119D71C1283C279711DA835261D82ADD740B4129C923ECD8A03658C84",
+    "bytes": 14223
+  },
+  {
+    "path": "sources/auto-output/PACKAGE.json",
+    "sha256": "2CC955826CE364DCEA7030E0BB691803E1EE6D4FE4122D9CE17F09E5C5B43D87",
+    "bytes": 454
+  },
+  {
+    "path": "sources/auto-output/Program.cs",
+    "sha256": "32DBFEDDC4D6F312218CA3B4F7A2CBD051DAA9871F3F0E00494B4D0160499A82",
+    "bytes": 5742
+  },
+  {
+    "path": "sources/auto-output/README.en.md",
+    "sha256": "44F21804E1A2BEC76821E32711297DB4FD09AEDAB589A141EBF735F18444313B",
+    "bytes": 4336
+  },
+  {
+    "path": "sources/auto-output/README.ko.md",
+    "sha256": "A097FC1DD479ADE76F7006CB90DD88899C06CCA2A56143A7D198F749AB8F8711",
+    "bytes": 6997
+  },
+  {
+    "path": "sources/auto-output/SessionSupport.cs",
+    "sha256": "AEF5853B9235D146D1B15AAFCC01492DEF79E6AB4D72F8B6AEF032200C7FBB26",
+    "bytes": 4790
+  },
+  {
+    "path": "sources/auto-output/VALIDATION.json",
+    "sha256": "9F31ABD7FC2CF62E74A55C3A88851C2F9B65DC445007EB6A6DF9946556911840",
+    "bytes": 2452
   }
 ]
