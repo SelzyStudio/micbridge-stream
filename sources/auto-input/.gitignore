@@ -1,0 +1,6 @@
+/build/
+/MicBridge-AutoInput.exe
+/status.json
+/switch.log
+/original-input.json*
+/install-receipt.json

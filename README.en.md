@@ -15,6 +15,10 @@ Distribution brand: **[Selzy Studio](https://github.com/SelzyStudio)** · Publis
 - The declared minimum requirements are Android 5.0 (API 21) and OpenGL ES 3.0. Emulator execution was checked on Android 6 and 15; not every manufacturer or device model has been tested.
 - **The Windows installer is not Authenticode-signed.** Final microphone, audio, and network-switching tests on another physical PC and Android phone remain outstanding, so this is distributed as a test release.
 
+## Optional PC microphone switching
+
+Use the [MicBridge Auto Input add-on](https://github.com/SelzyStudio/micbridge-stream/releases/tag/auto-input-v1.0.0-rc1) to select Steam Streaming Microphone on connection and restore previous inputs when the session ends. The APK and host packages remain unchanged. See [setup and validation limits](sources/auto-input/README.en.md).
+
 ## Features
 
 - Android microphone forwarding; screen streaming, PC audio, and microphone forwarding pause while the app is in the background and resume when it returns to the foreground

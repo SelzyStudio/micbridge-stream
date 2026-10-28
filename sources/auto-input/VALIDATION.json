@@ -1,0 +1,49 @@
+{
+  "product": "Selzy Studio MicBridge Auto Input",
+  "version": "1.0.0-rc1",
+  "releaseTag": "auto-input-v1.0.0-rc1",
+  "architecture": "windows-x64",
+  "executableSha256": "DD323E9238214D617503F49D0E394CC5A8A9D4B7043BDEE44ED7C61B4BE5AA68",
+  "authenticodeSigned": false,
+  "reviewDateUtc": "2026-10-28",
+  "regressionTests": {
+    "passed": 39,
+    "adapter": "fake capture endpoints; no real routing changes"
+  },
+  "adversarialTests": {
+    "assertionsPassed": 7,
+    "informationalCases": 1
+  },
+  "realWindowsRouting": {
+    "passed": true,
+    "captureRolesRestored": 3,
+    "playbackRolesPreserved": 3,
+    "trigger": "synthetic lifecycle log, real Windows endpoints"
+  },
+  "phoneSmoke": {
+    "initialImplementationPassed": true,
+    "repeatedAfterFinalReview": false,
+    "apkChanged": false,
+    "apolloChanged": false
+  },
+  "defender": {
+    "checkedAtUtc": "2026-10-28T14:43:40.0056631Z",
+    "exitCode": 0,
+    "detections": 0,
+    "fileSha256": "DD323E9238214D617503F49D0E394CC5A8A9D4B7043BDEE44ED7C61B4BE5AA68"
+  },
+  "distributionScripts": {
+    "fullInstallUpgradeUninstallTested": false,
+    "scope": "syntax and read-only preflight; live working installation preserved",
+    "syntaxChecked": true,
+    "existingInstallRejectedBeforeChanges": true
+  },
+  "limitations": [
+    "Not tested on other physical PCs or phones",
+    "Undocumented Windows IPolicyConfig interface",
+    "Specific Apollo log format and one sunshine process required",
+    "A driver loss and return between one-second observations can be missed",
+    "Hard-kill recovery occurs on a later helper start",
+    "Unsigned prerelease"
+  ]
+}

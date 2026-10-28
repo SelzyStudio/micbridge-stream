@@ -15,6 +15,10 @@ Android 마이크를 원격 Windows PC에 전달하는 비공식 Apollo·Artemis
 - 선언된 최소 조건은 Android 5.0(API 21)·OpenGL ES 3.0입니다. 가상 기기 실행 검증은 Android 6과 15에서 수행했으며 모든 제조사·기종을 시험한 것은 아닙니다.
 - **Windows 설치 파일은 Authenticode 미서명입니다.** 다른 물리 PC·Android폰의 최종 마이크·소리·네트워크 전환 시험은 남아 있어 시험판으로 배포합니다.
 
+## 선택적 PC 마이크 자동 전환
+
+원격 연결 때 Steam Streaming Microphone으로 바꾸고 종료 후 원래 입력을 복원하려면 [MicBridge Auto Input 추가 기능](https://github.com/SelzyStudio/micbridge-stream/releases/tag/auto-input-v1.0.0-rc1)을 설치하세요. APK·호스트는 그대로 사용합니다. [설치·검증 범위](sources/auto-input/README.ko.md).
+
 ## 기능
 
 - Android 마이크 전달, 백그라운드에서 화면·PC 소리·마이크 일시 중지 후 복귀

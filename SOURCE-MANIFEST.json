@@ -191,13 +191,13 @@
   },
   {
     "path": "README.ko.md",
-    "sha256": "4508B2E1C66D21A399676B2CD1C29C23B932623C84B4AFF0D4A564AB3D7E415C",
-    "bytes": 4328
+    "sha256": "149F1A17F41E189423A251CE2ECC4327000CFCC51479B6E1751508E98F951EFC",
+    "bytes": 4765
   },
   {
     "path": "README.md",
-    "sha256": "4508B2E1C66D21A399676B2CD1C29C23B932623C84B4AFF0D4A564AB3D7E415C",
-    "bytes": 4328
+    "sha256": "149F1A17F41E189423A251CE2ECC4327000CFCC51479B6E1751508E98F951EFC",
+    "bytes": 4765
   },
   {
     "path": "scripts/Bootstrap-PublicSourceBuild.py",
@@ -8958,5 +8958,85 @@
     "path": "verification/RELEASE-PROVENANCE.json",
     "sha256": "3EC8084A80A0784C2F5C7CCEC0502659C28875BC8699E2D5B82087ED0D121A07",
     "bytes": 473
+  },
+  {
+    "path": "docs/releases/AUTO-INPUT-1.0.0-rc1.ko.md",
+    "sha256": "94BCA6F65E84F2BE11662DB700998A07AA68B9371D8EBDF7F684FBD180DBB59D",
+    "bytes": 2630
+  },
+  {
+    "path": "README.en.md",
+    "sha256": "B26B65BAF5AB05CE076E874DE57D241BE8EBF75234980D52202E19B1529F599F",
+    "bytes": 5036
+  },
+  {
+    "path": "sources/auto-input/.gitignore",
+    "sha256": "CF1CB832649145CF1EE170741715B60AAEBE77EED9D9D8A9FEDF2DA0057D25CB",
+    "bytes": 102
+  },
+  {
+    "path": "sources/auto-input/Build.ps1",
+    "sha256": "B07E03AB6A41F6305AD1355430E57C6324AE1E6AA67CECC8309582DE616A7365",
+    "bytes": 1092
+  },
+  {
+    "path": "sources/auto-input/CoreAudio.cs",
+    "sha256": "01B7D3D06ABED1D57CB506197BC76F297C3B90DA6374A995883F33360BFDB0A5",
+    "bytes": 9633
+  },
+  {
+    "path": "sources/auto-input/Disable.ps1",
+    "sha256": "EBFF0F1B68C7FED33C6AEF97F55D4680D057F1EC249759A62DA34EEF14C053B8",
+    "bytes": 3539
+  },
+  {
+    "path": "sources/auto-input/Install.ps1",
+    "sha256": "F79710178442EDC9D1D86F7296AE256B1A6E3EA7C5082B2263471F8D92A2A9F9",
+    "bytes": 7756
+  },
+  {
+    "path": "sources/auto-input/LICENSE",
+    "sha256": "3972DC9744F6499F0F9B2DBF76696F2AE7AD8AF9B23DDE66D6AF86C9DFB36986",
+    "bytes": 35149
+  },
+  {
+    "path": "sources/auto-input/MicrophoneAutoSwitch.cs",
+    "sha256": "991342E20A917EC25AB49F2ED6BC0F77EC14BAB601D6FCBCF05B04FB2D212870",
+    "bytes": 17580
+  },
+  {
+    "path": "sources/auto-input/NOTICE.md",
+    "sha256": "135807B2822C2B7574E68F7C189D3E3577A33B003BA8C096806F9B0CEA1B4738",
+    "bytes": 1265
+  },
+  {
+    "path": "sources/auto-input/README.en.md",
+    "sha256": "14C3A4C9D6AE877DC889C6C527A2DB718FBA00F7AA6263E0720F2E7430A2F861",
+    "bytes": 3475
+  },
+  {
+    "path": "sources/auto-input/README.ko.md",
+    "sha256": "5831D565CC3C3C77965C15A54A2BEF6FCB05AF39D9BDE4847BB80D9AD02F3C1E",
+    "bytes": 6019
+  },
+  {
+    "path": "sources/auto-input/Tests.cs",
+    "sha256": "552A6FB50C9123E6E1148635BCF7325D3B3E246EA6E95423F80593947E794E43",
+    "bytes": 10052
+  },
+  {
+    "path": "sources/auto-input/tests/Adversarial.cs",
+    "sha256": "4DC64AB53201977CFA4120A38C0C5979BF019578CC7751BF3C294DC6AF8A8C6F",
+    "bytes": 5799
+  },
+  {
+    "path": "sources/auto-input/tests/Run.ps1",
+    "sha256": "26247D8FB20E485321727BE09520C60A9BFF3A29619F4D7107FA8E58877E660C",
+    "bytes": 1098
+  },
+  {
+    "path": "sources/auto-input/VALIDATION.json",
+    "sha256": "6994C4D36500D5887882941191B7CEABA3D5F0655830DB02267D6F85A7BC6F38",
+    "bytes": 1678
   }
 ]
